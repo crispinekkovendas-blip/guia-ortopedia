@@ -12,6 +12,10 @@ on:
         description: "Artigos por termo de busca"
         default: "10"
         type: string
+      licenses:
+        description: "by (só CC BY) · nc (só as outras CC) · all"
+        default: "by"
+        type: string
 
 jobs:
   harvest:
@@ -24,7 +28,7 @@ jobs:
         with:
           node-version: 24
       - name: Colheita
-        run: node scripts/images/epmc.mjs "$RUNNER_TEMP/ortho-refs-epmc" --max-articles "${{ inputs.max_articles }}" 2>&1 | tee colheita.log
+        run: node scripts/images/epmc.mjs "$RUNNER_TEMP/ortho-refs-epmc" --max-articles "${{ inputs.max_articles }}" --licenses "${{ inputs.licenses }}" 2>&1 | tee colheita.log
       - name: Resumo
         run: |
           echo "## Figuras por procedimento" >> "$GITHUB_STEP_SUMMARY"
@@ -33,11 +37,11 @@ jobs:
           du -sh "$RUNNER_TEMP/ortho-refs-epmc" >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:
-          name: ortho-refs-epmc
+          name: ortho-refs-epmc-${{ inputs.licenses }}
           path: ${{ runner.temp }}/ortho-refs-epmc
           retention-days: 14
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: colheita-log
+          name: colheita-log-${{ inputs.licenses }}
           path: colheita.log

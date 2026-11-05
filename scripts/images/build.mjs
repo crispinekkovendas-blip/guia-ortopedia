@@ -21,7 +21,8 @@ const guide = await import(pathToFileURL(resolve(ROOT, "src/lib/ortho-guide/inde
 const procs = [];
 for (const c of guide.ORTHO_GUIDE) for (const t of c.topics) (t.procedures ?? []).forEach((p, k) => procs.push({ n: procs.length + 1, slug: t.slug, k: k + 1, name: p.name }));
 
-const FREE = /^(CC BY(-SA)?( [0-9.]+)?( [a-z]{2})?|CC0|Public domain|No restrictions)$/i;
+// Licenças aceitas: todas as Creative Commons (as não comerciais entram porque o guia não é vendido), CC0 e domínio público.
+const FREE = /^(CC BY(-NC)?(-SA|-ND)?( [0-9.]+)?( [a-z]{2})?|CC0|Public domain|No restrictions)$/i;
 // As fontes: cada pasta tem credits.json na raiz (lista por procedimento, com `dir`) ou só as subpastas.
 const sources = SRCS.filter((d) => existsSync(d)).map((d) => {
   const root = join(d, "credits.json");

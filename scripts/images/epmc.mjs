@@ -10,6 +10,17 @@ import { pathToFileURL } from "node:url";
 
 const OUT = process.argv[2] ?? "C:/Users/admin/XGLA/Software/MEDAPP/ortho-refs-epmc";
 const MAX_ARTICLES = Number(process.argv[process.argv.indexOf("--max-articles") + 1]) || 25;
+// --licenses by (padrão): só CC BY · nc: só as outras CC (BY-NC, BY-NC-SA, BY-SA, BY-ND, BY-NC-ND) · all: todas
+const LICENSES = process.argv.includes("--licenses") ? process.argv[process.argv.indexOf("--licenses") + 1] : "by";
+const LIC_QUERY = LICENSES === "by" ? '(LICENSE:"cc by" OR LICENSE:"cc-by")'
+  : LICENSES === "nc" ? '(LICENSE:"cc by-nc" OR LICENSE:"cc by-nc-sa" OR LICENSE:"cc by-nc-nd" OR LICENSE:"cc by-sa" OR LICENSE:"cc by-nd")'
+  : '(LICENSE:"cc by" OR LICENSE:"cc by-nc" OR LICENSE:"cc by-nc-sa" OR LICENSE:"cc by-nc-nd" OR LICENSE:"cc by-sa" OR LICENSE:"cc by-nd")';
+/** O nome da licença a partir do texto/URL do artigo ("CC BY-NC-SA 4.0"); null quando não é Creative Commons. */
+function licenseName(text) {
+  const m = text.match(/creativecommons\.org\/licenses\/(by(?:-nc)?(?:-sa|-nd)?)\/?([0-9.]+)?/i) ?? text.match(/\bCC[ -]?(BY(?:[ -]?NC)?(?:[ -]?SA|[ -]?ND)?)\b[ -]?([0-9.]+)?/i);
+  if (!m) return /Creative Commons Attribution/i.test(text) ? (/Non-?Commercial/i.test(text) ? (/Share-?Alike/i.test(text) ? "CC BY-NC-SA" : /No-?Deriv/i.test(text) ? "CC BY-NC-ND" : "CC BY-NC") : /Share-?Alike/i.test(text) ? "CC BY-SA" : /No-?Deriv/i.test(text) ? "CC BY-ND" : "CC BY") : null;
+  return `CC ${m[1].toUpperCase().replace(/[ _]/g, "-")}${m[2] ? " " + m[2] : ""}`;
+}
 const ROOT = resolve(import.meta.dirname, "../..");
 const base = "https://www.ebi.ac.uk/europepmc/webservices/rest";
 
@@ -111,7 +122,7 @@ for (const p of procs) {
   const images = [];
   const seen = new Set();
   for (const t of terms) {
-    const q = encodeURIComponent(`(${t}) AND OPEN_ACCESS:y AND (LICENSE:"cc by" OR LICENSE:"cc-by") AND HAS_FT:y`);
+    const q = encodeURIComponent(`(${t}) AND OPEN_ACCESS:y AND ${LIC_QUERY} AND HAS_FT:y`);
     await sleep(1500);
     let j;
     try { j = await getJson(`${base}/search?query=${q}&format=json&pageSize=${MAX_ARTICLES}&resultType=lite&sort=RELEVANCE`); } catch (e) { console.warn(`busca falhou: ${t}: ${e.message}`); continue; }
@@ -128,8 +139,10 @@ for (const p of procs) {
       // a licença de verdade, no XML
       const lic = strip(xml.match(/<license[^>]*>([\s\S]*?)<\/license>/)?.[1] ?? "");
       const licUrl = xml.match(/<license[^>]*xlink:href="([^"]+)"/)?.[1] ?? "";
-      const byOnly = /creativecommons\.org\/licenses\/by\/|CC BY(?![ -]?(NC|ND|SA))|Attribution (4\.0|3\.0|2\.0) (International )?License(?! .*Non)/i.test(licUrl + " " + lic) && !/non-?commercial|nc\b|no-?deriv|\/by-nc|\/by-nd|\/by-sa/i.test(licUrl + " " + lic);
-      if (!byOnly) continue;
+      const licName = licenseName(licUrl + " " + lic);
+      if (!licName) continue;
+      if (LICENSES === "by" && licName.split(" ")[1] !== "BY") continue;
+      if (LICENSES === "nc" && licName.split(" ")[1] === "BY") continue;
       const authors = a.authorString ?? "";
       // primeiro as legendas que batem; só então a página do PMC (uma por artigo)
       const wanted = [];
@@ -154,7 +167,7 @@ for (const p of procs) {
           if (!ok) continue;
           await sleep(500);
         }
-        images.push({ file, title: cap.slice(0, 240), author: authors, license: "CC BY", page: `https://pmc.ncbi.nlm.nih.gov/articles/${a.pmcid}/`, article: a.title, journal: `${a.journalTitle ?? ""} ${a.pubYear ?? ""}`.trim(), pmcid: a.pmcid });
+        images.push({ file, title: cap.slice(0, 240), author: authors, license: licName, page: `https://pmc.ncbi.nlm.nih.gov/articles/${a.pmcid}/`, article: a.title, journal: `${a.journalTitle ?? ""} ${a.pubYear ?? ""}`.trim(), pmcid: a.pmcid });
       }
       if (images.length >= 30) break;
     }
