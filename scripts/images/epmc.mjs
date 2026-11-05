@@ -62,9 +62,10 @@ const Q = {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // O Europe PMC devolve 503 quando se pede depressa demais: espera e tenta de novo.
+const UA = { "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36", accept: "text/html,application/xml,application/json,image/*,*/*;q=0.8" };
 async function getRetry(url, as) {
   for (let i = 0; i < 5; i++) {
-    const r = await fetch(url);
+    const r = await fetch(url, { headers: UA });
     if (r.ok) return as === "json" ? r.json() : r.text();
     if (r.status !== 503 && r.status !== 429) throw new Error(`${r.status} ${url}`);
     await sleep(5000 * (i + 1));
@@ -75,7 +76,7 @@ const getJson = (url) => getRetry(url, "json");
 const getText = (url) => getRetry(url, "text");
 async function download(url, dest) {
   for (let i = 0; i < 3; i++) {
-    const r = await fetch(url);
+    const r = await fetch(url, { headers: UA });
     if (r.ok) { writeFileSync(dest, Buffer.from(await r.arrayBuffer())); return true; }
     if (r.status === 429) { await sleep(3000 * (i + 1)); continue; }
     return false;
@@ -83,6 +84,22 @@ async function download(url, dest) {
   return false;
 }
 const strip = (s) => s.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+// As figuras ficam no CDN do PMC com um caminho que só a página do artigo revela: nome do arquivo → URL.
+const pageCache = new Map();
+async function blobMap(pmcid) {
+  if (pageCache.has(pmcid)) return pageCache.get(pmcid);
+  const m = new Map();
+  try {
+    const html = await getText(`https://pmc.ncbi.nlm.nih.gov/articles/${pmcid}/`);
+    for (const u of html.matchAll(/https:\/\/cdn\.ncbi\.nlm\.nih\.gov\/pmc\/blobs\/[^"' ]+/g)) {
+      const name = u[0].split("/").pop();
+      if (!m.has(name.replace(/\.[^.]+$/, "").toLowerCase())) m.set(name.replace(/\.[^.]+$/, "").toLowerCase(), u[0]);
+    }
+  } catch (e) { console.warn(`página do PMC falhou: ${pmcid}: ${e.message}`); }
+  pageCache.set(pmcid, m);
+  await sleep(1200);
+  return m;
+}
 
 mkdirSync(OUT, { recursive: true });
 const all = [];
@@ -114,21 +131,30 @@ for (const p of procs) {
       const byOnly = /creativecommons\.org\/licenses\/by\/|CC BY(?![ -]?(NC|ND|SA))|Attribution (4\.0|3\.0|2\.0) (International )?License(?! .*Non)/i.test(licUrl + " " + lic) && !/non-?commercial|nc\b|no-?deriv|\/by-nc|\/by-nd|\/by-sa/i.test(licUrl + " " + lic);
       if (!byOnly) continue;
       const authors = a.authorString ?? "";
+      // primeiro as legendas que batem; só então a página do PMC (uma por artigo)
+      const wanted = [];
       for (const f of xml.matchAll(/<fig[^>]*>([\s\S]*?)<\/fig>/g)) {
         const cap = strip(f[1].match(/<caption>([\s\S]*?)<\/caption>/)?.[1] ?? "");
         const href = f[1].match(/<graphic[^>]*xlink:href="([^"]+)"/)?.[1];
         if (!href || /\.(mp4|avi|mov)$/i.test(href)) continue;
         const lc = cap.toLowerCase();
         if (!TECH.some((w) => lc.includes(w)) || BAD.some((w) => lc.includes(w))) continue;
-        const ext = /\.(jpe?g|png|gif|webp|tiff?)$/i.test(href) ? "" : ".jpg";
-        const file = `${a.pmcid}-${href.replace(/[^\w.-]/g, "_")}${ext}`.replace(/\.(tiff?)$/i, ".jpg");
+        wanted.push({ cap, href });
+      }
+      if (wanted.length === 0) continue;
+      const map = await blobMap(a.pmcid);
+      for (const { cap, href } of wanted) {
+        const url = map.get(href.replace(/\.[^.]+$/, "").toLowerCase());
+        if (!url) continue;
+        const ext = (url.split(".").pop() ?? "jpg").toLowerCase().replace(/[^a-z]/g, "") || "jpg";
+        const file = `${a.pmcid}-${href.replace(/\.[^.]+$/, "").replace(/[^\w.-]/g, "_")}.${ext}`;
         const dest = join(dir, file);
         if (!existsSync(dest)) {
-          const ok = await download(`https://europepmc.org/articles/${a.pmcid}/bin/${href}${ext ? ".jpg" : ""}`, dest);
+          const ok = await download(url, dest);
           if (!ok) continue;
-          await sleep(400);
+          await sleep(500);
         }
-        images.push({ file, title: cap.slice(0, 240), author: authors, license: "CC BY", page: `https://europepmc.org/article/PMC/${a.pmcid}`, article: a.title, journal: `${a.journalTitle ?? ""} ${a.pubYear ?? ""}`.trim(), pmcid: a.pmcid });
+        images.push({ file, title: cap.slice(0, 240), author: authors, license: "CC BY", page: `https://pmc.ncbi.nlm.nih.gov/articles/${a.pmcid}/`, article: a.title, journal: `${a.journalTitle ?? ""} ${a.pubYear ?? ""}`.trim(), pmcid: a.pmcid });
       }
       if (images.length >= 30) break;
     }
