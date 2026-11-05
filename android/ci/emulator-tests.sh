@@ -6,8 +6,11 @@ set -u
 adb shell settings put global hide_error_dialogs 1 || true
 adb shell rm -rf /sdcard/Download/renova
 adb shell mkdir -p /sdcard/Download/renova
+adb logcat -c || true
 gradle --no-daemon connectedDebugAndroidTest
 status=$?
+mkdir -p screenshots
+adb logcat -d -v time > screenshots/logcat-teste.txt || true
 
 adb uninstall br.com.renova.ortopedia >/dev/null 2>&1 || true
 if adb install -r app/build/outputs/apk/release/app-release.apk; then

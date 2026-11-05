@@ -12,6 +12,8 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performImeAction
 import androidx.compose.ui.test.performScrollTo
+import androidx.compose.ui.test.performSemanticsAction
+import androidx.compose.ui.semantics.SemanticsActions
 import androidx.compose.ui.test.performTextClearance
 import androidx.compose.ui.test.performTextInput
 import androidx.test.core.app.ActivityScenario
@@ -117,6 +119,16 @@ class AppFlowTest {
 
     @Test
     fun fluxoCompleto() {
+        try {
+            fluxo()
+        } catch (e: Throwable) {
+            // A tela no momento da falha, para o diagnóstico sem o aparelho na mão.
+            shell("screencap -p /sdcard/Download/renova/99-falha.png")
+            throw e
+        }
+    }
+
+    private fun fluxo() {
         ActivityScenario.launch(MainActivity::class.java).use {
             // Sem login: o guia baixa e chega numa revisão mais nova que a última vista — aviso.
             waitForTag("see-changes", 180_000)
@@ -171,7 +183,14 @@ class AppFlowTest {
 
             // Super Inteligência: a aba Perguntar, a pergunta e a resposta com as fontes. (Esperar a tela inicial voltar.)
             waitForTag("tab-perguntar")
+            shot("08d-antes-de-perguntar")
             compose.onNodeWithTag("tab-perguntar").performClick()
+            Thread.sleep(2500)
+            shot("08d-perguntar")
+            if (compose.onAllNodesWithTag("ask-field").fetchSemanticsNodes().isEmpty()) {
+                // O toque não abriu a aba (algo cobre a barra?): aciona a ação de clique do nó.
+                compose.onNodeWithTag("tab-perguntar").performSemanticsAction(SemanticsActions.OnClick)
+            }
             waitForTag("ask-field")
             shot("08d-perguntar")
             compose.onNodeWithTag("ask-field").performTextInput("Entorse de tornozelo: o que faço?")
