@@ -1,0 +1,43 @@
+name: Imagens — colheita no Europe PMC
+
+# Colhe figuras CC BY de artigos em acesso aberto (Europe PMC + CDN do PMC) para cada
+# procedimento do guia e publica a pasta como artefato, para a curadoria à mão
+# (scripts/images/sheet.mjs → rejected.txt → scripts/images/build.mjs). Nada entra
+# no site sem passar pela curadoria.
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_articles:
+        description: "Artigos por termo de busca"
+        default: "10"
+        type: string
+
+jobs:
+  harvest:
+    name: Colher figuras
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Colheita
+        run: node scripts/images/epmc.mjs "$RUNNER_TEMP/ortho-refs-epmc" --max-articles "${{ inputs.max_articles }}" 2>&1 | tee colheita.log
+      - name: Resumo
+        run: |
+          echo "## Figuras por procedimento" >> "$GITHUB_STEP_SUMMARY"
+          grep -E "^ *[0-9]+ " colheita.log >> "$GITHUB_STEP_SUMMARY" || true
+          grep -E "^total" colheita.log >> "$GITHUB_STEP_SUMMARY" || true
+          du -sh "$RUNNER_TEMP/ortho-refs-epmc" >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ortho-refs-epmc
+          path: ${{ runner.temp }}/ortho-refs-epmc
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: colheita-log
+          path: colheita.log
