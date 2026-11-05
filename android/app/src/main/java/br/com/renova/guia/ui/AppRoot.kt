@@ -192,6 +192,9 @@ private fun MainScaffold(container: AppContainer, ready: GuideState.Ready) {
                     )
                 }
             }
+            composable(Routes.ORTO_COLA) {
+                content.ortho?.let { ortho -> ColaScreen(ortho, onBack = { nav.popBackStack() }, onOpen = ::openRoute) }
+            }
             composable(Routes.ORTO_MUDANCAS) {
                 content.ortho?.let { ortho -> OrthoChangesScreen(ortho, onBack = { nav.popBackStack() }, onOpen = ::openRoute) }
             }

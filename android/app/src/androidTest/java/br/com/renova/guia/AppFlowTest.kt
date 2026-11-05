@@ -147,6 +147,16 @@ class AppFlowTest {
             back()
             back()
 
+            // A cola do plantão: lista, um texto aberto, Copiar.
+            waitForTag("orto-cola")
+            compose.onNodeWithTag("orto-cola").performClick()
+            waitForTag("cola-list")
+            shot("08b-cola")
+            compose.onAllNodesWithText("Lombalgia aguda").onFirst().performClick()
+            waitForTag("cola-copy")
+            shot("08c-cola-aberta")
+            back()
+
             // Menu: o que mudou e Sobre.
             waitForTag("menu")
             compose.onNodeWithTag("menu").performClick()

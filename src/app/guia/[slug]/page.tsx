@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { findOrthoTopic, orthoSlugs } from "@/lib/ortho-guide";
 import { CURRENT_ORTHO_REVISION, orthoRevisionLabel, orthoTopicRevised } from "@/lib/ortho-guide/revisions";
 import { topicImages } from "@/lib/images";
+import { colaForTopic } from "@/lib/ortho-guide/cola";
+import { ColaCard } from "@/components/guide/cola-card";
 import { ORTHO_SECTIONS, OrthoTopicBody } from "@/components/guide/ortho-topic";
 import { OrthoCredit } from "@/components/guide/ortho-credit";
 import { TopicImages } from "@/components/guide/topic-images";
@@ -23,6 +25,7 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
   const { chapter, topic, prev, next } = found;
   const revised = orthoTopicRevised(topic.slug);
   const images = topicImages(topic.slug);
+  const cola = colaForTopic(topic.slug);
   const present = new Set<string>([
     "perguntar",
     ...(topic.exam.length ? ["examinar"] : []),
@@ -37,7 +40,7 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
     "cirurgia",
     "atestado",
   ]);
-  const sections: (readonly [string, string])[] = [...ORTHO_SECTIONS.filter(([id]) => present.has(id)), ...(images.length ? [["imagens", "Imagens de referência"] as const] : [])];
+  const sections: (readonly [string, string])[] = [...ORTHO_SECTIONS.filter(([id]) => present.has(id)), ...(cola.length ? [["cola", "Cola do plantão"] as const] : []), ...(images.length ? [["imagens", "Imagens de referência"] as const] : [])];
 
   return (
     <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[minmax(0,1fr)_15rem]">
@@ -86,6 +89,22 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
 
         <div className="card mt-4 p-4 sm:p-6">
           <OrthoTopicBody topic={topic} />
+          {cola.length ? (
+            <section id="cola" className="mt-6 scroll-mt-20">
+              <h2 className="mb-1 text-[11.5px] font-extrabold tracking-[0.12em] text-pine-900/55 uppercase">Cola do plantão</h2>
+              <p className="mb-3 text-[12.5px] text-pine-900/55">
+                O texto pronto do prontuário e da receita para esta queixa. Abra, confira o que é do paciente e copie.{" "}
+                <Link href="/cola" className="font-bold text-pine-600 hover:underline">
+                  Toda a cola →
+                </Link>
+              </p>
+              <div className="space-y-2">
+                {cola.map((c) => (
+                  <ColaCard key={c.id} entry={c} />
+                ))}
+              </div>
+            </section>
+          ) : null}
           {images.length ? (
             <section id="imagens" className="mt-6 scroll-mt-20">
               <h2 className="mb-1 text-[11.5px] font-extrabold tracking-[0.12em] text-pine-900/55 uppercase">Imagens de referência</h2>

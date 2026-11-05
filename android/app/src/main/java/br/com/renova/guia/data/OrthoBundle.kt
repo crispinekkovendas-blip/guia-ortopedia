@@ -21,6 +21,9 @@ data class OrthoTab(
     val chapters: List<OrthoChapter> = emptyList(),
     /** Versão das ilustrações dos procedimentos: mudou, o app apaga a cópia local e baixa de novo. */
     val spritesVersion: Int = 0,
+    /** A cola do plantão (ColaScreen). */
+    val cola: List<ColaEntry> = emptyList(),
+    val colaGroups: List<ColaGroup> = emptyList(),
     val changes: List<OrthoChange> = emptyList(),
     val search: OrthoSearch = OrthoSearch(),
 )
@@ -102,6 +105,21 @@ data class OrthoProcedure(
     /** A ilustração própria (caminho do PNG no site; o app guarda uma cópia em filesDir/sprites). */
     val image: String? = null,
 )
+
+/** Um texto pronto da cola do plantão: prontuário por queixa, receita, medicação, nota ou incidência. */
+@Serializable
+data class ColaEntry(
+    val id: String,
+    val group: String,
+    val title: String,
+    val cid: String? = null,
+    val topic: String? = null,
+    val hint: String? = null,
+    val text: String,
+)
+
+@Serializable
+data class ColaGroup(val id: String, val label: String, val hint: String = "")
 
 /** Uma imagem de referência do tópico (foto, radiografia ou esquema com licença livre), com os créditos. */
 @Serializable

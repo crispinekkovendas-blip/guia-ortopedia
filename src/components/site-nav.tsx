@@ -7,6 +7,7 @@ import { ThemeToggle } from "./theme-toggle";
 const LINKS = [
   { href: "/guia", label: "Guia" },
   { href: "/guia/consulta", label: "Atender agora" },
+  { href: "/cola", label: "Cola" },
   { href: "/imagens", label: "Imagens" },
   { href: "/guia/revisoes", label: "Revisões" },
   { href: "/app", label: "App Android" },

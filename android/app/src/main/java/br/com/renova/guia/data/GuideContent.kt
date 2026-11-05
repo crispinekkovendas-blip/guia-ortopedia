@@ -90,6 +90,7 @@ object Routes {
     /** A consulta guiada; `?t=` abre já no roteiro do tópico. */
     const val ORTO_CONSULTA = "orto-consulta?t={slug}"
     const val ORTO_MUDANCAS = "orto-mudancas"
+    const val ORTO_COLA = "orto-cola"
 
     fun recipe(slug: String) = "receita/$slug"
     fun topic(slug: String) = "topico/$slug"

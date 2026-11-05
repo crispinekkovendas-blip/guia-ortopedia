@@ -181,6 +181,7 @@ private fun OrthoIndex(ortho: OrthoContent, chapter: String?, onChapter: (String
     val chapters = ortho.tab.chapters
     LazyColumn(contentPadding = PaddingValues(start = 16.dp, end = 16.dp, bottom = 24.dp), verticalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.testTag("orto-list")) {
         item { AttendNowCard { onOpen(Routes.ortoConsulta()) } }
+        if (ortho.tab.cola.isNotEmpty()) item { ColaHomeCard(ortho.tab.cola.size) { onOpen(Routes.ORTO_COLA) } }
         item { FirstDayStrip(ortho, onOpen) }
         item {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
@@ -225,6 +226,25 @@ private fun OrthoIndex(ortho: OrthoContent, chapter: String?, onChapter: (String
 }
 
 /** O cartão "Atender agora": a consulta guiada em cinco passos. */
+/** A cola do plantão, logo abaixo do Atender agora. */
+@Composable
+fun ColaHomeCard(n: Int, onClick: () -> Unit) {
+    Card(
+        onClick = onClick,
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer, contentColor = MaterialTheme.colorScheme.onSecondaryContainer),
+        modifier = Modifier.fillMaxWidth().testTag("orto-cola"),
+    ) {
+        Row(Modifier.padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
+            Icon(Icons.Filled.ContentCopy, contentDescription = null)
+            Spacer(Modifier.size(12.dp))
+            Column(Modifier.weight(1f)) {
+                Text("Cola do plantão — $n textos prontos", fontWeight = FontWeight.ExtraBold)
+                Text("Prontuário por queixa, receita para casa, medicação na unidade, notas de urgência e incidências do raio-X. Copie com um toque.", style = MaterialTheme.typography.bodySmall)
+            }
+        }
+    }
+}
+
 @Composable
 fun AttendNowCard(onClick: () -> Unit) {
     Card(
@@ -370,7 +390,7 @@ fun OrthoTopicScreen(ortho: OrthoContent, prefs: UserPrefs, slug: String, onBack
                     }
                 }
             }
-            OrthoTopicBody(topic)
+            OrthoTopicBody(topic, cola = ortho.tab.cola.filter { it.topic == topic.slug })
             Row(Modifier.fillMaxWidth().padding(top = 16.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 Box(Modifier.weight(1f)) {
                     if (prev != null) NeighborCard("← Anterior", prev.title, Alignment.Start) { onOpen(Routes.ortoTopic(prev.slug)) }
@@ -406,9 +426,9 @@ fun OrthoCreditText(ortho: OrthoContent) {
     )
 }
 
-/** O corpo do tópico na ordem da consulta. */
+/** O corpo do tópico na ordem da consulta; `cola` são os textos prontos da queixa (ortho.tab.cola). */
 @Composable
-fun OrthoTopicBody(topic: OrthoTopic) {
+fun OrthoTopicBody(topic: OrthoTopic, cola: List<br.com.renova.guia.data.ColaEntry>? = null) {
     val g = GuideTheme.colors
     Card(
         modifier = Modifier.fillMaxWidth().padding(top = 12.dp),
@@ -471,6 +491,10 @@ fun OrthoTopicBody(topic: OrthoTopic) {
             topic.immobilize?.takeIf { it.isNotEmpty() }?.let {
                 OrthoSection("Imobilizar", "órtese ou tala")
                 Bullets(it)
+            }
+            cola?.takeIf { it.isNotEmpty() }?.let { list ->
+                OrthoSection("Cola do plantão", "o texto pronto desta queixa")
+                for (c in list) Column(Modifier.padding(top = 8.dp)) { ColaCard(c) }
             }
             topic.images?.takeIf { it.isNotEmpty() }?.let { images ->
                 OrthoSection("Imagens de referência", "${images.size} com licença livre")

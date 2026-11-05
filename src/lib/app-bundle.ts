@@ -9,6 +9,8 @@ import type { OrthoRegion } from "./ortho-guide/consult.ts";
 import { CURRENT_ORTHO_REVISION, ORTHO_CHANGES, ORTHO_REVISIONS, orthoTopicRevised } from "./ortho-guide/revisions.ts";
 import { conciseDiff } from "./revision-diff.ts";
 import { REF_IMAGES } from "./images.ts";
+import { COLA, COLA_GROUPS } from "./ortho-guide/cola.ts";
+import type { ColaEntry } from "./ortho-guide/cola.ts";
 import type { RefImage } from "./images.ts";
 
 /*
@@ -59,6 +61,9 @@ export interface AppOrtho {
   chapters: { title: string; intro: string; topics: AppOrthoTopic[] }[];
   /** Versão das ilustrações e imagens: o app apaga a cópia local e baixa de novo quando muda. */
   spritesVersion: number;
+  /** A cola do plantão: textos prontos do prontuário, da receita e da medicação. */
+  cola: ColaEntry[];
+  colaGroups: { id: string; label: string; hint: string }[];
   changes: AppOrthoChange[];
   search: { docs: SearchDoc[]; items: AppSearchItem[] };
 }
@@ -115,6 +120,8 @@ function buildOrtho(): AppOrtho {
       }),
     })),
     spritesVersion: mediaVersion(),
+    cola: COLA.map((c) => ({ ...c })),
+    colaGroups: COLA_GROUPS.map((g) => ({ ...g })),
     changes: ORTHO_CHANGES.map((c) => ({
       rev: c.rev,
       slug: c.slug,
