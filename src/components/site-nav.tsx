@@ -11,6 +11,7 @@ const LINKS = [
   { href: "/imagens", label: "Imagens" },
   { href: "/guia/revisoes", label: "Revisões" },
   { href: "/app", label: "App Android" },
+  { href: "/pdf/Guia-de-ortopedia.pdf", label: "PDF" },
 ];
 
 /** O alto de toda página: o nome do guia, as cinco entradas e o tema. */
