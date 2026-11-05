@@ -54,6 +54,9 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.foundation.gestures.rememberTransformableState
+import androidx.compose.foundation.gestures.transformable
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.graphics.asImageBitmap
@@ -544,7 +547,12 @@ fun ProcedureCard(p: br.com.renova.guia.data.OrthoProcedure) {
         Modifier.padding(top = 8.dp).fillMaxWidth().clip(RoundedCornerShape(12.dp)).background(MaterialTheme.colorScheme.surfaceContainerLow).padding(10.dp),
     ) {
         Text(p.name, fontWeight = FontWeight.ExtraBold, style = MaterialTheme.typography.bodyMedium)
-        sprite?.let { svg -> SpriteView(svg, Modifier.padding(top = 6.dp).fillMaxWidth().aspectRatio(1200f / 800f).clip(RoundedCornerShape(10.dp)).background(Color.White)) }
+        sprite?.let { svg ->
+            var zoom by remember { mutableStateOf(false) }
+            SpriteView(svg, Modifier.padding(top = 6.dp).fillMaxWidth().aspectRatio(1200f / 800f).clip(RoundedCornerShape(10.dp)).background(Color.White), onTap = { zoom = true })
+            MutedText("Ilustração animada — toque para ampliar.", Modifier.padding(top = 2.dp))
+            if (zoom) ZoomDialog(onDismiss = { zoom = false }) { SpriteView(svg, Modifier.fillMaxSize().background(Color.White), zoomable = true) }
+        }
         Text("Quando: ${p.whenTo}", style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(top = 4.dp))
         Text("Material: ${p.needs}", style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(top = 2.dp))
         p.steps.forEachIndexed { i, s -> Text("${i + 1}. $s", style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(top = 4.dp, start = 4.dp)) }
@@ -567,25 +575,62 @@ private fun ReferenceImageCard(img: br.com.renova.guia.data.OrthoImage) {
             }.getOrNull() else null
         }
     }
+    var zoom by remember { mutableStateOf(false) }
     Column(Modifier.padding(top = 8.dp).fillMaxWidth().clip(RoundedCornerShape(12.dp)).background(MaterialTheme.colorScheme.surfaceContainerLow).padding(8.dp)) {
         bitmap?.let {
             androidx.compose.foundation.Image(
                 bitmap = it,
                 contentDescription = img.title,
-                modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(10.dp)).background(Color.White),
+                modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(10.dp)).background(Color.White).clickable { zoom = true },
                 contentScale = androidx.compose.ui.layout.ContentScale.FillWidth,
             )
+            if (zoom) ZoomDialog(onDismiss = { zoom = false }) { ZoomableImage(it, img.title) }
         }
         Text(img.title, style = MaterialTheme.typography.bodySmall, fontWeight = FontWeight.SemiBold, modifier = Modifier.padding(top = 4.dp))
         MutedText(listOf(img.author, img.license).filter { it.isNotBlank() }.joinToString(" · "))
     }
 }
 
-/** O SVG animado dentro de um WebView parado: sem JavaScript, sem rede, sem rolagem; o toque vai para a lista. */
+/** Tela cheia para ampliar uma figura: fundo branco, botão de fechar, o conteúdo com pinça. */
 @Composable
-private fun SpriteView(svg: String, modifier: Modifier) {
-    val page = "<!doctype html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" +
-        "<style>html,body{margin:0;padding:0;background:#fff;overflow:hidden}svg{width:100%;height:auto;display:block}</style></head><body>" + svg + "</body></html>"
+fun ZoomDialog(onDismiss: () -> Unit, content: @Composable () -> Unit) {
+    androidx.compose.ui.window.Dialog(onDismissRequest = onDismiss, properties = androidx.compose.ui.window.DialogProperties(usePlatformDefaultWidth = false)) {
+        Box(Modifier.fillMaxSize().background(Color.White)) {
+            content()
+            IconButton(onClick = onDismiss, modifier = Modifier.align(Alignment.TopEnd).padding(8.dp).background(Color.White.copy(alpha = 0.85f), CircleShape).testTag("zoom-close")) {
+                Icon(Icons.Filled.Close, contentDescription = "Fechar")
+            }
+        }
+    }
+}
+
+/** Uma imagem em tela cheia com pinça (zoom) e arrasto. */
+@Composable
+private fun ZoomableImage(bitmap: androidx.compose.ui.graphics.ImageBitmap, description: String) {
+    var scale by remember { mutableStateOf(1f) }
+    var offset by remember { mutableStateOf(androidx.compose.ui.geometry.Offset.Zero) }
+    val state = androidx.compose.foundation.gestures.rememberTransformableState { zoomChange, panChange, _ ->
+        scale = (scale * zoomChange).coerceIn(1f, 8f)
+        offset = if (scale > 1f) offset + panChange else androidx.compose.ui.geometry.Offset.Zero
+    }
+    Box(Modifier.fillMaxSize().background(Color.White).transformable(state), contentAlignment = Alignment.Center) {
+        androidx.compose.foundation.Image(
+            bitmap = bitmap,
+            contentDescription = description,
+            modifier = Modifier.fillMaxWidth().graphicsLayer(scaleX = scale, scaleY = scale, translationX = offset.x, translationY = offset.y),
+            contentScale = androidx.compose.ui.layout.ContentScale.FillWidth,
+        )
+    }
+}
+
+/**
+ * O SVG animado dentro de um WebView: sem JavaScript, sem rede. Na lista fica parado (o toque abre a
+ * ampliação); ampliado (`zoomable`), a pinça dá zoom e o dedo arrasta.
+ */
+@Composable
+private fun SpriteView(svg: String, modifier: Modifier, zoomable: Boolean = false, onTap: (() -> Unit)? = null) {
+    val page = "<!doctype html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1" + (if (zoomable) ", maximum-scale=6, user-scalable=yes" else "") + "\">" +
+        "<style>html,body{margin:0;padding:0;background:#fff;" + (if (zoomable) "" else "overflow:hidden") + "}svg{width:100%;height:auto;display:block" + (if (zoomable) ";margin-top:12vh" else "") + "}</style></head><body>" + svg + "</body></html>"
     AndroidView(
         factory = { ctx ->
             WebView(ctx).apply {
@@ -594,12 +639,25 @@ private fun SpriteView(svg: String, modifier: Modifier) {
                 settings.allowContentAccess = false
                 settings.loadWithOverviewMode = true
                 settings.useWideViewPort = true
+                settings.setSupportZoom(zoomable)
+                settings.builtInZoomControls = zoomable
+                settings.displayZoomControls = false
                 isVerticalScrollBarEnabled = false
                 isHorizontalScrollBarEnabled = false
                 overScrollMode = View.OVER_SCROLL_NEVER
                 setBackgroundColor(android.graphics.Color.WHITE)
                 webViewClient = WebViewClient()
-                setOnTouchListener { v, _ -> v.parent?.requestDisallowInterceptTouchEvent(false); true }
+                if (!zoomable) {
+                    var downX = 0f; var downY = 0f
+                    setOnTouchListener { v, e ->
+                        v.parent?.requestDisallowInterceptTouchEvent(false)
+                        when (e.action) {
+                            android.view.MotionEvent.ACTION_DOWN -> { downX = e.x; downY = e.y }
+                            android.view.MotionEvent.ACTION_UP -> if (onTap != null && kotlin.math.abs(e.x - downX) < 24 && kotlin.math.abs(e.y - downY) < 24) onTap()
+                        }
+                        true
+                    }
+                }
             }
         },
         update = { view ->

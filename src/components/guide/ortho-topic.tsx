@@ -82,13 +82,16 @@ export function OrthoTopicBody({ topic }: { topic: OrthoTopic }) {
             {topic.procedures.map((p, i) => (
               <li key={p.name} className="rounded-xl border border-pine-900/10 bg-white px-3.5 py-3">
                 <p className="text-[14.5px] font-extrabold text-pine-950">{p.name}</p>
-                {/* eslint-disable-next-line @next/next/no-img-element -- SVG próprio, servido como está */}
-                <img
-                  src={procedureImage(topic.slug, i + 1).svg}
-                  alt={`Ilustração: ${p.name}`}
-                  loading="lazy"
-                  className="mt-2 w-full rounded-lg border border-pine-900/10 bg-white"
-                />
+                <a href={procedureImage(topic.slug, i + 1).svg} target="_blank" rel="noopener" title="Abrir a ilustração em tamanho cheio (dá para ampliar)" className="block">
+                  {/* eslint-disable-next-line @next/next/no-img-element -- SVG próprio, servido como está */}
+                  <img
+                    src={procedureImage(topic.slug, i + 1).svg}
+                    alt={`Ilustração animada: ${p.name}`}
+                    loading="lazy"
+                    className="mt-2 w-full rounded-lg border border-pine-900/10 bg-white"
+                  />
+                </a>
+                <p className="mt-0.5 text-[11px] text-pine-900/45">Ilustração animada — toque para ampliar.</p>
                 <p className="mt-1 text-[13.5px]">
                   <span className="mr-1 rounded bg-pine-100 px-1 text-[10px] font-extrabold tracking-wide text-pine-800 uppercase">Quando</span>
                   {p.when}
