@@ -8,6 +8,8 @@
  * paciente. Cada texto copia inteiro com um toque.
  */
 
+import { COLA_MAIS } from "./cola-mais.ts";
+
 export type ColaGroup = "prontuario" | "receita" | "im" | "notas" | "raio-x";
 
 export interface ColaEntry {
@@ -20,6 +22,8 @@ export interface ColaEntry {
   topic?: string;
   /** Uma linha de contexto, quando o título não basta. */
   hint?: string;
+  /** "caderno" = veio do caderno do médico; "guia" = acrescentado a partir do guia, no mesmo jeito. */
+  source?: "caderno" | "guia";
   text: string;
 }
 
@@ -39,7 +43,7 @@ DIPIRONA -------------------------- 01 AMPOLA IM`;
 
 const GELO = `OBS: APLICAR COMPRESSA DE GELO NA REGIÃO POR 15–20 MINUTOS, 3–4 VEZES AO DIA, SEMPRE PROTEGENDO A PELE COM UM PANO. EVITAR APLICAR DIRETAMENTE NA PELE E NÃO ULTRAPASSAR 20 MINUTOS.`;
 
-export const COLA: ColaEntry[] = [
+const CADERNO: ColaEntry[] = [
   // ---------- prontuário por queixa ----------
   {
     id: "pront-lombalgia",
@@ -846,6 +850,9 @@ OMBRO: AP VERDADEIRO + PERFIL ESCAPULAR + AXILAR
 CLAVÍCULA: AP + ZANCA (BICOMIAL OU BILATERAL)`,
   },
 ];
+
+/** Todas as colas: o caderno do médico e o que foi acrescentado a partir do guia, por grupo. */
+export const COLA: ColaEntry[] = [...CADERNO.map((c) => ({ source: "caderno" as const, ...c })), ...COLA_MAIS];
 
 /** As colas de um tópico do guia. */
 export function colaForTopic(slug: string): ColaEntry[] {

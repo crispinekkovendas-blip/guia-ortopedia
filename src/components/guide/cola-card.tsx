@@ -22,6 +22,7 @@ export function ColaCard({ entry, open = false }: { entry: ColaEntry; open?: boo
           <span className="block text-[14px] font-extrabold text-pine-950">{entry.title}</span>
           {entry.hint ? <span className="block text-[12px] text-pine-900/55">{entry.hint}</span> : null}
         </span>
+        {entry.source === "guia" ? <span className="chip shrink-0 bg-clay-50 text-clay-800" title="Acrescentado a partir do guia, no jeito do caderno">do guia</span> : null}
         {entry.cid ? <span className="chip shrink-0 bg-pine-50 text-pine-800 tabular-nums">CID {entry.cid}</span> : null}
         <span aria-hidden className="shrink-0 text-pine-900/40 transition-transform group-open:rotate-90">
           ›

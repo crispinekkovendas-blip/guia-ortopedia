@@ -75,11 +75,11 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // O Europe PMC devolve 503 quando se pede depressa demais: espera e tenta de novo.
 const UA = { "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36", accept: "text/html,application/xml,application/json,image/*,*/*;q=0.8" };
 async function getRetry(url, as) {
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 8; i++) {
     const r = await fetch(url, { headers: UA });
     if (r.ok) return as === "json" ? r.json() : r.text();
-    if (r.status !== 503 && r.status !== 429) throw new Error(`${r.status} ${url}`);
-    await sleep(5000 * (i + 1));
+    if (r.status !== 503 && r.status !== 429 && r.status !== 502) throw new Error(`${r.status} ${url}`);
+    await sleep(Math.min(90_000, 8000 * (i + 1)));
   }
   throw new Error(`503 persistente ${url}`);
 }
@@ -123,7 +123,7 @@ for (const p of procs) {
   const seen = new Set();
   for (const t of terms) {
     const q = encodeURIComponent(`(${t}) AND OPEN_ACCESS:y AND ${LIC_QUERY} AND HAS_FT:y`);
-    await sleep(1500);
+    await sleep(3000);
     let j;
     try { j = await getJson(`${base}/search?query=${q}&format=json&pageSize=${MAX_ARTICLES}&resultType=lite&sort=RELEVANCE`); } catch (e) { console.warn(`busca falhou: ${t}: ${e.message}`); continue; }
     for (const a of j.resultList?.result ?? []) {

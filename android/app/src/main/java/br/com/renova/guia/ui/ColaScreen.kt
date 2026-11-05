@@ -94,6 +94,7 @@ fun ColaCard(c: ColaEntry, topicTitle: String? = null, onOpenTopic: (() -> Unit)
                     Text(c.title, fontWeight = FontWeight.ExtraBold, style = MaterialTheme.typography.bodyMedium)
                     c.hint?.let { MutedText(it) }
                 }
+                if (c.source == "guia") MutedText("do guia", Modifier.padding(end = 6.dp))
                 c.cid?.let { CidChip("CID $it") }
             }
             if (open) {

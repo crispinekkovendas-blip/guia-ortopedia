@@ -115,6 +115,8 @@ data class ColaEntry(
     val cid: String? = null,
     val topic: String? = null,
     val hint: String? = null,
+    /** "caderno" (do médico) ou "guia" (acrescentado). */
+    val source: String = "caderno",
     val text: String,
 )
 

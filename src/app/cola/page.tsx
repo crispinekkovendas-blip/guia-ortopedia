@@ -13,7 +13,8 @@ export default function ColaPage() {
         <h1 className="text-2xl font-extrabold tracking-tight text-pine-950 sm:text-[28px]">Cola do plantão</h1>
         <p className="mt-1 max-w-2xl text-sm text-pine-900/60">
           {COLA.length} textos prontos, como vão no prontuário: história, exame e conduta por queixa; a receita para casa; a medicação na unidade; as notas de
-          luxação, sutura, trauma e fratura exposta; as incidências do raio-X. Abra, confira o que é do paciente (lado, CID, dose por peso) e copie.
+          luxação, sutura, trauma e fratura exposta; as incidências do raio-X. Os do caderno do médico vêm como ele escreve; os marcados <span className="chip bg-clay-50 text-clay-800">do guia</span>{" "}
+          foram acrescentados no mesmo jeito para as queixas que faltavam, com as doses do guia. Abra, confira o que é do paciente (lado, CID, dose por peso) e copie.
         </p>
       </header>
       <nav aria-label="Grupos" className="scroll-x -mx-1 mb-5 flex gap-1.5 px-1">

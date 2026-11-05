@@ -147,7 +147,9 @@ class AppFlowTest {
             back()
             back()
 
-            // A cola do plantão: lista, um texto aberto, Copiar.
+            // A cola do plantão: lista, um texto aberto, Copiar. (A busca ainda está preenchida: limpar para ver a tela inicial.)
+            waitForTag("orto-search")
+            compose.onNodeWithTag("orto-search").performTextClearance()
             waitForTag("orto-cola")
             compose.onNodeWithTag("orto-cola").performClick()
             waitForTag("cola-list")
