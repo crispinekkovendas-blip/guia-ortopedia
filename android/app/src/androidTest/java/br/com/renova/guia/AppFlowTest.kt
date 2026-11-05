@@ -169,7 +169,8 @@ class AppFlowTest {
             shot("08c-cola-aberta")
             back()
 
-            // Super Inteligência: a aba Perguntar, a pergunta e a resposta com as fontes.
+            // Super Inteligência: a aba Perguntar, a pergunta e a resposta com as fontes. (Esperar a tela inicial voltar.)
+            waitForTag("tab-perguntar")
             compose.onNodeWithTag("tab-perguntar").performClick()
             waitForTag("ask-field")
             shot("08d-perguntar")
