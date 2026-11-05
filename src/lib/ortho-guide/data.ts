@@ -1002,7 +1002,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
           {
             name: "Redução fechada do rádio distal (Colles) e tala",
             when: "Desvio dorsal além dos critérios, fechada, < 48 h. Bloqueio de hematoma feito (ver Anestesia local).",
-            needs: "Bloqueio de hematoma (lidocaína 1% 10–15 mL), 1 ajudante ou tração com dedeiras (finger traps) e peso de 3–5 kg no braço, material de tala (gesso 10 cm).",
+            needs: "Bloqueio de hematoma (lidocaína 1% 10–15 mL), 1 ajudante ou tração com dedeiras e peso de 3–5 kg no braço, material de tala (gesso 10 cm).",
             steps: [
               "Tração longitudinal por 5–10 minutos (ajudante no braço com o cotovelo a 90°, você nos dedos; ou dedeiras com peso) — desimpacta os fragmentos e cansa a musculatura.",
               "Reproduza o desvio (hiperextensão leve) para destravar, então flexione o punho e desvie para ulnar enquanto o seu polegar empurra o fragmento distal de dorsal para volar e distal; sinta o encaixe.",
