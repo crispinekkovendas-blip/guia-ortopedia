@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   outputFileTracingRoot: path.join(process.cwd()),
   outputFileTracingIncludes: {
     // Os APKs do app Android que o site entrega (app-releases.ts).
-    "/api/app/apk/[file]": ["./android-releases/**"],
+    "/api/app/apk/**": ["./android-releases/**"],
     "/app": ["./android-releases/releases.json"],
   },
 };
