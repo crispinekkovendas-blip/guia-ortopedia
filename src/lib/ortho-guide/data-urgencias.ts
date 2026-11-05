@@ -94,7 +94,7 @@ export const URGENCIAS: readonly OrthoChapter[] = [
           "“Ferida pequena longe da fratura” em perna de moto é exposta até o cirurgião dizer que não. Trate como tal.",
           "O antibiótico na primeira hora reduz infecção mais do que qualquer coisa que o centro cirúrgico faça depois. É a sua parte.",
         ],
-        sources: ["BOAST 4 / NICE NG37 — Open fractures", "EAST 2011 — Antibiotics in open fractures", "Ministério da Saúde — Guia de Vigilância em Saúde (tétano acidental)", "Gustilo & Anderson 1976/1984"],
+        sources: ["BOAST 4 / NICE NG37 — Fraturas expostas", "EAST 2011 — Antibióticos nas fraturas expostas", "Ministério da Saúde — Guia de Vigilância em Saúde (tétano acidental)", "Gustilo & Anderson 1976/1984"],
       },
       {
         slug: "sindrome-compartimental-e-gesso-apertado",
@@ -161,7 +161,7 @@ export const URGENCIAS: readonly OrthoChapter[] = [
           "Os “5 P” em ordem de aparecimento: dor (desproporcional, ao estiramento), parestesia, pressão — e só depois paresia e ausência de pulso. Decida nos dois primeiros.",
           "Oxímetro normal no dedo não exclui síndrome compartimental. Nunca.",
         ],
-        sources: ["BOAST — Diagnosis and management of compartment syndrome 2016", "AAOS CPG — Acute compartment syndrome 2022", "McQueen & Court-Brown — compartment pressure monitoring"],
+        sources: ["BOAST — Diagnóstico e manejo da síndrome compartimental 2016", "AAOS (diretriz) — Síndrome compartimental aguda 2022", "McQueen & Court-Brown — Monitorização da pressão compartimental"],
       },
       {
         slug: "fraturas-diafisarias-femur-tibia-umero",
@@ -214,11 +214,11 @@ export const URGENCIAS: readonly OrthoChapter[] = [
               "Acolchoe axila e cotovelo. Tala em U: face medial do braço (axila) → em volta do cotovelo → face lateral até o ombro, moldando ao úmero para corrigir varo.",
               "Enfaixe com crepe, tipoia. O cotovelo fica livre para fletir e estender com a tipoia.",
             ],
-            after: "Raio-X com a tala; radial reexaminado. Troca pela órtese funcional (brace) em 7–14 dias, quando o edema baixa; mover ombro em pêndulo e cotovelo desde já.",
+            after: "Raio-X com a tala; radial reexaminado. Troca pela órtese funcional em 7–14 dias, quando o edema baixa; mover ombro em pêndulo e cotovelo desde já.",
           },
         ],
         plan: [
-          "Úmero conservador (a maioria): tala por 1–2 semanas → órtese funcional (brace de Sarmiento) por 8–12 semanas, apertada diariamente conforme o edema baixa; pêndulo e cotovelo desde o início, ombro ativo a partir de 3–4 semanas; raio-X a cada 2–3 semanas; consolidação em 10–12 semanas em 90%. Alinhamento aceitável: até 20° de angulação anterior, 30° de varo, 3 cm de encurtamento.",
+          "Úmero conservador (a maioria): tala por 1–2 semanas → órtese funcional de Sarmiento por 8–12 semanas, apertada diariamente conforme o edema baixa; pêndulo e cotovelo desde o início, ombro ativo a partir de 3–4 semanas; raio-X a cada 2–3 semanas; consolidação em 10–12 semanas em 90%. Alinhamento aceitável: até 20° de angulação anterior, 30° de varo, 3 cm de encurtamento.",
           "Fêmur e tíbia operados: carga conforme o cirurgião (haste bloqueada costuma permitir carga parcial precoce); fisioterapia; profilaxia de trombose por 4–5 semanas; raio-X em 2, 6, 12 semanas.",
           "Tíbia em gesso (sem desvio, se o cirurgião concordou): gesso inguinopodálico 4–6 semanas, depois bota ou gesso de Sarmiento até consolidar (12–16 semanas); raio-X semanal no primeiro mês (desvio tardio).",
           "Tabagismo atrasa a consolidação da tíbia em semanas e dobra a não união — diga.",
@@ -241,9 +241,9 @@ export const URGENCIAS: readonly OrthoChapter[] = [
         followup: "Internado até a cirurgia. Úmero: 7–10 dias, depois a cada 2–3 semanas até consolidar.",
         pearls: [
           "Raio-X de bacia em todo fêmur: a fratura de colo escondida é a que vira necrose porque ninguém olhou.",
-          "No úmero, o brace funciona porque o peso do braço alinha a fratura: paciente sentado ou em pé, nunca deitado o dia todo.",
+          "No úmero, a órtese funcional funciona porque o peso do braço alinha a fratura: paciente sentado ou em pé, nunca deitado o dia todo.",
         ],
-        sources: ["AAOS OrthoInfo — Femur shaft; Tibia shaft; Humerus shaft fractures", "BOAST — Diaphyseal fractures; The management of fragility fractures", "Sarmiento — Functional bracing of humeral shaft fractures (JBJS 2000)", "NICE NG37/NG38"],
+        sources: ["AAOS OrthoInfo — Fraturas diafisárias do fêmur, da tíbia e do úmero", "BOAST — Fraturas diafisárias; manejo das fraturas de fragilidade", "Sarmiento — Órtese funcional nas fraturas diafisárias do úmero (JBJS 2000)", "NICE NG37/NG38"],
       },
       {
         slug: "luxacao-de-quadril-joelho-e-tornozelo",
@@ -296,7 +296,7 @@ export const URGENCIAS: readonly OrthoChapter[] = [
               "Tração no eixo da perna por 1–2 minutos, depois leve o pé na direção contrária à deformidade (na luxação lateral, para medial) e para a posição neutra, com dorsiflexão a 90°.",
               "Reduzido: a forma volta, a pele relaxa, o pulso melhora. Mantenha a posição enquanto a tala posterior e o estribo são aplicados e endurecem.",
             ],
-            after: "Raio-X AP, perfil e mortise com a tala; neurovascular; eleve. A cirurgia (fixação) fica para quando o edema permitir (5–10 dias) — salvo irredutível, exposta ou pele comprometida.",
+            after: "Raio-X AP, perfil e pinça (mortise) com a tala; neurovascular; eleve. A cirurgia (fixação) fica para quando o edema permitir (5–10 dias) — salvo irredutível, exposta ou pele comprometida.",
           },
         ],
         plan: [
@@ -325,7 +325,7 @@ export const URGENCIAS: readonly OrthoChapter[] = [
           "Joelho que “saiu e voltou sozinho” em acidente de moto é luxação de joelho. Pulso presente não tranquiliza: ITB e observação.",
           "Quadril: 6 horas. Chame o sobreaviso ou a regulação antes de conseguir a sedação, não depois de falhar.",
         ],
-        sources: ["AAOS OrthoInfo — Hip dislocation; Knee dislocation", "BOAST — Knee dislocation (vascular assessment)", "EAST — Penetrating/blunt popliteal injury", "Rockwood & Green — Fractures in adults (dislocations)"],
+        sources: ["AAOS OrthoInfo — Luxação do quadril; luxação do joelho", "BOAST — Luxação do joelho (avaliação vascular)", "EAST — Lesão poplítea penetrante/contusa", "Rockwood & Green — Fraturas no adulto (luxações)"],
       },
       {
         slug: "fraturas-do-tornozelo",
@@ -347,7 +347,7 @@ export const URGENCIAS: readonly OrthoChapter[] = [
           "Fratura de pilão tibial (queda de altura, articular cominuta): tomografia, tala, elevação; cirurgia em etapas (fixador externo e depois placa) — centro de referência, não espere o edema sozinho.",
           "Diabético com neuropatia: alto risco de pseudoartrose, infecção e Charcot — imobilização mais longa, sem carga, e discussão precoce com o cirurgião.",
         ],
-        imaging: ["RX de tornozelo AP, perfil e mortise (AP com 15–20° de rotação interna): espaço claro medial ≤ 4 mm e igual ao superior = tálus no lugar; espaço tibiofibular, sobreposição. Dor medial com raio-X “só fíbula”: teste de estresse (gravidade — perfil com o pé pendente — ou rotação externa) para ver o espaço medial abrir. Fíbula proximal dolorosa: raio-X de perna inteira. Tomografia no pilão, no maléolo posterior > 25% e pré-operatório."],
+        imaging: ["RX de tornozelo AP, perfil e pinça (mortise: AP com 15–20° de rotação interna): espaço claro medial ≤ 4 mm e igual ao superior = tálus no lugar; espaço tibiofibular, sobreposição. Dor medial com raio-X “só fíbula”: teste de estresse (gravidade — perfil com o pé pendente — ou rotação externa) para ver o espaço medial abrir. Fíbula proximal dolorosa: raio-X de perna inteira. Tomografia no pilão, no maléolo posterior > 25% e pré-operatório."],
         urgent: [
           "Weber A ou B isolada, tálus centrado, sem dor medial e estresse negativo: estável — bota imobilizadora (ou tala posterior + estribo e gesso suropodálico em 5–7 dias) com carga conforme a dor; alta com retorno em 7 dias com raio-X. É a maioria.",
           "Weber B com espaço medial > 4 mm, bimaleolar, trimaleolar, Weber C, Maisonneuve, desvio talar: reduza se há desvio (tração e correção), tala posterior + estribo bem moldada, elevação, raio-X de controle; cirurgia (placa e parafusos, parafuso de sindesmose) quando o edema permitir (5–10 dias, “sinal da ruga”) — hoje se exposta, irredutível ou pele comprometida. Alta com a tala e o pedido na regulação, ou internação se não consegue ficar em casa sem apoiar.",
@@ -384,10 +384,10 @@ export const URGENCIAS: readonly OrthoChapter[] = [
         leave: "Estável: 6–8 semanas (escritório: 2–3 semanas com muletas). Operada: 8–12 semanas.",
         followup: "7 dias e 14 dias com raio-X; 6 semanas; 3 meses.",
         pearls: [
-          "O que decide é o espaço medial no mortise, não o tamanho da fratura da fíbula. Meça.",
+          "O que decide é o espaço medial na pinça (mortise), não o tamanho da fratura da fíbula. Meça.",
           "Dor na fíbula alta em tornozelo torcido com raio-X normal: raio-X da perna. Maisonneuve passa batido todo plantão.",
         ],
-        sources: ["BOAST — Ankle fractures 2016", "NICE NG38", "AAOS OrthoInfo — Ankle fractures", "Weber / Lauge-Hansen classifications", "CAST / AIM trials (BMJ 2016; close contact casting in older adults)"],
+        sources: ["BOAST — Fraturas do tornozelo 2016", "NICE NG38", "AAOS OrthoInfo — Fraturas do tornozelo", "Classificações de Weber e Lauge-Hansen", "Estudos CAST / AIM (BMJ 2016; gesso de contato íntimo no idoso)"],
       },
       {
         slug: "fratura-do-umero-proximal",
@@ -451,7 +451,7 @@ export const URGENCIAS: readonly OrthoChapter[] = [
           "O erro mais comum não é deixar de operar: é deixar 6 semanas na tipoia sem mover. Ombro congelado por fratura é iatrogenia que você evita com a folha de exercícios no primeiro dia.",
           "Tubérculo maior sozinho, desviado > 5 mm: o manguito puxa, trava o ombro — essa opera mesmo no idoso ativo.",
         ],
-        sources: ["PROFHER trial (JAMA 2015)", "AAOS OrthoInfo — Proximal humerus fractures", "BESS/BOA — Proximal humeral fractures", "Neer classification (JBJS 1970)", "ABRASSO — Osteoporose"],
+        sources: ["Estudo PROFHER (JAMA 2015)", "AAOS OrthoInfo — Fraturas do úmero proximal", "BESS/BOA — Fraturas do úmero proximal", "Classificação de Neer (JBJS 1970)", "ABRASSO — Osteoporose"],
       },
       {
         slug: "fratura-da-patela-e-aparelho-extensor",
@@ -464,8 +464,8 @@ export const URGENCIAS: readonly OrthoChapter[] = [
           "Conseguiu andar? Consegue esticar o joelho sentado e segurar?",
         ],
         exam: [
-          { name: "Elevação da perna estendida (straight leg raise)", how: "Deitado, pedir para elevar a perna com o joelho reto; se dói, aspire a hemartrose e infiltre lidocaína antes de repetir.", positive: "Não eleva (ou eleva com “lag” que não corrige) → aparelho extensor roto: patela desviada, tendão patelar ou quadríceps." },
-          { name: "Palpação do gap", how: "Depressão palpável acima da patela (quadríceps), abaixo (tendão patelar) ou entre os fragmentos (patela); patela alta ou baixa.", positive: "Gap → ruptura; a hemartrose pode esconder nas primeiras horas." },
+          { name: "Elevação da perna estendida", how: "Deitado, pedir para elevar a perna com o joelho reto; se dói, aspire a hemartrose e infiltre lidocaína antes de repetir.", positive: "Não eleva (ou eleva com “lag” que não corrige) → aparelho extensor roto: patela desviada, tendão patelar ou quadríceps." },
+          { name: "Palpação da falha", how: "Depressão palpável acima da patela (quadríceps), abaixo (tendão patelar) ou entre os fragmentos (patela); patela alta ou baixa.", positive: "Falha → ruptura; a hemartrose pode esconder nas primeiras horas." },
           { name: "Derrame e pele", how: "Hemartrose (tecla), ferida sobre a patela (fratura exposta da patela é comum em moto).", positive: "Ferida que se comunica → exposta: antibiótico e cirurgia." },
         ],
         alarm: [
@@ -496,9 +496,9 @@ export const URGENCIAS: readonly OrthoChapter[] = [
         followup: "7 dias, 3 semanas, 6 semanas com raio-X; 3 meses função.",
         pearls: [
           "Hemartrose tensa dói demais para elevar a perna: puncione e infiltre lidocaína antes de concluir que o extensor está roto.",
-          "Patela alta no perfil após trauma com joelho que “não estica” é tendão patelar roto mesmo sem gap palpável.",
+          "Patela alta no perfil após trauma com joelho que “não estica” é tendão patelar roto mesmo sem falha palpável.",
         ],
-        sources: ["AAOS OrthoInfo — Patellar fractures; Patellar tendon tear; Quadriceps tendon tear", "Rockwood & Green — Patella and extensor mechanism", "NICE NG38"],
+        sources: ["AAOS OrthoInfo — Fraturas da patela; ruptura do tendão patelar; ruptura do tendão do quadríceps", "Rockwood & Green — Patela e mecanismo extensor", "NICE NG38"],
       },
       {
         slug: "fraturas-de-pelve-e-sacro-no-idoso",
@@ -511,7 +511,7 @@ export const URGENCIAS: readonly OrthoChapter[] = [
           "Osteoporose, corticoide, radioterapia pélvica prévia (fratura por insuficiência do sacro); anticoagulante; quem cuida em casa.",
         ],
         exam: [
-          { name: "Compressão da pelve e palpação", how: "Compressão lateral e anteroposterior das cristas ilíacas uma vez só (não repita “para ver se mexe”); palpação da sínfise, ramos e sacro; log roll do quadril (afasta o colo).", positive: "Dor → raio-X de bacia; instabilidade → cinta pélvica e trauma." },
+          { name: "Compressão da pelve e palpação", how: "Compressão lateral e anteroposterior das cristas ilíacas uma vez só (não repita “para ver se mexe”); palpação da sínfise, ramos e sacro; rolamento da perna (afasta o colo).", positive: "Dor → raio-X de bacia; instabilidade → cinta pélvica e trauma." },
           { name: "Carga", how: "Tentar sentar, levantar e dar passos com apoio.", positive: "Não consegue com raio-X normal → tomografia (fratura de sacro é invisível no raio-X em 50%)." },
           { name: "Neurovascular e períneo", how: "Pulsos, sensibilidade perineal e das pernas, reflexo aquileu (raízes sacrais na fratura de sacro desviada); sangue no meato ou no reto na alta energia.", positive: "Déficit sacral ou sangue → centro de trauma, urologia." },
         ],
@@ -566,7 +566,7 @@ export const URGENCIAS: readonly OrthoChapter[] = [
           "“Fratura de ramo púbico isolada” em idosa que não anda tem fratura de sacro junto em 60–80%. A tomografia não muda a conduta se ela anda; muda se não anda.",
           "Cinta pélvica no idoso com ramo isolado não ajuda e machuca a pele. Não é para ele.",
         ],
-        sources: ["BOAST — The management of fragility fractures of the pelvis", "Rommens & Hofmann — Fragility fractures of the pelvis classification", "ATLS 10ª ed. — pelvic trauma", "AAOS OrthoInfo — Pelvic fractures", "ABRASSO — Osteoporose"],
+        sources: ["BOAST — Manejo das fraturas de fragilidade da pelve", "Rommens & Hofmann — Classificação das fraturas de fragilidade da pelve", "ATLS 10ª ed. — Trauma pélvico", "AAOS OrthoInfo — Fraturas da pelve", "ABRASSO — Osteoporose"],
       },
     ],
   },

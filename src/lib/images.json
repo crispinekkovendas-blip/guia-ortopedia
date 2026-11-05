@@ -8,7 +8,8 @@
    {
     "file": "01-Radiographs_and_CT_images_of_a_12-year-old_boy.jpg",
     "src": "/imagens/como-pedir-o-raio-x/01-Radiographs_and_CT_images_of_a_12-year-old_boy.jpg",
-    "title": "Radiographs and CT images of a 12-year-old boy",
+    "title": "Radiografias e tomografia de um menino de 12 anos",
+    "original": "Radiographs and CT images of a 12-year-old boy",
     "author": "Wang S, Zheng S, Liu Q, Wang C, Liu M and Su L",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Radiographs_and_CT_images_of_a_12-year-old_boy.jpg",
@@ -18,7 +19,8 @@
    {
     "file": "02-Radiographs_of_a_13-year-old_boy.jpg",
     "src": "/imagens/como-pedir-o-raio-x/02-Radiographs_of_a_13-year-old_boy.jpg",
-    "title": "Radiographs of a 13-year-old boy",
+    "title": "Radiografias de um menino de 13 anos",
+    "original": "Radiographs of a 13-year-old boy",
     "author": "Wang S, Zheng S, Liu Q, Wang C, Liu M and Su L",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Radiographs_of_a_13-year-old_boy.jpg",
@@ -28,7 +30,8 @@
    {
     "file": "03-Healing_supracondylar_fracture.jpg",
     "src": "/imagens/como-pedir-o-raio-x/03-Healing_supracondylar_fracture.jpg",
-    "title": "Healing supracondylar fracture",
+    "title": "Fratura supracondiliana em consolidação",
+    "original": "Healing supracondylar fracture",
     "author": "Lindsaydavidson",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Healing_supracondylar_fracture.jpg",
@@ -38,7 +41,8 @@
    {
     "file": "04-Anterior_humeral_line.jpg",
     "src": "/imagens/como-pedir-o-raio-x/04-Anterior_humeral_line.jpg",
-    "title": "Anterior humeral line",
+    "title": "Linha umeral anterior",
+    "original": "Anterior humeral line",
     "author": "Article authors: Tracy Kilborn, Halvani Moodley and Stewart Mears Added annotati",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Anterior_humeral_line.jpg",
@@ -48,7 +52,8 @@
    {
     "file": "05-Anterior_humeral_line.png",
     "src": "/imagens/como-pedir-o-raio-x/05-Anterior_humeral_line.png",
-    "title": "Anterior humeral line",
+    "title": "Linha umeral anterior",
+    "original": "Anterior humeral line",
     "author": "Article authors: Tracy Kilborn, Halvani Moodley and Stewart Mears Added annotati",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Anterior_humeral_line.svg",
@@ -66,9 +71,10 @@
    {
     "file": "01-The_operating_room_and_the_patient_a_manual_of_pre-_and_post-operative_treatment_1913_1459.jpg",
     "src": "/imagens/imobilizacoes-e-orteses/01-The_operating_room_and_the_patient_a_manual_of_pre-_and_post-operative_treatment_1913_1459.jpg",
-    "title": "The operating room and the patient; a manual of pre- and post-operative treatment (1913) (14592987918)",
+    "title": "Imobilização gessada — manual cirúrgico de 1913",
+    "original": "The operating room and the patient; a manual of pre- and post-operative treatment (1913) (14592987918)",
     "author": "Internet Archive Book Images",
-    "license": "No restrictions",
+    "license": "Sem restrições",
     "page": "https://commons.wikimedia.org/wiki/File:The_operating_room_and_the_patient;_a_manual_of_pre-_and_post-operative_treatment_(1913)_(14592987918).jpg",
     "w": 1220,
     "h": 954
@@ -76,7 +82,8 @@
    {
     "file": "02-Bandaged_orthopedic_plaster_splint.jpg",
     "src": "/imagens/imobilizacoes-e-orteses/02-Bandaged_orthopedic_plaster_splint.jpg",
-    "title": "Bandaged orthopedic plaster splint",
+    "title": "Tala gessada enfaixada",
+    "original": "Bandaged orthopedic plaster splint",
     "author": "Acabashi",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Bandaged_orthopedic_plaster_splint.jpg",
@@ -86,7 +93,8 @@
    {
     "file": "03-Bandage_orthopedic_resin_cast.jpg",
     "src": "/imagens/imobilizacoes-e-orteses/03-Bandage_orthopedic_resin_cast.jpg",
-    "title": "Bandage orthopedic resin cast",
+    "title": "Gesso sintético (resina) enfaixado",
+    "original": "Bandage orthopedic resin cast",
     "author": "Acabashi",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Bandage_orthopedic_resin_cast.jpg",
@@ -104,7 +112,8 @@
    {
     "file": "01-Cast_extended.jpg",
     "src": "/imagens/imobilizacoes-e-orteses/01-Cast_extended.jpg",
-    "title": "Cast extended",
+    "title": "Gesso com o cotovelo estendido",
+    "original": "Cast extended",
     "author": "Jackson P&amp;O",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Cast_extended.jpg",
@@ -114,7 +123,8 @@
    {
     "file": "02-Casting_extended.jpg",
     "src": "/imagens/imobilizacoes-e-orteses/02-Casting_extended.jpg",
-    "title": "Casting extended",
+    "title": "Confecção do gesso em extensão",
+    "original": "Casting extended",
     "author": "Jackson P&amp;O",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Casting_extended.jpg",
@@ -124,7 +134,8 @@
    {
     "file": "03-Cast_flexed.jpg",
     "src": "/imagens/imobilizacoes-e-orteses/03-Cast_flexed.jpg",
-    "title": "Cast flexed",
+    "title": "Gesso com o cotovelo fletido",
+    "original": "Cast flexed",
     "author": "Jackson P&amp;O",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Cast_flexed.jpg",
@@ -134,7 +145,8 @@
    {
     "file": "04-Broken_right_hand_in_orange_cast.jpg",
     "src": "/imagens/imobilizacoes-e-orteses/04-Broken_right_hand_in_orange_cast.jpg",
-    "title": "Broken right hand in orange cast",
+    "title": "Mão direita fraturada em gesso sintético laranja",
+    "original": "Broken right hand in orange cast",
     "author": "pixlaw",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Broken_right_hand_in_orange_cast.jpg",
@@ -144,7 +156,8 @@
    {
     "file": "05-A_little_boy_with_a_broken_leg_in_a_red_short_leg_cast.jpg",
     "src": "/imagens/imobilizacoes-e-orteses/05-A_little_boy_with_a_broken_leg_in_a_red_short_leg_cast.jpg",
-    "title": "A little boy with a broken leg in a red short leg cast",
+    "title": "Menino com bota gessada curta (gesso sintético vermelho)",
+    "original": "A little boy with a broken leg in a red short leg cast",
     "author": "shelnew19",
     "license": "CC BY 2.0",
     "page": "https://commons.wikimedia.org/wiki/File:A_little_boy_with_a_broken_leg_in_a_red_short_leg_cast.jpg",
@@ -154,7 +167,8 @@
    {
     "file": "06-Cast_wrist_after_fracture_of_the_scaphoid_bone.jpg",
     "src": "/imagens/imobilizacoes-e-orteses/06-Cast_wrist_after_fracture_of_the_scaphoid_bone.jpg",
-    "title": "Cast wrist after fracture of the scaphoid bone",
+    "title": "Gesso de punho após fratura do escafoide",
+    "original": "Cast wrist after fracture of the scaphoid bone",
     "author": "Frankie Fouganthin",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Cast_wrist_after_fracture_of_the_scaphoid_bone.jpg",
@@ -164,7 +178,8 @@
    {
     "file": "07-Brazo_escayolado_por_rotura_de_mu_eca.jpg",
     "src": "/imagens/imobilizacoes-e-orteses/07-Brazo_escayolado_por_rotura_de_mu_eca.jpg",
-    "title": "Brazo escayolado por rotura de muñeca",
+    "title": "Braço engessado por fratura do punho",
+    "original": "Brazo escayolado por rotura de muñeca",
     "author": "Juan Emilio Prades Bel",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Brazo_escayolado_por_rotura_de_mu%C3%B1eca.jpg",
@@ -182,7 +197,8 @@
    {
     "file": "01-Hematoma_block.jpg",
     "src": "/imagens/anestesia-local-bloqueios-e-sedacao/01-Hematoma_block.jpg",
-    "title": "Hematoma block",
+    "title": "Bloqueio de hematoma",
+    "original": "Hematoma block",
     "author": "emdocs",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Hematoma_block.jpg",
@@ -192,7 +208,8 @@
    {
     "file": "02-_.png",
     "src": "/imagens/anestesia-local-bloqueios-e-sedacao/02-_.png",
-    "title": "Гематома блок",
+    "title": "Bloqueio de hematoma (esquema)",
+    "original": "Гематома блок",
     "author": "Wildvepr",
     "license": "CC0",
     "page": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%B5%D0%BC%D0%B0%D1%82%D0%BE%D0%BC%D0%B0_%D0%B1%D0%BB%D0%BE%D0%BA.png",
@@ -217,9 +234,10 @@
    {
     "file": "01-Gray344.png",
     "src": "/imagens/anestesia-local-bloqueios-e-sedacao/01-Gray344.png",
-    "title": "Gray344",
+    "title": "Corte do quadril: nervo femoral e nervo ciático (Gray)",
+    "original": "Gray344",
     "author": "Henry Vandyke Carter",
-    "license": "Public domain",
+    "license": "Domínio público",
     "page": "https://commons.wikimedia.org/wiki/File:Gray344.png",
     "w": 564,
     "h": 500
@@ -235,7 +253,8 @@
    {
     "file": "01-Pulse_oximeter_on_a_finger.jpg",
     "src": "/imagens/anestesia-local-bloqueios-e-sedacao/01-Pulse_oximeter_on_a_finger.jpg",
-    "title": "Pulse oximeter on a finger",
+    "title": "Oxímetro de pulso no dedo",
+    "original": "Pulse oximeter on a finger",
     "author": "Jakub T. Jankiewicz",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Pulse_oximeter_on_a_finger.jpg",
@@ -245,7 +264,8 @@
    {
     "file": "02-Bag_valve_mask_with_BV_filter.png",
     "src": "/imagens/anestesia-local-bloqueios-e-sedacao/02-Bag_valve_mask_with_BV_filter.png",
-    "title": "Bag valve mask with BV filter",
+    "title": "Bolsa-válvula-máscara com filtro",
+    "original": "Bag valve mask with BV filter",
     "author": "Open Critical Care &amp; World Health Organization",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Bag_valve_mask_with_BV_filter.png",
@@ -255,7 +275,8 @@
    {
     "file": "03-Co_monitor.jpg",
     "src": "/imagens/anestesia-local-bloqueios-e-sedacao/03-Co_monitor.jpg",
-    "title": "Co monitor",
+    "title": "CO-oxímetro de pulso",
+    "original": "Co monitor",
     "author": "James Heilman, MD",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Co_monitor.JPG",
@@ -273,7 +294,8 @@
    {
     "file": "01-Pain-Doctor-Knee-Injection-Procedure-3.jpg",
     "src": "/imagens/puncao-e-infiltracao-articular/01-Pain-Doctor-Knee-Injection-Procedure-3.jpg",
-    "title": "Pain-Doctor-Knee-Injection-Procedure-3",
+    "title": "Infiltração do joelho",
+    "original": "Pain-Doctor-Knee-Injection-Procedure-3",
     "author": "PainDoctorUSA",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Pain-Doctor-Knee-Injection-Procedure-3.jpg",
@@ -291,7 +313,8 @@
    {
     "file": "01-X-ray_of_osteoarthritis_of_the_shoulder.jpg",
     "src": "/imagens/puncao-e-infiltracao-articular/01-X-ray_of_osteoarthritis_of_the_shoulder.jpg",
-    "title": "X-ray of osteoarthritis of the shoulder",
+    "title": "Artrose do ombro (raio-X)",
+    "original": "X-ray of osteoarthritis of the shoulder",
     "author": "Article authors: Vladimir V. Senatorov, Ramon Cuevas-Trisan, Francisco J. Garcia",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:X-ray_of_osteoarthritis_of_the_shoulder.jpg",
@@ -301,7 +324,8 @@
    {
     "file": "02-Bursae_shoulder_joint_normal.jpg",
     "src": "/imagens/puncao-e-infiltracao-articular/02-Bursae_shoulder_joint_normal.jpg",
-    "title": "Bursae shoulder joint normal",
+    "title": "Bursas do ombro normal (esquema)",
+    "original": "Bursae shoulder joint normal",
     "author": "Zameer Hirji",
     "license": "CC BY 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Bursae_shoulder_joint_normal.jpg",
@@ -319,7 +343,8 @@
    {
     "file": "01-Hydrocortisone_injection_position.jpg",
     "src": "/imagens/puncao-e-infiltracao-articular/01-Hydrocortisone_injection_position.jpg",
-    "title": "Hydrocortisone injection position",
+    "title": "Posição para a infiltração de corticoide",
+    "original": "Hydrocortisone injection position",
     "author": "Aimeeg",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Hydrocortisone_injection_position.jpg",
@@ -337,7 +362,8 @@
    {
     "file": "01-A1_Pulley_release.jpg",
     "src": "/imagens/puncao-e-infiltracao-articular/01-A1_Pulley_release.jpg",
-    "title": "A1 Pulley release",
+    "title": "Liberação da polia A1",
+    "original": "A1 Pulley release",
     "author": "JoJoEMC",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:A1_Pulley_release.jpg",
@@ -347,7 +373,8 @@
    {
     "file": "02-Annular_and_cruciform_parts_of_fibrous_sheath_over_flexor_tendon_sheaths.png",
     "src": "/imagens/puncao-e-infiltracao-articular/02-Annular_and_cruciform_parts_of_fibrous_sheath_over_flexor_tendon_sheaths.png",
-    "title": "Annular and cruciform parts of fibrous sheath over flexor tendon sheaths",
+    "title": "Polias anulares e cruciformes da bainha dos tendões flexores",
+    "original": "Annular and cruciform parts of fibrous sheath over flexor tendon sheaths",
     "author": "Wilfredor derivative work: Anka Friedrich",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Annular_and_cruciform_parts_of_fibrous_sheath_over_flexor_tendon_sheaths.svg",
@@ -365,7 +392,8 @@
    {
     "file": "01-Greater_trochanteric_pain_syndrome_by_Hariadhi.png",
     "src": "/imagens/puncao-e-infiltracao-articular/01-Greater_trochanteric_pain_syndrome_by_Hariadhi.png",
-    "title": "Greater trochanteric pain syndrome by Hariadhi",
+    "title": "Síndrome dolorosa do trocânter maior (esquema)",
+    "original": "Greater trochanteric pain syndrome by Hariadhi",
     "author": "Hariadhi",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Greater_trochanteric_pain_syndrome_by_Hariadhi.svg",
@@ -383,9 +411,10 @@
    {
     "file": "01-US_Navy_110827-N-KA543-005_Hospital_Corpsman_2nd_Class_Chris_Dunbar_assigned_to_Naval_Medi.jpg",
     "src": "/imagens/fratura-exposta/01-US_Navy_110827-N-KA543-005_Hospital_Corpsman_2nd_Class_Chris_Dunbar_assigned_to_Naval_Medi.jpg",
-    "title": "US Navy 110827-N-KA543-005 Hospital Corpsman 2nd Class Chris Dunbar, assigned to Naval Medical Center San Diego, gives a patient a tetanus, diphthe",
+    "title": "Aplicação da vacina antitetânica",
+    "original": "US Navy 110827-N-KA543-005 Hospital Corpsman 2nd Class Chris Dunbar, assigned to Naval Medical Center San Diego, gives a patient a tetanus, diphthe",
     "author": "U.S. Navy photo by Mass Communication Specialist 2nd Class Chad A. Bascom",
-    "license": "Public domain",
+    "license": "Domínio público",
     "page": "https://commons.wikimedia.org/wiki/File:US_Navy_110827-N-KA543-005_Hospital_Corpsman_2nd_Class_Chris_Dunbar,_assigned_to_Naval_Medical_Center_San_Diego,_gives_a_patient_a_tetanus,_diphthe.jpg",
     "w": 500,
     "h": 357
@@ -401,9 +430,10 @@
    {
     "file": "01-A_practical_treatise_on_fractures_and_dislocations_1912_14598045839_.jpg",
     "src": "/imagens/fratura-exposta/01-A_practical_treatise_on_fractures_and_dislocations_1912_14598045839_.jpg",
-    "title": "A practical treatise on fractures and dislocations (1912) (14598045839)",
+    "title": "Fraturas e luxações — tratado de 1912",
+    "original": "A practical treatise on fractures and dislocations (1912) (14598045839)",
     "author": "Internet Archive Book Images",
-    "license": "No restrictions",
+    "license": "Sem restrições",
     "page": "https://commons.wikimedia.org/wiki/File:A_practical_treatise_on_fractures_and_dislocations_(1912)_(14598045839).jpg",
     "w": 500,
     "h": 323
@@ -419,7 +449,8 @@
    {
     "file": "01-Elektrische_Gipss_ge.jpg",
     "src": "/imagens/sindrome-compartimental-e-gesso-apertado/01-Elektrische_Gipss_ge.jpg",
-    "title": "Elektrische Gipssäge",
+    "title": "Serra elétrica de gesso",
+    "original": "Elektrische Gipssäge",
     "author": "Drahreg01",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Elektrische_Gipss%C3%A4ge.JPG",
@@ -429,9 +460,10 @@
    {
     "file": "02-Cast_off.jpg",
     "src": "/imagens/sindrome-compartimental-e-gesso-apertado/02-Cast_off.jpg",
-    "title": "Cast off",
+    "title": "Retirada do gesso",
+    "original": "Cast off",
     "author": "Merzperson at English Wikipedia",
-    "license": "Public domain",
+    "license": "Domínio público",
     "page": "https://commons.wikimedia.org/wiki/File:Cast_off.JPG",
     "w": 1468,
     "h": 960
@@ -439,7 +471,8 @@
    {
     "file": "03-Saw-cast.jpg",
     "src": "/imagens/sindrome-compartimental-e-gesso-apertado/03-Saw-cast.jpg",
-    "title": "Saw-cast",
+    "title": "Serra oscilante cortando o gesso",
+    "original": "Saw-cast",
     "author": "Russell,_Betsy_(2007).jpg: pinguino k from North Hollywood, USA CaryElwesApr10.j",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Saw-cast.jpg",
@@ -457,7 +490,8 @@
    {
     "file": "01-Traction_placement.jpg",
     "src": "/imagens/fraturas-diafisarias-femur-tibia-umero/01-Traction_placement.jpg",
-    "title": "Traction placement",
+    "title": "Colocação da tração",
+    "original": "Traction placement",
     "author": "Bobjgalindo",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Traction_placement.jpg",
@@ -467,9 +501,10 @@
    {
     "file": "02-GreekGravityTraction.png",
     "src": "/imagens/fraturas-diafisarias-femur-tibia-umero/02-GreekGravityTraction.png",
-    "title": "GreekGravityTraction",
+    "title": "Tração pela gravidade (manuscrito grego)",
+    "original": "GreekGravityTraction",
     "author": "",
-    "license": "Public domain",
+    "license": "Domínio público",
     "page": "https://commons.wikimedia.org/wiki/File:GreekGravityTraction.png",
     "w": 802,
     "h": 935
@@ -485,7 +520,8 @@
    {
     "file": "01-Diagrams_illustrating_how_to_set_a_broken_arm._Stipple_engra_Wellcome_V0016831.jpg",
     "src": "/imagens/fraturas-diafisarias-femur-tibia-umero/01-Diagrams_illustrating_how_to_set_a_broken_arm._Stipple_engra_Wellcome_V0016831.jpg",
-    "title": "Diagrams illustrating how to set a broken arm. Stipple engra Wellcome V0016831",
+    "title": "Diagramas de redução de fratura do braço (gravura)",
+    "original": "Diagrams illustrating how to set a broken arm. Stipple engra Wellcome V0016831",
     "author": "",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Diagrams_illustrating_how_to_set_a_broken_arm._Stipple_engra_Wellcome_V0016831.jpg",
@@ -503,7 +539,8 @@
    {
     "file": "01-Primatrice_Reduction_of_dislocation_of_thigh._1544_Wellcome_L0004169.jpg",
     "src": "/imagens/luxacao-de-quadril-joelho-e-tornozelo/01-Primatrice_Reduction_of_dislocation_of_thigh._1544_Wellcome_L0004169.jpg",
-    "title": "Primatrice; Reduction of dislocation of thigh. 1544 Wellcome L0004169",
+    "title": "Redução de luxação do quadril (gravura de 1544)",
+    "original": "Primatrice; Reduction of dislocation of thigh. 1544 Wellcome L0004169",
     "author": "",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Primatrice;_Reduction_of_dislocation_of_thigh._1544_Wellcome_L0004169.jpg",
@@ -513,7 +550,8 @@
    {
     "file": "02-Hip_Spica_Casts.png",
     "src": "/imagens/luxacao-de-quadril-joelho-e-tornozelo/02-Hip_Spica_Casts.png",
-    "title": "Hip Spica Casts",
+    "title": "Gesso pelvipodálico",
+    "original": "Hip Spica Casts",
     "author": "BruceBlaus",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Hip_Spica_Casts.png",
@@ -531,7 +569,8 @@
    {
     "file": "01-Supination-adduction_ankle_fracture-dislocation.png",
     "src": "/imagens/luxacao-de-quadril-joelho-e-tornozelo/01-Supination-adduction_ankle_fracture-dislocation.png",
-    "title": "Supination-adduction ankle fracture-dislocation",
+    "title": "Fratura-luxação do tornozelo por supinação-adução",
+    "original": "Supination-adduction ankle fracture-dislocation",
     "author": "Mu-Min Cao, Yuan-Wei Zhang, Sheng-Ye Hu, and Yun-Feng Rui",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Supination-adduction_ankle_fracture-dislocation.png",
@@ -541,7 +580,8 @@
    {
     "file": "02-Pronation-abduction_ankle_fracture-dislocation.png",
     "src": "/imagens/luxacao-de-quadril-joelho-e-tornozelo/02-Pronation-abduction_ankle_fracture-dislocation.png",
-    "title": "Pronation-abduction ankle fracture-dislocation",
+    "title": "Fratura-luxação do tornozelo por pronação-abdução",
+    "original": "Pronation-abduction ankle fracture-dislocation",
     "author": "Mu-Min Cao, Yuan-Wei Zhang, Sheng-Ye Hu, and Yun-Feng Rui",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Pronation-abduction_ankle_fracture-dislocation.png",
@@ -551,7 +591,8 @@
    {
     "file": "03-Supination-external_rotation_ankle_fracture-dislocation.png",
     "src": "/imagens/luxacao-de-quadril-joelho-e-tornozelo/03-Supination-external_rotation_ankle_fracture-dislocation.png",
-    "title": "Supination-external rotation ankle fracture-dislocation",
+    "title": "Fratura-luxação do tornozelo por supinação-rotação externa",
+    "original": "Supination-external rotation ankle fracture-dislocation",
     "author": "Mu-Min Cao, Yuan-Wei Zhang, Sheng-Ye Hu, and Yun-Feng Rui",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Supination-external_rotation_ankle_fracture-dislocation.png",
@@ -561,7 +602,8 @@
    {
     "file": "04-Pronation-external_rotation_ankle_fracture-dislocation.png",
     "src": "/imagens/luxacao-de-quadril-joelho-e-tornozelo/04-Pronation-external_rotation_ankle_fracture-dislocation.png",
-    "title": "Pronation-external rotation ankle fracture-dislocation",
+    "title": "Fratura-luxação do tornozelo por pronação-rotação externa",
+    "original": "Pronation-external rotation ankle fracture-dislocation",
     "author": "Mu-Min Cao, Yuan-Wei Zhang, Sheng-Ye Hu, and Yun-Feng Rui",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Pronation-external_rotation_ankle_fracture-dislocation.png",
@@ -571,7 +613,8 @@
    {
     "file": "05-Compound_dislocation_inwards_of_the_left_ankle_Wellcome_L0062611.jpg",
     "src": "/imagens/luxacao-de-quadril-joelho-e-tornozelo/05-Compound_dislocation_inwards_of_the_left_ankle_Wellcome_L0062611.jpg",
-    "title": "Compound dislocation inwards of the left ankle Wellcome L0062611",
+    "title": "Luxação exposta do tornozelo esquerdo (gravura)",
+    "original": "Compound dislocation inwards of the left ankle Wellcome L0062611",
     "author": "",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Compound_dislocation_inwards_of_the_left_ankle_Wellcome_L0062611.jpg",
@@ -589,9 +632,10 @@
    {
     "file": "01-The_operating_room_and_the_patient_a_manual_of_pre-_and_post-operative_treatment_1913_1459.jpg",
     "src": "/imagens/fraturas-do-tornozelo/01-The_operating_room_and_the_patient_a_manual_of_pre-_and_post-operative_treatment_1913_1459.jpg",
-    "title": "The operating room and the patient; a manual of pre- and post-operative treatment (1913) (14592640208)",
+    "title": "Enfaixamento do tornozelo — manual cirúrgico de 1913",
+    "original": "The operating room and the patient; a manual of pre- and post-operative treatment (1913) (14592640208)",
     "author": "Internet Archive Book Images",
-    "license": "No restrictions",
+    "license": "Sem restrições",
     "page": "https://commons.wikimedia.org/wiki/File:The_operating_room_and_the_patient;_a_manual_of_pre-_and_post-operative_treatment_(1913)_(14592640208).jpg",
     "w": 1226,
     "h": 658
@@ -607,9 +651,10 @@
    {
     "file": "01-Upper_arm_splint.jpg",
     "src": "/imagens/fratura-do-umero-proximal/01-Upper_arm_splint.jpg",
-    "title": "Upper arm splint",
+    "title": "Tala de braço",
+    "original": "Upper arm splint",
     "author": "U.S. Navy",
-    "license": "Public domain",
+    "license": "Domínio público",
     "page": "https://commons.wikimedia.org/wiki/File:Upper_arm_splint.jpg",
     "w": 321,
     "h": 298
@@ -617,7 +662,8 @@
    {
     "file": "02-Sling-and-swathe.png",
     "src": "/imagens/fratura-do-umero-proximal/02-Sling-and-swathe.png",
-    "title": "Sling-and-swathe",
+    "title": "Tipoia com faixa torácica (tipoia americana)",
+    "original": "Sling-and-swathe",
     "author": "Baedr-9439",
     "license": "CC0",
     "page": "https://commons.wikimedia.org/wiki/File:Sling-and-swathe.svg",
@@ -627,7 +673,8 @@
    {
     "file": "03-202404_A_woman_fixing_his_arm_with_a_sling.png",
     "src": "/imagens/fratura-do-umero-proximal/03-202404_A_woman_fixing_his_arm_with_a_sling.png",
-    "title": "202404 A woman fixing his arm with a sling",
+    "title": "Tipoia colocada (1)",
+    "original": "202404 A woman fixing his arm with a sling",
     "author": "DataBase Center for Life Science (DBCLS)",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:202404_A_woman_fixing_his_arm_with_a_sling.svg",
@@ -637,7 +684,8 @@
    {
     "file": "04-202404_A_man_fixing_his_arm_with_a_sling.png",
     "src": "/imagens/fratura-do-umero-proximal/04-202404_A_man_fixing_his_arm_with_a_sling.png",
-    "title": "202404 A man fixing his arm with a sling",
+    "title": "Tipoia colocada (2)",
+    "original": "202404 A man fixing his arm with a sling",
     "author": "DataBase Center for Life Science (DBCLS)",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:202404_A_man_fixing_his_arm_with_a_sling.svg",
@@ -647,7 +695,8 @@
    {
     "file": "05-AngelegterGV.jpg",
     "src": "/imagens/fratura-do-umero-proximal/05-AngelegterGV.jpg",
-    "title": "AngelegterGV",
+    "title": "Tipoia de Gilchrist colocada",
+    "original": "AngelegterGV",
     "author": "ilc (Ernst Ilchmann)",
     "license": "CC BY-SA 3.0 de",
     "page": "https://commons.wikimedia.org/wiki/File:AngelegterGV.JPG",
@@ -657,9 +706,10 @@
    {
     "file": "06-Grierson_50_Cabestrillo_antebrazo.jpg",
     "src": "/imagens/fratura-do-umero-proximal/06-Grierson_50_Cabestrillo_antebrazo.jpg",
-    "title": "Grierson 50 Cabestrillo antebrazo",
+    "title": "Tipoia de antebraço (gravura)",
+    "original": "Grierson 50 Cabestrillo antebrazo",
     "author": "Cecilia Grierson",
-    "license": "Public domain",
+    "license": "Domínio público",
     "page": "https://commons.wikimedia.org/wiki/File:Grierson_50_Cabestrillo_antebrazo.jpg",
     "w": 555,
     "h": 620
@@ -667,9 +717,10 @@
    {
     "file": "07-Grierson_51_Cabestrillo_brazo.jpg",
     "src": "/imagens/fratura-do-umero-proximal/07-Grierson_51_Cabestrillo_brazo.jpg",
-    "title": "Grierson 51 Cabestrillo brazo",
+    "title": "Tipoia de braço (gravura)",
+    "original": "Grierson 51 Cabestrillo brazo",
     "author": "Cecilia Grierson",
-    "license": "Public domain",
+    "license": "Domínio público",
     "page": "https://commons.wikimedia.org/wiki/File:Grierson_51_Cabestrillo_brazo.jpg",
     "w": 557,
     "h": 801
@@ -685,7 +736,8 @@
    {
     "file": "01-EquipmentforPelvicBinder.jpg",
     "src": "/imagens/fraturas-de-pelve-e-sacro-no-idoso/01-EquipmentforPelvicBinder.jpg",
-    "title": "EquipmentforPelvicBinder",
+    "title": "Cinto pélvico: o material",
+    "original": "EquipmentforPelvicBinder",
     "author": "Doc James",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:EquipmentforPelvicBinder.jpg",
@@ -695,9 +747,10 @@
    {
     "file": "02-USAFE-AFAFRICA_hosts_European-African_Military_Nursing_Exchange_conference_7190018_.jpg",
     "src": "/imagens/fraturas-de-pelve-e-sacro-no-idoso/02-USAFE-AFAFRICA_hosts_European-African_Military_Nursing_Exchange_conference_7190018_.jpg",
-    "title": "USAFE-AFAFRICA hosts European-African Military Nursing Exchange conference (7190018)",
+    "title": "Treino de colocação do cinto pélvico",
+    "original": "USAFE-AFAFRICA hosts European-African Military Nursing Exchange conference (7190018)",
     "author": "U.S. Air Force photo by 1st Lt. William Gomez",
-    "license": "Public domain",
+    "license": "Domínio público",
     "page": "https://commons.wikimedia.org/wiki/File:USAFE-AFAFRICA_hosts_European-African_Military_Nursing_Exchange_conference_(7190018).jpg",
     "w": 500,
     "h": 334
@@ -705,9 +758,10 @@
    {
     "file": "03-Operation_Georgian_Shield_2023_7887112_.jpg",
     "src": "/imagens/fraturas-de-pelve-e-sacro-no-idoso/03-Operation_Georgian_Shield_2023_7887112_.jpg",
-    "title": "Operation Georgian Shield 2023 (7887112)",
+    "title": "Cinto pélvico em treinamento (1)",
+    "original": "Operation Georgian Shield 2023 (7887112)",
     "author": "Sgt. Mykaela Martin",
-    "license": "Public domain",
+    "license": "Domínio público",
     "page": "https://commons.wikimedia.org/wiki/File:Operation_Georgian_Shield_2023_(7887112).jpg",
     "w": 500,
     "h": 333
@@ -715,9 +769,10 @@
    {
     "file": "04-Operation_Georgian_Shield_2023_7887118_.jpg",
     "src": "/imagens/fraturas-de-pelve-e-sacro-no-idoso/04-Operation_Georgian_Shield_2023_7887118_.jpg",
-    "title": "Operation Georgian Shield 2023 (7887118)",
+    "title": "Cinto pélvico em treinamento (2)",
+    "original": "Operation Georgian Shield 2023 (7887118)",
     "author": "Sgt. Mykaela Martin",
-    "license": "Public domain",
+    "license": "Domínio público",
     "page": "https://commons.wikimedia.org/wiki/File:Operation_Georgian_Shield_2023_(7887118).jpg",
     "w": 500,
     "h": 333
@@ -725,7 +780,8 @@
    {
     "file": "05-Zweipunkt-Beckengurt.jpg",
     "src": "/imagens/fraturas-de-pelve-e-sacro-no-idoso/05-Zweipunkt-Beckengurt.jpg",
-    "title": "Zweipunkt-Beckengurt",
+    "title": "Cinto pélvico de dois pontos",
+    "original": "Zweipunkt-Beckengurt",
     "author": "Beademung → https://de.wikipedia.org/wiki/Benutzer:Beademung",
     "license": "CC BY-SA 3.0 de",
     "page": "https://commons.wikimedia.org/wiki/File:Zweipunkt-Beckengurt.JPG",
@@ -743,7 +799,8 @@
    {
     "file": "01-Arthrographie_epauleGauche.jpg",
     "src": "/imagens/capsulite-adesiva/01-Arthrographie_epauleGauche.jpg",
-    "title": "Arthrographie epauleGauche",
+    "title": "Artrografia do ombro esquerdo",
+    "original": "Arthrographie epauleGauche",
     "author": "Zezounet",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Arthrographie_epauleGauche.jpg",
@@ -753,7 +810,8 @@
    {
     "file": "02-Shoulder_joint-es.png",
     "src": "/imagens/capsulite-adesiva/02-Shoulder_joint-es.png",
-    "title": "Shoulder joint-es",
+    "title": "Articulação do ombro (esquema)",
+    "original": "Shoulder joint-es",
     "author": "Jmarchn",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Shoulder_joint-es.svg",
@@ -763,7 +821,8 @@
    {
     "file": "03-Shoulder_joint_back-en.png",
     "src": "/imagens/capsulite-adesiva/03-Shoulder_joint_back-en.png",
-    "title": "Shoulder joint back-en",
+    "title": "Articulação do ombro, vista posterior (esquema)",
+    "original": "Shoulder joint back-en",
     "author": "Jmarchn",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Shoulder_joint_back-en.svg",
@@ -781,7 +840,8 @@
    {
     "file": "01-Shoulder_dislocation_Y-projection_before_reduction.jpg",
     "src": "/imagens/luxacao-e-instabilidade-do-ombro/01-Shoulder_dislocation_Y-projection_before_reduction.jpg",
-    "title": "Shoulder dislocation, Y-projection before reduction",
+    "title": "Luxação do ombro: incidência em Y antes da redução",
+    "original": "Shoulder dislocation, Y-projection before reduction",
     "author": "Mikael Häggström, M.D. Author info - Reusing images- Conflicts of interest: None",
     "license": "CC0",
     "page": "https://commons.wikimedia.org/wiki/File:Shoulder_dislocation,_Y-projection_before_reduction.jpg",
@@ -791,7 +851,8 @@
    {
     "file": "02-Shoulder_dislocation_anteroposterior_before_reduction.jpg",
     "src": "/imagens/luxacao-e-instabilidade-do-ombro/02-Shoulder_dislocation_anteroposterior_before_reduction.jpg",
-    "title": "Shoulder dislocation, anteroposterior before reduction",
+    "title": "Luxação do ombro: AP antes da redução",
+    "original": "Shoulder dislocation, anteroposterior before reduction",
     "author": "Mikael Häggström, M.D. Author info - Reusing images- Conflicts of interest: None",
     "license": "CC0",
     "page": "https://commons.wikimedia.org/wiki/File:Shoulder_dislocation,_anteroposterior_before_reduction.jpg",
@@ -801,7 +862,8 @@
    {
     "file": "03-Shoulder_dislocation_Y-projection_after_reduction.jpg",
     "src": "/imagens/luxacao-e-instabilidade-do-ombro/03-Shoulder_dislocation_Y-projection_after_reduction.jpg",
-    "title": "Shoulder dislocation, Y-projection after reduction",
+    "title": "Luxação do ombro: incidência em Y após a redução",
+    "original": "Shoulder dislocation, Y-projection after reduction",
     "author": "Mikael Häggström, M.D. Author info - Reusing images- Conflicts of interest: None",
     "license": "CC0",
     "page": "https://commons.wikimedia.org/wiki/File:Shoulder_dislocation,_Y-projection_after_reduction.jpg",
@@ -811,7 +873,8 @@
    {
     "file": "04-CunnighamTechnique.jpg",
     "src": "/imagens/luxacao-e-instabilidade-do-ombro/04-CunnighamTechnique.jpg",
-    "title": "CunnighamTechnique",
+    "title": "Técnica de Cunningham para a redução do ombro",
+    "original": "CunnighamTechnique",
     "author": "AnonymousUnknown author",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:CunnighamTechnique.jpg",
@@ -821,7 +884,8 @@
    {
     "file": "05-Cunningham2017.jpg",
     "src": "/imagens/luxacao-e-instabilidade-do-ombro/05-Cunningham2017.jpg",
-    "title": "Cunningham2017",
+    "title": "Técnica de Cunningham (esquema)",
+    "original": "Cunningham2017",
     "author": "James Heilman, MD",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Cunningham2017.jpg",
@@ -831,7 +895,8 @@
    {
     "file": "06-Analgesic_position.jpg",
     "src": "/imagens/luxacao-e-instabilidade-do-ombro/06-Analgesic_position.jpg",
-    "title": "Analgesic position",
+    "title": "Posição analgésica",
+    "original": "Analgesic position",
     "author": "Neiljcunningham",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Analgesic_position.jpg",
@@ -841,7 +906,8 @@
    {
     "file": "07-Biceps_massage_for_cunningham_technique.jpg",
     "src": "/imagens/luxacao-e-instabilidade-do-ombro/07-Biceps_massage_for_cunningham_technique.jpg",
-    "title": "Biceps massage for cunningham technique",
+    "title": "Massagem do bíceps na técnica de Cunningham",
+    "original": "Biceps massage for cunningham technique",
     "author": "Neiljcunningham",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Biceps_massage_for_cunningham_technique.jpg",
@@ -851,7 +917,8 @@
    {
     "file": "08-Cunningham_technique_demonstration.jpg",
     "src": "/imagens/luxacao-e-instabilidade-do-ombro/08-Cunningham_technique_demonstration.jpg",
-    "title": "Cunningham technique demonstration",
+    "title": "Demonstração da técnica de Cunningham",
+    "original": "Cunningham technique demonstration",
     "author": "Neiljcunningham",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Cunningham_technique_demonstration.jpg",
@@ -861,7 +928,8 @@
    {
     "file": "09-Lightbulb_sign_-_posterior_shoulder_dislocation_-_Roe_vor_und_nach_Reposition_001.jpg",
     "src": "/imagens/luxacao-e-instabilidade-do-ombro/09-Lightbulb_sign_-_posterior_shoulder_dislocation_-_Roe_vor_und_nach_Reposition_001.jpg",
-    "title": "Lightbulb sign - posterior shoulder dislocation - Roe vor und nach Reposition 001",
+    "title": "Sinal da lâmpada: luxação posterior do ombro, antes e após a redução",
+    "original": "Lightbulb sign - posterior shoulder dislocation - Roe vor und nach Reposition 001",
     "author": "Hellerhoff",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Lightbulb_sign_-_posterior_shoulder_dislocation_-_Roe_vor_und_nach_Reposition_001.jpg",
@@ -879,7 +947,8 @@
    {
     "file": "01-Colles_fracture_reduction_by_Judo_therapists.png",
     "src": "/imagens/fratura-do-radio-distal/01-Colles_fracture_reduction_by_Judo_therapists.png",
-    "title": "Colles fracture reduction by Judo therapists",
+    "title": "Redução da fratura de Colles",
+    "original": "Colles fracture reduction by Judo therapists",
     "author": "Jusei Bear",
     "license": "CC0",
     "page": "https://commons.wikimedia.org/wiki/File:Colles_fracture_reduction_by_Judo_therapists.png",
@@ -889,7 +958,8 @@
    {
     "file": "02-Collesfracture.jpg",
     "src": "/imagens/fratura-do-radio-distal/02-Collesfracture.jpg",
-    "title": "Collesfracture",
+    "title": "Fratura de Colles (raio-X)",
+    "original": "Collesfracture",
     "author": "Lucien Monfils",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Collesfracture.jpg",
@@ -899,7 +969,8 @@
    {
     "file": "03-Colles_Fracture_Dinner_Fork_Appearance.jpg",
     "src": "/imagens/fratura-do-radio-distal/03-Colles_Fracture_Dinner_Fork_Appearance.jpg",
-    "title": "Colles' Fracture Dinner Fork Appearance",
+    "title": "Fratura de Colles: deformidade em dorso de garfo",
+    "original": "Colles' Fracture Dinner Fork Appearance",
     "author": "Dsprenkels",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Colles%27_Fracture_Dinner_Fork_Appearance.jpg",
@@ -909,9 +980,10 @@
    {
     "file": "04-The_treatment_of_fractures_1901_14595183967_.jpg",
     "src": "/imagens/fratura-do-radio-distal/04-The_treatment_of_fractures_1901_14595183967_.jpg",
-    "title": "The treatment of fractures (1901) (14595183967)",
+    "title": "Tratamento de fraturas — manual de 1901",
+    "original": "The treatment of fractures (1901) (14595183967)",
     "author": "Internet Archive Book Images",
-    "license": "No restrictions",
+    "license": "Sem restrições",
     "page": "https://commons.wikimedia.org/wiki/File:The_treatment_of_fractures_(1901)_(14595183967).jpg",
     "w": 1590,
     "h": 938
@@ -927,7 +999,8 @@
    {
     "file": "01-Radiographie_d_une_luxation_post_rieur_du_coude_gauche_sans_fracture.jpg",
     "src": "/imagens/luxacao-de-cotovelo-e-fratura-da-cabeca-do-radio/01-Radiographie_d_une_luxation_post_rieur_du_coude_gauche_sans_fracture.jpg",
-    "title": "Radiographie d’une luxation postérieur du coude gauche sans fracture",
+    "title": "Luxação posterior do cotovelo esquerdo sem fratura (raio-X)",
+    "original": "Radiographie d’une luxation postérieur du coude gauche sans fracture",
     "author": "Flibust1er",
     "license": "CC0",
     "page": "https://commons.wikimedia.org/wiki/File:Radiographie_d%E2%80%99une_luxation_post%C3%A9rieur_du_coude_gauche_sans_fracture.jpg",
@@ -937,7 +1010,8 @@
    {
     "file": "02-X-ray_of_ventral_dislocation_of_the_radial_head_with_calcification_of_annular_ligament.jpg",
     "src": "/imagens/luxacao-de-cotovelo-e-fratura-da-cabeca-do-radio/02-X-ray_of_ventral_dislocation_of_the_radial_head_with_calcification_of_annular_ligament.jpg",
-    "title": "X-ray of ventral dislocation of the radial head with calcification of annular ligament",
+    "title": "Luxação anterior da cabeça do rádio com calcificação do ligamento anular (raio-X)",
+    "original": "X-ray of ventral dislocation of the radial head with calcification of annular ligament",
     "author": "Jagadish Prabhu, Mohammed K. Faqi, Fahad AL Khalifa and Rashad K. Awad",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:X-ray_of_ventral_dislocation_of_the_radial_head_with_calcification_of_annular_ligament.jpg",
@@ -947,7 +1021,8 @@
    {
     "file": "03-Radiocapitellar_line_-_abnormal.jpg",
     "src": "/imagens/luxacao-de-cotovelo-e-fratura-da-cabeca-do-radio/03-Radiocapitellar_line_-_abnormal.jpg",
-    "title": "Radiocapitellar line - abnormal",
+    "title": "Linha radiocapitelar: anormal",
+    "original": "Radiocapitellar line - abnormal",
     "author": "Article authors: Tracy Kilborn, Halvani Moodley and Stewart Mears Added annotati",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Radiocapitellar_line_-_abnormal.jpg",
@@ -957,7 +1032,8 @@
    {
     "file": "04-Radiocapitellar_line_-_normal.jpg",
     "src": "/imagens/luxacao-de-cotovelo-e-fratura-da-cabeca-do-radio/04-Radiocapitellar_line_-_normal.jpg",
-    "title": "Radiocapitellar line - normal",
+    "title": "Linha radiocapitelar: normal",
+    "original": "Radiocapitellar line - normal",
     "author": "Article authors: Tracy Kilborn, Halvani Moodley and Stewart Mears Added annotati",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Radiocapitellar_line_-_normal.jpg",
@@ -967,9 +1043,10 @@
    {
     "file": "05-Grierson_32_Luxaci_n.jpg",
     "src": "/imagens/luxacao-de-cotovelo-e-fratura-da-cabeca-do-radio/05-Grierson_32_Luxaci_n.jpg",
-    "title": "Grierson 32 Luxación",
+    "title": "Luxação do cotovelo (gravura)",
+    "original": "Grierson 32 Luxación",
     "author": "Cecilia Grierson",
-    "license": "Public domain",
+    "license": "Domínio público",
     "page": "https://commons.wikimedia.org/wiki/File:Grierson_32_Luxaci%C3%B3n.JPG",
     "w": 624,
     "h": 811
@@ -985,7 +1062,8 @@
    {
     "file": "01-Neck_Fracture_of_the_Fourth_Metacarpal_Bone.png",
     "src": "/imagens/fraturas-de-metacarpo-e-falanges/01-Neck_Fracture_of_the_Fourth_Metacarpal_Bone.png",
-    "title": "Neck Fracture of the Fourth Metacarpal Bone",
+    "title": "Fratura do colo do 4º metacarpo",
+    "original": "Neck Fracture of the Fourth Metacarpal Bone",
     "author": "Louis Philippe Lessard",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Neck_Fracture_of_the_Fourth_Metacarpal_Bone.png",
@@ -995,7 +1073,8 @@
    {
     "file": "02-HeadedScarpperFractMark.png",
     "src": "/imagens/fraturas-de-metacarpo-e-falanges/02-HeadedScarpperFractMark.png",
-    "title": "HeadedScarpperFractMark",
+    "title": "Fratura do colo do 5º metacarpo (seta)",
+    "original": "HeadedScarpperFractMark",
     "author": "James Heilman, MD",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:HeadedScarpperFractMark.png",
@@ -1005,7 +1084,8 @@
    {
     "file": "03-Fractured5thMetacarpalHead2018.jpg",
     "src": "/imagens/fraturas-de-metacarpo-e-falanges/03-Fractured5thMetacarpalHead2018.jpg",
-    "title": "Fractured5thMetacarpalHead2018",
+    "title": "Fratura da cabeça do 5º metacarpo",
+    "original": "Fractured5thMetacarpalHead2018",
     "author": "James Heilman, MD",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Fractured5thMetacarpalHead2018.jpg",
@@ -1015,7 +1095,8 @@
    {
     "file": "04-Boxers_fracture-lateral_xray.jpg",
     "src": "/imagens/fraturas-de-metacarpo-e-falanges/04-Boxers_fracture-lateral_xray.jpg",
-    "title": "Boxers fracture-lateral xray",
+    "title": "Fratura do boxeador: raio-X em perfil",
+    "original": "Boxers fracture-lateral xray",
     "author": "Roberto J. Galindo",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Boxers_fracture-lateral_xray.JPG",
@@ -1025,7 +1106,8 @@
    {
     "file": "05-Hand_in_gips_Fifth_Metacarpal_Fracture_.jpg",
     "src": "/imagens/fraturas-de-metacarpo-e-falanges/05-Hand_in_gips_Fifth_Metacarpal_Fracture_.jpg",
-    "title": "Hand in gips (Fifth Metacarpal Fracture)",
+    "title": "Mão engessada por fratura do 5º metacarpo (1)",
+    "original": "Hand in gips (Fifth Metacarpal Fracture)",
     "author": "Atillak",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Hand_in_gips_(Fifth_Metacarpal_Fracture).jpg",
@@ -1035,7 +1117,8 @@
    {
     "file": "06-Hand_in_gips_Fifth_Metacarpal_Fracture_3.jpg",
     "src": "/imagens/fraturas-de-metacarpo-e-falanges/06-Hand_in_gips_Fifth_Metacarpal_Fracture_3.jpg",
-    "title": "Hand in gips (Fifth Metacarpal Fracture) 3",
+    "title": "Mão engessada por fratura do 5º metacarpo (3)",
+    "original": "Hand in gips (Fifth Metacarpal Fracture) 3",
     "author": "Atillak",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Hand_in_gips_(Fifth_Metacarpal_Fracture)_3.jpg",
@@ -1045,7 +1128,8 @@
    {
     "file": "07-Hand_in_gips_Fifth_Metacarpal_Fracture_2.jpg",
     "src": "/imagens/fraturas-de-metacarpo-e-falanges/07-Hand_in_gips_Fifth_Metacarpal_Fracture_2.jpg",
-    "title": "Hand in gips (Fifth Metacarpal Fracture) 2",
+    "title": "Mão engessada por fratura do 5º metacarpo (2)",
+    "original": "Hand in gips (Fifth Metacarpal Fracture) 2",
     "author": "Atillak",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Hand_in_gips_(Fifth_Metacarpal_Fracture)_2.jpg",
@@ -1063,7 +1147,8 @@
    {
     "file": "01-Buddy-taping-finger.png",
     "src": "/imagens/fraturas-de-metacarpo-e-falanges/01-Buddy-taping-finger.png",
-    "title": "Buddy-taping-finger",
+    "title": "Sindactilia: o dedo fixado ao vizinho",
+    "original": "Buddy-taping-finger",
     "author": "Baedr-9439",
     "license": "CC0",
     "page": "https://commons.wikimedia.org/wiki/File:Buddy-taping-finger.png",
@@ -1073,9 +1158,10 @@
    {
     "file": "02-A_splint_is_used_to_immobilize_the_finger_of_a_Congolese_soldier_assigned_to_the_Congolese.jpg",
     "src": "/imagens/fraturas-de-metacarpo-e-falanges/02-A_splint_is_used_to_immobilize_the_finger_of_a_Congolese_soldier_assigned_to_the_Congolese.jpg",
-    "title": "A splint is used to immobilize the finger of a Congolese soldier assigned to the Congolese Light Infantry Battalion after the fractured finger was placed into a more acceptable anatomical alignment at Camp Base 100505-F-FW561-128",
+    "title": "Tala digital após o alinhamento de um dedo fraturado",
+    "original": "A splint is used to immobilize the finger of a Congolese soldier assigned to the Congolese Light Infantry Battalion after the fractured finger was placed into a more acceptable anatomical alignment at Camp Base 100505-F-FW561-128",
     "author": "SSgt. Jocelyn A. Guthrie",
-    "license": "Public domain",
+    "license": "Domínio público",
     "page": "https://commons.wikimedia.org/wiki/File:A_splint_is_used_to_immobilize_the_finger_of_a_Congolese_soldier_assigned_to_the_Congolese_Light_Infantry_Battalion_after_the_fractured_finger_was_placed_into_a_more_acceptable_anatomical_alignment_at_Camp_Base_100505-F-FW561-128.jpg",
     "w": 500,
     "h": 333
@@ -1091,7 +1177,8 @@
    {
     "file": "01-Finger017.png",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/01-Finger017.png",
-    "title": "Finger017",
+    "title": "Fratura de falange do 4º e do 5º dedos (raio-X)",
+    "original": "Finger017",
     "author": "Hellerhoff",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Finger017.png",
@@ -1101,7 +1188,8 @@
    {
     "file": "02-Finger_luxation_pre_and_post.png",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/02-Finger_luxation_pre_and_post.png",
-    "title": "Finger luxation pre and post",
+    "title": "Luxação de dedo: antes e depois da redução",
+    "original": "Finger luxation pre and post",
     "author": "Hellerhoff",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Finger_luxation_pre_and_post.png",
@@ -1111,7 +1199,8 @@
    {
     "file": "03-Dislocated_finger.jpg",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/03-Dislocated_finger.jpg",
-    "title": "Dislocated finger",
+    "title": "Dedo luxado",
+    "original": "Dislocated finger",
     "author": "Original uploader was Rbmoore at en.wikipedia",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Dislocated_finger.jpg",
@@ -1121,7 +1210,8 @@
    {
     "file": "04-Finger_luxation_D4_PIP.png",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/04-Finger_luxation_D4_PIP.png",
-    "title": "Finger luxation D4 PIP",
+    "title": "Luxação da IFP do 4º dedo",
+    "original": "Finger luxation D4 PIP",
     "author": "Hellerhoff",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Finger_luxation_D4_PIP.png",
@@ -1131,7 +1221,8 @@
    {
     "file": "05-Finger_luxation_D2_PIP.png",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/05-Finger_luxation_D2_PIP.png",
-    "title": "Finger luxation D2 PIP",
+    "title": "Luxação da IFP do 2º dedo",
+    "original": "Finger luxation D2 PIP",
     "author": "Hellerhoff",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Finger_luxation_D2_PIP.png",
@@ -1141,7 +1232,8 @@
    {
     "file": "06-Dislocated_Finger_XRay.png",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/06-Dislocated_Finger_XRay.png",
-    "title": "Dislocated Finger XRay",
+    "title": "Dedo luxado (raio-X)",
+    "original": "Dislocated Finger XRay",
     "author": "Mdumont01",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Dislocated_Finger_XRay.png",
@@ -1159,7 +1251,8 @@
    {
     "file": "01-Splint1.jpg",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/01-Splint1.jpg",
-    "title": "Splint1",
+    "title": "Tala de Stack no dedo (dedo em martelo)",
+    "original": "Splint1",
     "author": "James Heilman, MD",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Splint1.JPG",
@@ -1169,7 +1262,8 @@
    {
     "file": "02-Splint2.jpg",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/02-Splint2.jpg",
-    "title": "Splint2",
+    "title": "Tala termoplástica de dedo",
+    "original": "Splint2",
     "author": "James Heilman, MD",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Splint2.JPG",
@@ -1179,7 +1273,8 @@
    {
     "file": "03-Mallet_finger_thermoplastic_splint.jpg",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/03-Mallet_finger_thermoplastic_splint.jpg",
-    "title": "Mallet finger thermoplastic splint",
+    "title": "Tala termoplástica para dedo em martelo",
+    "original": "Mallet finger thermoplastic splint",
     "author": "Davplast",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Mallet_finger_thermoplastic_splint.jpg",
@@ -1189,7 +1284,8 @@
    {
     "file": "04-Custom-made_Oval-8_thermoplastic_splint_for_mallet_finger.jpg",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/04-Custom-made_Oval-8_thermoplastic_splint_for_mallet_finger.jpg",
-    "title": "Custom-made Oval-8 thermoplastic splint for mallet finger",
+    "title": "Tala termoplástica sob medida (Oval-8) para dedo em martelo",
+    "original": "Custom-made Oval-8 thermoplastic splint for mallet finger",
     "author": "Davplast",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Custom-made_Oval-8_thermoplastic_splint_for_mallet_finger.jpg",
@@ -1199,7 +1295,8 @@
    {
     "file": "05-Stack-schiene.jpg",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/05-Stack-schiene.jpg",
-    "title": "Stack-schiene",
+    "title": "Tala de Stack",
+    "original": "Stack-schiene",
     "author": "J. Lengerke",
     "license": "CC BY-SA 3.0 de",
     "page": "https://commons.wikimedia.org/wiki/File:Stack-schiene.jpg",
@@ -1209,7 +1306,8 @@
    {
     "file": "06-Mallet_finger.jpg",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/06-Mallet_finger.jpg",
-    "title": "Mallet finger",
+    "title": "Dedo em martelo",
+    "original": "Mallet finger",
     "author": "Holly Cheng",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Mallet_finger.jpg",
@@ -1219,7 +1317,8 @@
    {
     "file": "07-Mallet_finger_mechanism.png",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/07-Mallet_finger_mechanism.png",
-    "title": "Mallet finger mechanism",
+    "title": "Mecanismo do dedo em martelo",
+    "original": "Mallet finger mechanism",
     "author": "Davplast",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Mallet_finger_mechanism.png",
@@ -1229,7 +1328,8 @@
    {
     "file": "08-Mallet_finger_mechanism.png",
     "src": "/imagens/luxacao-de-dedo-e-lesoes-de-tendao/08-Mallet_finger_mechanism.png",
-    "title": "Mallet finger mechanism",
+    "title": "Mecanismo do dedo em martelo",
+    "original": "Mallet finger mechanism",
     "author": "Davplast made the original; adapted by HLHJ",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Mallet_finger_mechanism.svg",
@@ -1247,7 +1347,8 @@
    {
     "file": "01-Percage-ongle-par-trombone.jpg",
     "src": "/imagens/ferimentos-da-mao-unha-e-ponta-do-dedo/01-Percage-ongle-par-trombone.jpg",
-    "title": "Percage-ongle-par-trombone",
+    "title": "Trepanação da unha com clipe aquecido",
+    "original": "Percage-ongle-par-trombone",
     "author": "Nicolas Vergnes",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Percage-ongle-par-trombone.jpg",
@@ -1257,7 +1358,8 @@
    {
     "file": "02-Hematomasubungual.png",
     "src": "/imagens/ferimentos-da-mao-unha-e-ponta-do-dedo/02-Hematomasubungual.png",
-    "title": "Hematomasubungual",
+    "title": "Hematoma subungueal",
+    "original": "Hematomasubungual",
     "author": "Alex Lozupone",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Hematomasubungual.png",
@@ -1267,7 +1369,8 @@
    {
     "file": "03-Diversion_of_subnail_haematoma_of_digits.jpg",
     "src": "/imagens/ferimentos-da-mao-unha-e-ponta-do-dedo/03-Diversion_of_subnail_haematoma_of_digits.jpg",
-    "title": "Diversion of subnail haematoma of digits",
+    "title": "Drenagem do hematoma subungueal",
+    "original": "Diversion of subnail haematoma of digits",
     "author": "Χαράλαμπος Γκούβας / The original uploader was Harrygouvas at Greek Wikipedia.",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Diversion_of_subnail_haematoma_of_digits.jpg",
@@ -1277,7 +1380,8 @@
    {
     "file": "04-H_matome_sous_ungu_al_04.jpg",
     "src": "/imagens/ferimentos-da-mao-unha-e-ponta-do-dedo/04-H_matome_sous_ungu_al_04.jpg",
-    "title": "Hématome sous unguéal 04",
+    "title": "Hematoma subungueal (2)",
+    "original": "Hématome sous unguéal 04",
     "author": "Grook Da Oger",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:H%C3%A9matome_sous_ungu%C3%A9al_04.jpg",
@@ -1287,7 +1391,8 @@
    {
     "file": "05-Subungal_hematoma_of_the_finger.jpg",
     "src": "/imagens/ferimentos-da-mao-unha-e-ponta-do-dedo/05-Subungal_hematoma_of_the_finger.jpg",
-    "title": "Subungal hematoma of the finger",
+    "title": "Hematoma subungueal do dedo",
+    "original": "Subungal hematoma of the finger",
     "author": "Callaleo",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Subungal_hematoma_of_the_finger.jpg",
@@ -1305,7 +1410,8 @@
    {
     "file": "01-Cortada_de_dedo.jpg",
     "src": "/imagens/ferimentos-da-mao-unha-e-ponta-do-dedo/01-Cortada_de_dedo.jpg",
-    "title": "Cortada de dedo",
+    "title": "Corte no dedo",
+    "original": "Cortada de dedo",
     "author": "Wilfredor",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Cortada_de_dedo.jpg",
@@ -1315,7 +1421,8 @@
    {
     "file": "02-Surgical_stitches.jpg",
     "src": "/imagens/ferimentos-da-mao-unha-e-ponta-do-dedo/02-Surgical_stitches.jpg",
-    "title": "Surgical stitches",
+    "title": "Pontos de sutura",
+    "original": "Surgical stitches",
     "author": "Grayana",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Surgical_stitches.jpg",
@@ -1333,7 +1440,8 @@
    {
     "file": "01-Cast_Child.jpg",
     "src": "/imagens/fraturas-na-crianca-torus-galho-verde-e-fise/01-Cast_Child.jpg",
-    "title": "Cast Child",
+    "title": "Gesso na criança",
+    "original": "Cast Child",
     "author": "Mheref36",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Cast_Child.jpg",
@@ -1343,7 +1451,8 @@
    {
     "file": "02-Casting_for_walkable_legs.jpg",
     "src": "/imagens/fraturas-na-crianca-torus-galho-verde-e-fise/02-Casting_for_walkable_legs.jpg",
-    "title": "Casting for walkable legs",
+    "title": "Bota gessada para deambular",
+    "original": "Casting for walkable legs",
     "author": "Anna.psiaki",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Casting_for_walkable_legs.jpg",
@@ -1361,7 +1470,8 @@
    {
     "file": "01-Force_diagrams_of_the_right_elbow.png",
     "src": "/imagens/fratura-supracondiliana-do-umero/01-Force_diagrams_of_the_right_elbow.png",
-    "title": "Force diagrams of the right elbow",
+    "title": "Diagrama de forças no cotovelo direito",
+    "original": "Force diagrams of the right elbow",
     "author": "Snvu",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Force_diagrams_of_the_right_elbow.png",
@@ -1371,7 +1481,8 @@
    {
     "file": "02-Healing_supracondylar_fracture.jpg",
     "src": "/imagens/fratura-supracondiliana-do-umero/02-Healing_supracondylar_fracture.jpg",
-    "title": "Healing supracondylar fracture",
+    "title": "Fratura supracondiliana em consolidação",
+    "original": "Healing supracondylar fracture",
     "author": "Lindsaydavidson",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Healing_supracondylar_fracture.jpg",
@@ -1381,7 +1492,8 @@
    {
     "file": "03-Supracondylar09.jpg",
     "src": "/imagens/fratura-supracondiliana-do-umero/03-Supracondylar09.jpg",
-    "title": "Supracondylar09",
+    "title": "Fratura supracondiliana: perfil do cotovelo (seta)",
+    "original": "Supracondylar09",
     "author": "James Heilman, MD",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Supracondylar09.JPG",
@@ -1391,7 +1503,8 @@
    {
     "file": "04-AnteriorandPSailSign.png",
     "src": "/imagens/fratura-supracondiliana-do-umero/04-AnteriorandPSailSign.png",
-    "title": "AnteriorandPSailSign",
+    "title": "Sinal da vela anterior e posterior (coxim gorduroso)",
+    "original": "AnteriorandPSailSign",
     "author": "James Heilman, MD",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:AnteriorandPSailSign.png",
@@ -1401,7 +1514,8 @@
    {
     "file": "05-Anterior_humeral_line_in_a_6_month_old_child.jpg",
     "src": "/imagens/fratura-supracondiliana-do-umero/05-Anterior_humeral_line_in_a_6_month_old_child.jpg",
-    "title": "Anterior humeral line in a 6 month old child",
+    "title": "Linha umeral anterior em lactente de 6 meses",
+    "original": "Anterior humeral line in a 6 month old child",
     "author": "Article authors: Tracy Kilborn, Halvani Moodley and Stewart Mears",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Anterior_humeral_line_in_a_6_month_old_child.jpg",
@@ -1419,7 +1533,8 @@
    {
     "file": "01-Elbow_subluxation.png",
     "src": "/imagens/pronacao-dolorosa/01-Elbow_subluxation.png",
-    "title": "Elbow subluxation",
+    "title": "Pronação dolorosa: o ligamento anular deslocado (esquema)",
+    "original": "Elbow subluxation",
     "author": "InjuryMap",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Elbow_subluxation.svg",
@@ -1429,7 +1544,8 @@
    {
     "file": "02-Elbow_subluxation_2.png",
     "src": "/imagens/pronacao-dolorosa/02-Elbow_subluxation_2.png",
-    "title": "Elbow subluxation 2",
+    "title": "Pronação dolorosa (esquema 2)",
+    "original": "Elbow subluxation 2",
     "author": "InjuryMap",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Elbow_subluxation_2.svg",
@@ -1439,7 +1555,8 @@
    {
     "file": "03-Fixing_nursemaid_elbow_hariadhi.png",
     "src": "/imagens/pronacao-dolorosa/03-Fixing_nursemaid_elbow_hariadhi.png",
-    "title": "Fixing nursemaid elbow hariadhi",
+    "title": "Redução da pronação dolorosa",
+    "original": "Fixing nursemaid elbow hariadhi",
     "author": "Hariadhi",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Fixing_nursemaid_elbow_hariadhi.svg",
@@ -1449,7 +1566,8 @@
    {
     "file": "04-Fixing_nursemaid_elbow_hariadhi_HyperProandExtend_.png",
     "src": "/imagens/pronacao-dolorosa/04-Fixing_nursemaid_elbow_hariadhi_HyperProandExtend_.png",
-    "title": "Fixing nursemaid elbow hariadhi (HyperProandExtend)",
+    "title": "Redução da pronação dolorosa: hiperpronação e extensão",
+    "original": "Fixing nursemaid elbow hariadhi (HyperProandExtend)",
     "author": "Hariadhi",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Fixing_nursemaid_elbow_hariadhi_(HyperProandExtend).svg",
@@ -1459,7 +1577,8 @@
    {
     "file": "05-Fixing_nursemaid_elbow_hariadhi_Step2_.png",
     "src": "/imagens/pronacao-dolorosa/05-Fixing_nursemaid_elbow_hariadhi_Step2_.png",
-    "title": "Fixing nursemaid elbow hariadhi (Step2)",
+    "title": "Redução da pronação dolorosa: passo 2",
+    "original": "Fixing nursemaid elbow hariadhi (Step2)",
     "author": "Hariadhi",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Fixing_nursemaid_elbow_hariadhi_(Step2).svg",
@@ -1469,7 +1588,8 @@
    {
     "file": "06-Nurse_elbow_hariadhi.png",
     "src": "/imagens/pronacao-dolorosa/06-Nurse_elbow_hariadhi.png",
-    "title": "Nurse elbow hariadhi",
+    "title": "Pronação dolorosa (esquema)",
+    "original": "Nurse elbow hariadhi",
     "author": "Hariadhi",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Nurse_elbow_hariadhi.svg",
@@ -1487,7 +1607,8 @@
    {
     "file": "01-Patellar_dislocation.png",
     "src": "/imagens/dor-patelofemoral/01-Patellar_dislocation.png",
-    "title": "Patellar dislocation",
+    "title": "Luxação da patela",
+    "original": "Patellar dislocation",
     "author": "InjuryMap",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Patellar_dislocation.svg",
@@ -1497,7 +1618,8 @@
    {
     "file": "02-Patella-Querfraktur_kaum_disloziert.png",
     "src": "/imagens/dor-patelofemoral/02-Patella-Querfraktur_kaum_disloziert.png",
-    "title": "Patella-Querfraktur kaum disloziert",
+    "title": "Fratura transversa da patela pouco desviada",
+    "original": "Patella-Querfraktur kaum disloziert",
     "author": "Hellerhoff",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Patella-Querfraktur_kaum_disloziert.png",
@@ -1507,7 +1629,8 @@
    {
     "file": "03-Patellaluxation_ap_001.png",
     "src": "/imagens/dor-patelofemoral/03-Patellaluxation_ap_001.png",
-    "title": "Patellaluxation ap 001",
+    "title": "Luxação da patela: AP",
+    "original": "Patellaluxation ap 001",
     "author": "Hellerhoff",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Patellaluxation_ap_001.png",
@@ -1517,7 +1640,8 @@
    {
     "file": "04-Patellaluxation_tang_001.png",
     "src": "/imagens/dor-patelofemoral/04-Patellaluxation_tang_001.png",
-    "title": "Patellaluxation tang 001",
+    "title": "Luxação da patela: axial",
+    "original": "Patellaluxation tang 001",
     "author": "Hellerhoff",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Patellaluxation_tang_001.png",
@@ -1527,7 +1651,8 @@
    {
     "file": "05-04-Patellaluxation_ap_im_Roentgen.jpg",
     "src": "/imagens/dor-patelofemoral/05-04-Patellaluxation_ap_im_Roentgen.jpg",
-    "title": "04-Patellaluxation ap im Roentgen",
+    "title": "Luxação da patela no raio-X: AP",
+    "original": "04-Patellaluxation ap im Roentgen",
     "author": "Hellerhoff",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:04-Patellaluxation_ap_im_Roentgen.jpg",
@@ -1537,7 +1662,8 @@
    {
     "file": "06-04-Patellaluxation_tangential_im_Roentgen.jpg",
     "src": "/imagens/dor-patelofemoral/06-04-Patellaluxation_tangential_im_Roentgen.jpg",
-    "title": "04-Patellaluxation tangential im Roentgen",
+    "title": "Luxação da patela no raio-X: axial",
+    "original": "04-Patellaluxation tangential im Roentgen",
     "author": "Hellerhoff",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:04-Patellaluxation_tangential_im_Roentgen.jpg",
@@ -1547,7 +1673,8 @@
    {
     "file": "07-Greek_Manuscript_reducing_a_dislocated_knee._Wellcome_M0007311.jpg",
     "src": "/imagens/dor-patelofemoral/07-Greek_Manuscript_reducing_a_dislocated_knee._Wellcome_M0007311.jpg",
-    "title": "Greek Manuscript; reducing a dislocated knee. Wellcome M0007311",
+    "title": "Redução de luxação do joelho (manuscrito grego)",
+    "original": "Greek Manuscript; reducing a dislocated knee. Wellcome M0007311",
     "author": "",
     "license": "CC BY 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Greek_Manuscript;_reducing_a_dislocated_knee._Wellcome_M0007311.jpg",
@@ -1565,7 +1692,8 @@
    {
     "file": "01-VACOped_Bewegungsausma_.jpg",
     "src": "/imagens/tendao-de-aquiles/01-VACOped_Bewegungsausma_.jpg",
-    "title": "VACOped Bewegungsausmaß",
+    "title": "Bota VACOped: amplitude de movimento",
+    "original": "VACOped Bewegungsausmaß",
     "author": "Xundhite",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:VACOped_Bewegungsausma%C3%9F.jpg",
@@ -1575,7 +1703,8 @@
    {
     "file": "02-VACOped_zur_Versorgung_von_Achillessehnenverletzungen.jpg",
     "src": "/imagens/tendao-de-aquiles/02-VACOped_zur_Versorgung_von_Achillessehnenverletzungen.jpg",
-    "title": "VACOped zur Versorgung von Achillessehnenverletzungen",
+    "title": "Bota VACOped para lesão do tendão de Aquiles",
+    "original": "VACOped zur Versorgung von Achillessehnenverletzungen",
     "author": "Xundhite",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:VACOped_zur_Versorgung_von_Achillessehnenverletzungen.jpg",
@@ -1585,7 +1714,8 @@
    {
     "file": "03-Rupture_tendon_achil_en.jpg",
     "src": "/imagens/tendao-de-aquiles/03-Rupture_tendon_achil_en.jpg",
-    "title": "Rupture tendon achiléen",
+    "title": "Ruptura do tendão de Aquiles (1)",
+    "original": "Rupture tendon achiléen",
     "author": "Grook Da Oger",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Rupture_tendon_achil%C3%A9en.jpg",
@@ -1595,7 +1725,8 @@
    {
     "file": "04-Rupture_tendon_achil_en_l_gende.jpg",
     "src": "/imagens/tendao-de-aquiles/04-Rupture_tendon_achil_en_l_gende.jpg",
-    "title": "Rupture tendon achiléen légende",
+    "title": "Ruptura do tendão de Aquiles, com legenda",
+    "original": "Rupture tendon achiléen légende",
     "author": "Grook Da Oger",
     "license": "CC BY-SA 3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Rupture_tendon_achil%C3%A9en_l%C3%A9gende.jpg",
@@ -1605,7 +1736,8 @@
    {
     "file": "05-Achilles_Tendon_Tear.png",
     "src": "/imagens/tendao-de-aquiles/05-Achilles_Tendon_Tear.png",
-    "title": "Achilles Tendon Tear",
+    "title": "Ruptura do tendão de Aquiles (esquema)",
+    "original": "Achilles Tendon Tear",
     "author": "BruceBlaus",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Achilles_Tendon_Tear.png",
@@ -1615,7 +1747,8 @@
    {
     "file": "06-Achilles_tendon_rupture.png",
     "src": "/imagens/tendao-de-aquiles/06-Achilles_tendon_rupture.png",
-    "title": "Achilles tendon rupture",
+    "title": "Ruptura do tendão de Aquiles (2)",
+    "original": "Achilles tendon rupture",
     "author": "InjuryMap",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Achilles_tendon_rupture.svg",

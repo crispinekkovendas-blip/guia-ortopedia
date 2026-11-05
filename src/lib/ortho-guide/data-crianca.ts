@@ -54,7 +54,7 @@ export const CRIANCA: readonly OrthoChapter[] = [
         ],
         imaging: ["RX em duas incidências com as articulações vizinhas; comparar com o outro lado se dúvida (fises abertas confundem). Tórus: “dobra” no córtex metafisário. Galho verde: córtex rompido de um lado, dobrado do outro. Fise: classifique Salter-Harris (I: só a fise, pode ter raio-X normal; II: fise + metáfise, a mais comum; III: fise + epífise/articular; IV: atravessa tudo; V: esmagamento). Raio-X de controle: só nas reduzidas (7–10 dias) e nas fises (3 semanas e 6–12 meses)."],
         urgent: [
-          "Tórus (torus/buckle) do rádio distal: tala removível (órtese de punho ou tala gessada) por 3 semanas, sem raio-X de controle, alta com analgesia por kg e orientação; retorno em 3 semanas só para tirar — é a fratura mais comum e a mais simples.",
+          "Tórus (fratura em cunha) do rádio distal: tala removível (órtese de punho ou tala gessada) por 3 semanas, sem raio-X de controle, alta com analgesia por kg e orientação; retorno em 3 semanas só para tirar — é a fratura mais comum e a mais simples.",
           "Galho verde de antebraço angulado além do aceitável (ver conduta): redução sob sedação (pediatra/anestesista) ou bloqueio de hematoma no maior, completando a fratura do córtex quando a angulação é grande (senão volta); gesso axilopalmar (acima do cotovelo) 4–6 semanas; raio-X em 7–10 dias.",
           "Rádio distal completo ou fise Salter-Harris I–II desviada: redução suave, uma tentativa boa (cada tentativa a mais lesa a fise), gesso antebraquiopalmar bem moldado (axilopalmar se instável), raio-X de controle em 7–10 dias; fise com mais de 5–7 dias de evolução: não reduza (lesa a fise) — aceite ou cirurgia.",
           "Clavícula (galho verde ou completa no terço médio): tipoia 2–3 semanas, sem raio-X de controle, calo é normal. Fêmur: < 6 meses Pavlik (ou spica); 6 meses–5 anos: gesso pelvipodálico (spica) precoce; > 5 anos: hastes flexíveis ou placa — ortopedia pediátrica em dias; tíbia do deambulador (espiral oblíqua sutil em 1–3 anos que mancou após torção): gesso ou bota por 3–4 semanas.",
@@ -95,7 +95,7 @@ export const CRIANCA: readonly OrthoChapter[] = [
           "Raio-X normal com dor sobre a fise após trauma é Salter-Harris I: imobilize 2–3 semanas e repita o raio-X. Não diga “só contusão”.",
           "Na criança que “não mexe o braço” sem edema nem dor óssea após um puxão, pense em pronação dolorosa antes de pedir raio-X.",
         ],
-        sources: ["AAOS/POSNA — Pediatric distal radius and forearm fractures", "NICE NG38 (children: buckle fractures)", "Salter & Harris 1963", "AAP — The evaluation of suspected child physical abuse 2015", "Lei 13.431/2017 e ECA art. 13"],
+        sources: ["AAOS/POSNA — Fraturas do rádio distal e do antebraço na criança", "NICE NG38 (crianças: fraturas em tórus)", "Salter & Harris 1963", "AAP — Avaliação da suspeita de maus-tratos físicos na criança 2015", "Lei 13.431/2017 e ECA art. 13"],
       },
       {
         slug: "fratura-supracondiliana-do-umero",
@@ -159,12 +159,12 @@ export const CRIANCA: readonly OrthoChapter[] = [
           "O cotovelo da criança desviado vai para a tala em 20–40°, não a 90°. É a única imobilização em que a posição “bonita” isquemia a mão.",
           "O sinal de que a redução sem cirurgia não serve é a linha umeral anterior: se não cruza o capítulo, vai para os fios.",
         ],
-        sources: ["AAOS CPG — Pediatric supracondylar humerus fractures 2011/2022", "POSNA — Supracondylar fracture", "BOAST — Supracondylar fractures of the humerus in children", "Gartland classification (1959) / Wilkins modification"],
+        sources: ["AAOS (diretriz) — Fraturas supracondilianas do úmero na criança 2011/2022", "POSNA — Fratura supracondiliana", "BOAST — Fraturas supracondilianas do úmero na criança", "Classificação de Gartland (1959) / modificação de Wilkins"],
       },
       {
         slug: "pronacao-dolorosa",
         title: "Pronação dolorosa (subluxação da cabeça do rádio)",
-        aliases: ["cotovelo de babá", "criança não mexe o braço após puxão", "puxou pelo braço", "nursemaid's elbow", "subluxação da cabeça do rádio", "braço mole da criança"],
+        aliases: ["cotovelo de babá", "criança não mexe o braço após puxão", "puxou pelo braço", "cotovelo de babá", "subluxação da cabeça do rádio", "braço mole da criança"],
         cid: "S53.0",
         summary: "Criança de 1 a 4 anos que foi puxada ou erguida pelo braço e parou de usá-lo, sem edema nem deformidade, com o cotovelo semifletido e o antebraço pronado: é pronação dolorosa — reduz com uma manobra de 10 segundos, sem raio-X e sem imobilização, e sai da sala brincando.",
         ask: [
@@ -217,7 +217,7 @@ export const CRIANCA: readonly OrthoChapter[] = [
           "O erro do plantão é pedir raio-X em toda criança que “não mexe o braço”: na história típica sem edema, a manobra é o diagnóstico e o tratamento.",
           "O erro contrário é pior: hiperpronar um cotovelo inchado. Edema = raio-X primeiro.",
         ],
-        sources: ["Cochrane — Manipulative interventions for reducing pulled elbow in young children 2017", "AAOS OrthoInfo — Nursemaid's elbow", "POSNA — Radial head subluxation"],
+        sources: ["Cochrane — Manobras de redução da pronação dolorosa na criança pequena 2017", "AAOS OrthoInfo — Pronação dolorosa", "POSNA — Subluxação da cabeça do rádio"],
       },
     ],
   },

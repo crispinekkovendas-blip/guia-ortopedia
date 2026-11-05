@@ -15,6 +15,9 @@ const ROOT = resolve(import.meta.dirname, "../..");
 const SRCS = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 if (SRCS.length === 0) SRCS.push("C:/Users/admin/XGLA/Software/MEDAPP/ortho-refs", "C:/Users/admin/XGLA/Software/MEDAPP/ortho-refs-epmc");
 const OUT = resolve(ROOT, "public/imagens");
+// Legenda em português por título original (titulos-pt.json); o original fica em `original`, para o crédito.
+const TITLES_PT = JSON.parse(readFileSync(resolve(import.meta.dirname, "titulos-pt.json"), "utf8"));
+const LICENSE_PT = { "Public domain": "Domínio público", "No restrictions": "Sem restrições" };
 const MAX = 1600;
 
 const guide = await import(pathToFileURL(resolve(ROOT, "src/lib/ortho-guide/index.ts")).href);
@@ -59,7 +62,10 @@ for (const p of procs) {
         const info = await s.toFile(dest);
         // Artigo (Europe PMC): o crédito é autores + título do artigo + revista; a legenda vira o título.
         const author = img.article ? `${img.author} — ${img.article} (${img.journal})`.slice(0, 220) : img.author;
-        images.push({ file: name, src: `/imagens/${p.slug}/${name}`, title: img.title.replace(/\.[a-z0-9]+$/i, ""), author, license: img.license, page: img.page, w: info.width, h: info.height });
+        const original = img.title.replace(/\.[a-z0-9]+$/i, "");
+        const title = TITLES_PT[original] ?? original;
+        if (!TITLES_PT[original]) console.warn(`sem legenda em português: ${original}`);
+        images.push({ file: name, src: `/imagens/${p.slug}/${name}`, title, ...(title !== original ? { original } : {}), author, license: LICENSE_PT[img.license] ?? img.license, page: img.page, w: info.width, h: info.height });
         total++;
       } catch (e) {
         console.warn(`pulei ${img.file}: ${e.message}`);

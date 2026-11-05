@@ -171,7 +171,7 @@ export const BASES_DO_PLANTAO: readonly OrthoTopic[] = [
       "A lidocaína a 1% tem 10 mg/mL; a 2%, 20 mg/mL. Para a mesma dose em mg, a 1% dá o dobro do volume — e volume é o que faz o bloqueio de hematoma funcionar.",
       "Reduzir ombro com lidocaína intra-articular: 20 mL a 1% pela via posterior (2 cm abaixo e 1 cm medial ao ângulo posterolateral do acrômio, em direção ao processo coracoide). Espere 15 minutos.",
     ],
-    sources: ["ACEP — Procedural sedation and analgesia 2014/2019", "NICE NG124 (nerve blocks in hip fracture)", "BOAST — Fragility hip fracture (fascia iliaca block)", "Bulas (Anvisa): lidocaína, bupivacaína, cetamina, propofol, midazolam", "AAGBI — Local anaesthetic toxicity"],
+    sources: ["ACEP — Sedação e analgesia para procedimentos 2014/2019", "NICE NG124 (bloqueios de nervo na fratura do quadril)", "BOAST — Fratura de fragilidade do quadril (bloqueio da fáscia ilíaca)", "Bulas (Anvisa): lidocaína, bupivacaína, cetamina, propofol, midazolam", "AAGBI — Toxicidade dos anestésicos locais"],
   },
   {
     slug: "puncao-e-infiltracao-articular",
@@ -278,6 +278,6 @@ export const BASES_DO_PLANTAO: readonly OrthoTopic[] = [
       "Joelho que “não tem líquido” mas tem tecla: comprima a bolsa suprapatelar com a mão livre enquanto aspira — o líquido vem.",
       "Infiltrou e a dor sumiu na hora, mas voltou em 2 horas: o anestésico confirmou o alvo; o corticoide ainda vai agir em 2–7 dias. Explique antes, não depois.",
     ],
-    sources: ["AAOS — Joint aspiration and injection", "ACR — Synovial fluid analysis", "BSR/BOA — Hot swollen joint", "Cochrane — Intra-articular corticosteroid for knee OA; Corticosteroid injection for CTS; Trigger finger; De Quervain", "LEAP trial (BMJ 2018)"],
+    sources: ["AAOS — Punção e infiltração articular", "ACR — Análise do líquido sinovial", "BSR/BOA — Articulação quente e inchada", "Cochrane — Corticoide intra-articular na artrose do joelho; infiltração de corticoide na síndrome do túnel do carpo; dedo em gatilho; De Quervain", "Estudo LEAP (BMJ 2018)"],
   },
 ];

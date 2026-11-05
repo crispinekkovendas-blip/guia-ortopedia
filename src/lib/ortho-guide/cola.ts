@@ -765,7 +765,7 @@ ENCAMINHAMENTO ORTOPEDIA (URGENTE SE DESVIO).`,
   {
     id: "nota-boxer",
     group: "notas",
-    title: "Fratura de metacarpo (boxer — 5º metacarpo)",
+    title: "Fratura de metacarpo (“do boxeador” — 5º metacarpo)",
     topic: "fraturas-de-metacarpo-e-falanges",
     text: `PACIENTE COM TRAUMA EM MÃO (SOCO/IMPACTO).
 REFERE DOR E EDEMA EM REGIÃO DE MÃO.
@@ -833,7 +833,7 @@ ENCAMINHAMENTO ORTOPEDIA.`,
     title: "Incidências por região",
     topic: "como-pedir-o-raio-x",
     text: `PÉ: AP + OBLÍQUO + PERFIL
-TORNOZELO: AP + PERFIL + MORTISE
+TORNOZELO: AP + PERFIL + PINÇA (MORTISE)
 PERNA: AP + PERFIL
 JOELHO: AP + PERFIL
 PATELA: AP + PERFIL + AXIAL

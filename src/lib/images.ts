@@ -13,7 +13,10 @@ export interface RefImage {
   file: string;
   /** Caminho no site: "/imagens/<slug>/<file>". */
   src: string;
+  /** Legenda em português (scripts/images/titulos-pt.json). */
   title: string;
+  /** O título original da fonte, quando a legenda foi traduzida (vai no crédito). */
+  original?: string;
   author: string;
   license: string;
   /** A página de origem (Commons, PMC…). */

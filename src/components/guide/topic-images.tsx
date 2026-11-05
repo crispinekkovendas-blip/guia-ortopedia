@@ -19,7 +19,7 @@ export function TopicImages({ groups, compact = false }: { groups: ProcedureImag
                   {/* eslint-disable-next-line @next/next/no-img-element -- imagem estática do próprio site */}
                   <img src={img.src} alt={img.title} width={img.w} height={img.h} loading="lazy" className="aspect-[4/3] w-full object-contain bg-white" />
                 </a>
-                <p className="mt-1 line-clamp-2 text-[11.5px] leading-snug text-pine-900/80" title={img.title}>
+                <p className="mt-1 line-clamp-2 text-[11.5px] leading-snug text-pine-900/80" title={img.original ? `${img.title} — original: ${img.original}` : img.title}>
                   {img.title}
                 </p>
                 <p className="text-[10.5px] leading-snug text-pine-900/50">

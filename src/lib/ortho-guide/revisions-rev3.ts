@@ -580,8 +580,8 @@ export const REV3_CHANGES: readonly OrthoChange[] = [
     rev: 3,
     slug: "entorse-de-tornozelo",
     section: "Alarme",
-    before: "Lesão de sindesmose (squeeze positivo, dor alta, raio-X com diástase): ortopedista em dias — costuma ser cirúrgica.",
-    after: "Lesão de sindesmose (squeeze positivo, dor alta, raio-X com diástase ou com estresse em rotação externa): tala sem carga e cirurgia (parafuso/botão de sindesmose) em dias, pela regulação; sem diástase, bota sem carga 4–6 semanas e controle.",
+    before: "Lesão de sindesmose (compressão da perna positiva, dor alta, raio-X com diástase): ortopedista em dias — costuma ser cirúrgica.",
+    after: "Lesão de sindesmose (compressão da perna positiva, dor alta, raio-X com diástase ou com estresse em rotação externa): tala sem carga e cirurgia (parafuso/botão de sindesmose) em dias, pela regulação; sem diástase, bota sem carga 4–6 semanas e controle.",
     why: "Os alarmes mandavam “ao pronto-socorro” e “ao ortopedista”; o leitor é ambos: passam a dizer o que ele faz com a fratura e a sindesmose.",
   },
   {
@@ -613,7 +613,7 @@ export const REV3_CHANGES: readonly OrthoChange[] = [
     slug: "tendao-de-aquiles",
     section: "Alarme",
     before: "Ruptura: imobilizar em equino (bota com cunhas ou tala posterior em flexão plantar), sem apoiar, ortopedista em 48 h — conservador funcional ou cirurgia, decisão do especialista; atraso > 2 semanas piora o resultado.",
-    after: "Ruptura: imobilizar em equino hoje (bota com cunhas ou tala posterior em flexão plantar de 20–30°), sem apoiar; em 48 h você decide — protocolo funcional (a maioria; ver procedimento) ou cirurgia (atleta, gap > 5 mm em equino no ultrassom, diagnóstico tardio > 2 semanas, reruptura) pela regulação; atraso > 2 semanas sem imobilizar piora o resultado.",
+    after: "Ruptura: imobilizar em equino hoje (bota com cunhas ou tala posterior em flexão plantar de 20–30°), sem apoiar; em 48 h você decide — protocolo funcional (a maioria; ver procedimento) ou cirurgia (atleta, falha > 5 mm em equino no ultrassom, diagnóstico tardio > 2 semanas, reruptura) pela regulação; atraso > 2 semanas sem imobilizar piora o resultado.",
     why: "O alarme passa a dizer o que o ortopedista de plantão faz na ruptura (equino hoje) e os critérios da decisão que é dele em 48 h.",
   },
   {
@@ -637,7 +637,7 @@ export const REV3_CHANGES: readonly OrthoChange[] = [
     slug: "tendao-de-aquiles",
     section: "Encaminhar → Cirurgia e regulação",
     before: "Ruptura: 48 h. Tendinopatia sem melhora em 3–6 meses de excêntrico.",
-    after: "Sai da sua mão: a sutura do Aquiles quando você a indica (atleta de alto nível, gap > 5 mm em equino, diagnóstico tardio > 2–4 semanas, reruptura) — cirurgião pela regulação em 1–2 semanas; a tendinopatia que falhou 6–12 meses de excêntrico e ondas de choque (desbridamento/transferência, eletiva, rara).",
+    after: "Sai da sua mão: a sutura do Aquiles quando você a indica (atleta de alto nível, falha > 5 mm em equino, diagnóstico tardio > 2–4 semanas, reruptura) — cirurgião pela regulação em 1–2 semanas; a tendinopatia que falhou 6–12 meses de excêntrico e ondas de choque (desbridamento/transferência, eletiva, rara).",
     why: "O guia foi escrito como se o médico fosse encaminhar ao ortopedista; quem o usa é o ortopedista de plantão e de ambulatório no SUS. O trecho passa a dizer o que ele mesmo faz e o que sai da mão dele — cirurgia ou centro terciário pela regulação — e com que urgência.",
   },
   {

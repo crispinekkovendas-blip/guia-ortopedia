@@ -56,7 +56,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
           "Coluna cervical sem trauma: “RX de coluna cervical — AP, perfil e oblíquas”. Com trauma, tomografia.",
           "Quadril: “RX de bacia AP e RX de quadril D — perfil (Lauenstein)”. A bacia AP compara os dois lados.",
           "Joelho: “RX de joelho D — AP com carga, perfil e axial de patela”. Na artrose, acrescente “Rosenberg (PA com 45° de flexão, com carga)”, que mostra o estreitamento que o AP esconde.",
-          "Tornozelo: “RX de tornozelo D — AP, perfil e mortise (AP com 15–20° de rotação interna)”. Pé: “RX de pé D — AP, perfil e oblíqua, com carga”.",
+          "Tornozelo: “RX de tornozelo D — AP, perfil e pinça (mortise: AP com 15–20° de rotação interna)”. Pé: “RX de pé D — AP, perfil e oblíqua, com carga”.",
           "Ultrassom é o exame de tendão, bursa e cisto (ombro, Aquiles, De Quervain, Baker). Ressonância é de ligamento, menisco, disco e fratura oculta — pedir depois de 4 a 6 semanas de tratamento que não funcionou, salvo alarme.",
         ],
         plan: [
@@ -76,7 +76,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
             when: "Toda radiografia que você pediu, antes do laudo.",
             needs: "As duas incidências na tela, o outro lado se criança.",
             steps: [
-              "Identificação, lado e incidências certas (é o paciente certo? faltou a axilar, o mortise, o perfil verdadeiro?).",
+              "Identificação, lado e incidências certas (é o paciente certo? faltou a axilar, a pinça (mortise), o perfil verdadeiro?).",
               "Alinhamento: as linhas que devem bater (umeral anterior e radiocapitelar no cotovelo; Shenton no quadril; linhas de Gilula no punho; espaço claro medial no tornozelo).",
               "Córtex osso a osso, em volta de cada osso, nas duas incidências: degrau, interrupção, dobra (tórus), densidade (impactação).",
               "Articulações: congruência, espaço, fragmento solto, luxação; fises na criança (largura igual à do outro lado?).",
@@ -98,7 +98,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
           "No perfil de cotovelo, procure a linha umeral anterior: ela deve cruzar o terço médio do capítulo. Na criança, se não cruza, é fratura supracondiliana até prova em contrário.",
           "Pedir “RX de joelho” sem incidência rende um AP só. Escreva as três.",
         ],
-        sources: ["ACR Appropriateness Criteria (musculoesquelético)", "Ottawa Ankle, Foot and Knee Rules", "Canadian C-Spine Rule"],
+        sources: ["ACR — Critérios de adequação de imagem (musculoesquelético)", "Regras de Ottawa para tornozelo, pé e joelho", "Regra canadense da coluna cervical (Canadian C-Spine Rule)"],
       },
       {
         slug: "analgesia-em-escada",
@@ -155,7 +155,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
       {
         slug: "imobilizacoes-e-orteses",
         title: "Imobilizações e órteses",
-        aliases: ["tala", "gesso", "tipoia", "bota imobilizadora", "splint", "órtese", "munhequeira", "joelheira"],
+        aliases: ["tala", "gesso", "tipoia", "bota imobilizadora", "imobilização", "órtese", "munhequeira", "joelheira"],
         cid: "—",
         summary: "Na primeira consulta, tala (gesso ou órtese) — gesso circular só após o edema baixar; a tala sempre com o aviso escrito dos sinais de aperto.",
         ask: [
@@ -232,7 +232,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
           "PRICE nas primeiras 48–72 h: proteção, repouso relativo, gelo 20 min 3–4×/dia (com pano), compressão e elevação. Depois disso, movimento cedo é o que cura mais rápido.",
           "Tipoia por 6 semanas “para garantir” é a maior causa de ombro congelado iatrogênico.",
         ],
-        sources: ["AAOS OrthoInfo — cast and splint care", "NICE NG38 (fractures: non-complex)", "BOAST (British Orthopaedic Association) — compartment syndrome"],
+        sources: ["AAOS OrthoInfo — Cuidados com gesso e tala", "NICE NG38 (fraturas não complexas)", "BOAST (British Orthopaedic Association) — Síndrome compartimental"],
       },
       {
         slug: "atestado-e-afastamento",
@@ -288,7 +288,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         exam: [
           {
             name: "Os 5 P do membro em risco",
-            how: "Dor desproporcional (Pain), palidez (Pallor), parestesia, paralisia e ausência de pulso (Pulselessness) — o pulso é o último a sumir; não espere por ele.",
+            how: "Os 5 P: dor desproporcional, palidez, parestesia, paralisia e ausência de pulso — o pulso é o último a sumir; não espere por ele.",
             positive: "Dor desproporcional + dor ao estiramento passivo já é síndrome compartimental até prova em contrário: abra tudo e acione a fasciotomia.",
           },
           {
@@ -339,7 +339,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
           "A luxação de ombro posterior passa despercebida no AP; a incidência axilar mostra.",
           "O que destrava a vaga é a classificação com o risco no laudo: “Gustilo III”, “Gartland III”, “pulso ausente há 2 h”.",
         ],
-        sources: ["BOAST — Open fractures; Compartment syndrome; Supracondylar fractures", "NICE NG124 (hip fracture)", "NICE NG59 (cauda equina)", "AAOS — pediatric supracondylar fractures", "Portaria GM/MS 2.048/2002 (vaga zero)"],
+        sources: ["BOAST — Fraturas expostas; síndrome compartimental; fraturas supracondilianas", "NICE NG124 (fratura do quadril)", "NICE NG59 (cauda equina)", "AAOS — Fraturas supracondilianas na criança", "Portaria GM/MS 2.048/2002 (vaga zero)"],
       },
       ...BASES_DO_PLANTAO,
     ],
@@ -406,7 +406,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
           "Dor na coxa que para acima do joelho não é ciática: costuma ser referida (facetária ou sacroilíaca) e responde ao mesmo tratamento.",
           "Corticoide oral não melhora lombalgia sem radiculopatia.",
         ],
-        sources: ["NICE NG59 — Low back pain and sciatica", "ACP 2017 — Noninvasive treatments for low back pain", "Lancet Low Back Pain Series 2018"],
+        sources: ["NICE NG59 — Lombalgia e ciática", "ACP 2017 — Tratamentos não invasivos da lombalgia", "Série do Lancet sobre lombalgia 2018"],
       },
       {
         slug: "lombociatalgia-hernia-de-disco",
@@ -463,7 +463,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "7–14 dias; estender conforme a dor, com retorno em função leve.",
         followup: "2 semanas, com exame neurológico repetido e anotado.",
         pearls: ["Anote a força a cada consulta: “L5 grau 4” que vira “grau 3” muda a conduta mesmo com a dor igual."],
-        sources: ["NICE NG59", "NASS Clinical Guideline — Lumbar disc herniation with radiculopathy", "Goldberg et al., JAMA 2015 (corticoide oral na ciática)"],
+        sources: ["NICE NG59", "NASS (diretriz) — Hérnia de disco lombar com radiculopatia", "Goldberg et al., JAMA 2015 (corticoide oral na ciática)"],
       },
       {
         slug: "cervicalgia-e-cervicobraquialgia",
@@ -514,7 +514,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0–3 dias; mais se o trabalho exige carga ou posição fixa da cabeça.",
         followup: "2–3 semanas; antes se piora neurológica.",
         pearls: ["Torcicolo agudo do adulto (dormiu mal) melhora em 3–5 dias com calor e relaxante; na criança, torcicolo com febre ou após infecção de garganta pede avaliação (Grisel, abscesso)."],
-        sources: ["Canadian C-Spine Rule", "NASS — Cervical radiculopathy", "Cochrane — Neck pain exercises"],
+        sources: ["Regra canadense da coluna cervical (Canadian C-Spine Rule)", "NASS — Radiculopatia cervical", "Cochrane — Exercícios para cervicalgia"],
       },
       {
         slug: "fratura-vertebral-osteoporotica",
@@ -571,7 +571,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "Idoso em geral aposentado; se trabalha, 4–6 semanas sem carga.",
         followup: "2 semanas (dor e mobilidade), depois 6–8 semanas com raio-X de controle e os exames da osteoporose.",
         pearls: ["Uma fratura de punho ou vértebra depois dos 50 anos é a chance de evitar a fratura de quadril que vem em seguida — não deixe a osteoporose sem tratamento quando o paciente sai da sua sala."],
-        sources: ["ABRASSO / ABOT — Diretrizes de osteoporose", "NICE CG146 / TA464", "AACE 2020 — Postmenopausal osteoporosis", "Endocrine Society 2019"],
+        sources: ["ABRASSO / ABOT — Diretrizes de osteoporose", "NICE CG146 / TA464", "AACE 2020 — Osteoporose pós-menopausa", "Endocrine Society 2019"],
       },
     ],
   },
@@ -598,7 +598,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
           { name: "Neer e Hawkins", how: "Neer: elevação passiva do braço em rotação interna com a escápula fixa. Hawkins: braço a 90° de flexão, cotovelo fletido, rotação interna forçada.", positive: "Dor → impacto (sensíveis, pouco específicos)." },
           { name: "Jobe (supraespinhal)", how: "Braços a 90° de abdução, 30° à frente, polegares para baixo; resistir à elevação.", positive: "Dor = tendinopatia; fraqueza = ruptura do supraespinhal." },
           { name: "Rotação externa resistida (infraespinhal) e Gerber (subescapular)", how: "Cotovelos no corpo a 90°, resistir à rotação externa. Gerber: mão nas costas, afastar da lombar contra resistência.", positive: "Fraqueza → ruptura do tendão correspondente." },
-          { name: "Drop arm", how: "Eleve passivamente a 90° de abdução e peça para baixar devagar.", positive: "Braço cai → ruptura extensa do manguito." },
+          { name: "Braço caído (drop arm)", how: "Eleve passivamente a 90° de abdução e peça para baixar devagar.", positive: "Braço cai → ruptura extensa do manguito." },
         ],
         alarm: [
           "Fraqueza súbita após queda em paciente < 60 anos: ruptura aguda — ultrassom ou ressonância e cirurgião do ombro em 2–4 semanas pela regulação (reparo cedo tem melhor resultado).",
@@ -637,7 +637,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
           "A rotação externa passiva livre é o que separa o manguito da capsulite — faça sempre.",
           "Idoso com ruptura maciça crônica e sem dor não precisa operar; o que trata é função.",
         ],
-        sources: ["AAOS CPG — Rotator cuff injuries 2019", "BESS/BOA — Subacromial shoulder pain", "NICE CKS — Shoulder pain"],
+        sources: ["AAOS (diretriz) — Lesões do manguito rotador 2019", "BESS/BOA — Dor subacromial do ombro", "NICE CKS — Dor no ombro"],
       },
       {
         slug: "capsulite-adesiva",
@@ -695,7 +695,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0–7 dias na fase aguda; restrição de trabalho acima da cabeça.",
         followup: "4–6 semanas; a cada fase, redefinir o tratamento.",
         pearls: ["Capsulite num ombro imobilizado por tipoia “por precaução” é a complicação mais evitável da ortopedia: tire a tipoia cedo."],
-        sources: ["BESS — Frozen shoulder guideline", "UK FROST trial (Lancet 2020)", "Cochrane — Corticosteroid injection for adhesive capsulitis"],
+        sources: ["BESS — Diretriz da capsulite adesiva", "Estudo UK FROST (Lancet 2020)", "Cochrane — Infiltração de corticoide na capsulite adesiva"],
       },
       {
         slug: "luxacao-e-instabilidade-do-ombro",
@@ -763,7 +763,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "14–21 dias; trabalho acima da cabeça ou de carga, 6 semanas.",
         followup: "1 semana após a redução (neurovascular, raio-X), depois 3 semanas.",
         pearls: ["Luxação que “volta sozinha” várias vezes é instabilidade estabelecida: não é benigna — cada episódio tira osso da glenoide."],
-        sources: ["BESS — Traumatic anterior shoulder instability", "AAOS OrthoInfo — Dislocated shoulder", "Cochrane — Immobilisation position after shoulder dislocation"],
+        sources: ["BESS — Instabilidade anterior traumática do ombro", "AAOS OrthoInfo — Luxação do ombro", "Cochrane — Posição de imobilização após luxação do ombro"],
       },
       {
         slug: "fratura-de-clavicula",
@@ -801,7 +801,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "21–42 dias conforme a função; escritório pode voltar em 7–14 dias com a tipoia.",
         followup: "1–2 semanas com raio-X de controle; 6 semanas para liberar movimento acima da cabeça.",
         pearls: ["Na criança, fratura de clavícula em galho verde trata com tipoia 2–3 semanas e nem precisa de raio-X de controle."],
-        sources: ["AAOS OrthoInfo — Clavicle fracture", "BOAST — Clavicle (adult)", "Cochrane — Surgical vs conservative for midshaft clavicle"],
+        sources: ["AAOS OrthoInfo — Fratura da clavícula", "BOAST — Clavícula (adulto)", "Cochrane — Cirúrgico vs conservador na fratura do terço médio da clavícula"],
       },
     ],
   },
@@ -829,7 +829,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         plan: [
           "Modificar a atividade (não parar): pegar objetos com a palma para cima, mouse ergonômico, reduzir força de preensão.",
           "Exercícios excêntricos de extensores (ou flexores) do punho, 3 séries de 15, 2× ao dia, por 8–12 semanas — é o que tem evidência. Fisioterapia orienta.",
-          "Órtese tipo braçadeira (tennis elbow strap) 2–3 cm abaixo do epicôndilo durante a atividade; munhequeira à noite se dor noturna.",
+          "Órtese tipo braçadeira (para epicondilite) 2–3 cm abaixo do epicôndilo durante a atividade; munhequeira à noite se dor noturna.",
           "AINE tópico (diclofenaco gel) ou oral por 7–10 dias na fase aguda.",
           "Infiltração de corticoide: alivia por semanas e piora o resultado em 6–12 meses — evitar ou usar uma vez só. PRP, ondas de choque: opções do especialista no refratário.",
           "Prognóstico: 80–90% melhoram em 12 meses; cirurgia é rara.",
@@ -853,7 +853,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0 com restrição (sem preensão forçada por 2–4 semanas); 7–14 dias no braçal em fase aguda intensa.",
         followup: "6 semanas.",
         pearls: ["Dor lateral do cotovelo que não melhora em 6 meses: pense em plica, instabilidade posterolateral ou compressão do radial (síndrome do túnel radial) antes de repetir corticoide."],
-        sources: ["AAOS OrthoInfo — Tennis elbow", "Cochrane — Interventions for lateral elbow pain", "Coombes et al., Lancet 2010 (corticoide piora a longo prazo)"],
+        sources: ["AAOS OrthoInfo — Epicondilite lateral", "Cochrane — Intervenções na dor lateral do cotovelo", "Coombes et al., Lancet 2010 (corticoide piora a longo prazo)"],
       },
       {
         slug: "sindrome-do-tunel-do-carpo",
@@ -898,7 +898,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0–7 dias com órtese; trabalho vibratório ou de força: restrição por 2–4 semanas.",
         followup: "6 semanas com a órtese; 2 semanas após infiltração.",
         pearls: ["AINE não trata túnel do carpo. Se a receita tiver só anti-inflamatório, o paciente volta igual.", "Na gestante, costuma sumir após o parto: órtese e paciência."],
-        sources: ["AAOS CPG — Carpal tunnel syndrome 2016", "Cochrane — Splinting / Local corticosteroid injection for CTS", "NICE CKS — Carpal tunnel syndrome"],
+        sources: ["AAOS (diretriz) — Síndrome do túnel do carpo 2016", "Cochrane — Tala / infiltração local de corticoide na síndrome do túnel do carpo", "NICE CKS — Síndrome do túnel do carpo"],
       },
       {
         slug: "tenossinovite-de-de-quervain",
@@ -910,7 +910,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         exam: [
           { name: "Palpação do 1º compartimento", how: "Dor e às vezes espessamento sobre o estiloide radial, 1–2 cm proximal à tabaqueira.", positive: "Dor localizada no estiloide." },
           { name: "Finkelstein (Eichhoff)", how: "Polegar dentro do punho fechado, desvio ulnar passivo do punho.", positive: "Dor aguda no estiloide radial → De Quervain." },
-          { name: "Tabaqueira anatômica e CMC do polegar", how: "Palpar a tabaqueira (escafoide) e fazer o grind test (compressão com rotação da base do polegar).", positive: "Dor na tabaqueira após trauma → escafoide; grind doloroso → rizartrose." },
+          { name: "Tabaqueira anatômica e CMC do polegar", how: "Palpar a tabaqueira (escafoide) e fazer o teste de compressão-rotação (grind: compressão com rotação da base do polegar).", positive: "Dor na tabaqueira após trauma → escafoide; compressão-rotação dolorosa → rizartrose." },
         ],
         alarm: ["Trauma recente com dor na tabaqueira: raio-X série de escafoide e imobilizar até prova em contrário (ver fratura de escafoide)."],
         imaging: ["Não precisa na apresentação típica. RX de punho PA, perfil e série do escafoide se trauma ou > 50 anos (rizartrose). Ultrassom confirma em dúvida."],
@@ -934,7 +934,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0–7 dias; restrição de preensão por 3 semanas.",
         followup: "4 semanas.",
         pearls: ["Na lactante, a infiltração de corticoide local é segura e evita meses de dor."],
-        sources: ["Cochrane — De Quervain treatments", "ASSH — De Quervain tenosynovitis", "NICE CKS"],
+        sources: ["Cochrane — Tratamentos da tenossinovite de De Quervain", "ASSH — Tenossinovite de De Quervain", "NICE CKS"],
       },
       {
         slug: "dedo-em-gatilho",
@@ -968,7 +968,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0.",
         followup: "6 semanas após a infiltração.",
         pearls: ["No diabético, avise que a glicemia sobe por 2–3 dias após a infiltração."],
-        sources: ["ASSH — Trigger finger", "Cochrane — Corticosteroid injection for trigger finger"],
+        sources: ["ASSH — Dedo em gatilho", "Cochrane — Infiltração de corticoide no dedo em gatilho"],
       },
       {
         slug: "fratura-do-radio-distal",
@@ -1023,7 +1023,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "4–6 semanas para mão dominante no trabalho manual; 2–3 semanas no escritório com órtese, conforme a dor.",
         followup: "7–10 dias com raio-X de controle (troca por gesso circular), 2 semanas e 6 semanas; operada, conforme o cirurgião e depois com você.",
         pearls: ["Dor no punho com raio-X normal após queda sobre a mão: palpe a tabaqueira — é escafoide até prova em contrário (próximo tópico)."],
-        sources: ["AAOS CPG — Distal radius fractures 2020", "BOAST / BSSH — Distal radius", "NICE NG38"],
+        sources: ["AAOS (diretriz) — Fraturas do rádio distal 2020", "BOAST / BSSH — Rádio distal", "NICE NG38"],
       },
       {
         slug: "fratura-de-escafoide",
@@ -1064,17 +1064,17 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "Suspeita: 7–14 dias com a órtese; fratura confirmada: 6–10 semanas em trabalho manual.",
         followup: "10–14 dias para a segunda imagem, sem falta.",
         pearls: ["Quando o paciente liga dizendo que o raio-X deu normal e quer tirar o gesso: não tire pelo telefone."],
-        sources: ["BSSH — Scaphoid fracture guideline", "NICE NG38 (scaphoid imaging: MRI first-line)", "AAOS OrthoInfo"],
+        sources: ["BSSH — Diretriz da fratura do escafoide", "NICE NG38 (imagem do escafoide: ressonância em primeira linha)", "AAOS OrthoInfo"],
       },
       {
         slug: "rizartrose",
         title: "Rizartrose (artrose da base do polegar)",
         aliases: ["dor na base do polegar", "artrose do polegar", "dor para abrir pote", "dor ao pinçar"],
         cid: "M18",
-        summary: "Dor na base do polegar ao pinçar e abrir frascos, em mulher > 50 anos, com grind test positivo: artrose carpometacarpal — órtese e infiltração.",
+        summary: "Dor na base do polegar ao pinçar e abrir frascos, em mulher > 50 anos, com teste de compressão-rotação positivo: artrose carpometacarpal — órtese e infiltração.",
         ask: ["Dor ao abrir pote, virar chave, escrever? Quanto tempo? Deformidade (base do polegar “saliente”)?"],
         exam: [
-          { name: "Grind test", how: "Segurar o metacarpo do polegar e fazer compressão axial com rotação.", positive: "Dor e crepitação → rizartrose." },
+          { name: "Teste de compressão-rotação (grind)", how: "Segurar o metacarpo do polegar e fazer compressão axial com rotação.", positive: "Dor e crepitação → rizartrose." },
           { name: "Inspeção", how: "Proeminência da base do polegar (subluxação), adução do metacarpo.", positive: "Deformidade em “ombro” → avançada." },
           { name: "Diferenciar", how: "Finkelstein (De Quervain), tabaqueira (escafoide), Phalen (túnel do carpo).", positive: "Positivo em outra → coexistência é comum." },
         ],
@@ -1101,7 +1101,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0 com restrição de pinça forte.",
         followup: "6–8 semanas.",
         pearls: ["Rizartrose e túnel do carpo andam juntos na mulher após a menopausa — examine as duas coisas."],
-        sources: ["ASSH — Thumb CMC arthritis", "Cochrane — Hand osteoarthritis", "EULAR 2018 — Hand OA"],
+        sources: ["ASSH — Rizartrose (artrose carpometacarpal do polegar)", "Cochrane — Artrose da mão", "EULAR 2018 — Artrose da mão"],
       },
     ],
   },
@@ -1151,7 +1151,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0–3 dias nas crises; trabalho braçal pesado é incompatível com artrose avançada — discutir readaptação.",
         followup: "8–12 semanas.",
         pearls: ["“Dor no quadril” apontada com a mão na lateral é trocantérica; com a mão na nádega é coluna; com a mão na virilha (sinal do C) é o quadril."],
-        sources: ["AAOS CPG — Osteoarthritis of the hip 2023", "NICE NG226 — Osteoarthritis", "OARSI 2019"],
+        sources: ["AAOS (diretriz) — Artrose do quadril 2023", "NICE NG226 — Osteoartrite", "OARSI 2019"],
       },
       {
         slug: "sindrome-dolorosa-do-grande-trocanter",
@@ -1187,7 +1187,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0–3 dias.",
         followup: "6–8 semanas.",
         pearls: ["Infiltração sem exercício depois = recidiva em meses. Combine os dois."],
-        sources: ["LEAP trial (BMJ 2018) — education + exercise vs corticosteroid", "Grimaldi & Fearon 2015 — Gluteal tendinopathy"],
+        sources: ["Estudo LEAP (BMJ 2018) — educação + exercício vs corticoide", "Grimaldi & Fearon 2015 — Tendinopatia glútea"],
       },
       {
         slug: "fratura-de-quadril-no-idoso",
@@ -1198,7 +1198,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         ask: ["Queda da própria altura? Consegue levantar e dar passos? Dor na virilha ou na coxa? Anticoagulante, diabetes, insuficiência cardíaca (preparo cirúrgico)?", "Quem cuida em casa, mora sozinho, já tinha dificuldade para andar?"],
         exam: [
           { name: "Inspeção", how: "Membro encurtado e em rotação externa.", positive: "Clássico de fratura desviada; a sem desvio pode não ter sinal." },
-          { name: "Log roll", how: "Rolar a perna suavemente sobre o leito.", positive: "Dor na virilha → fratura até prova em contrário." },
+          { name: "Rolamento da perna (log roll)", how: "Rolar a perna suavemente sobre o leito.", positive: "Dor na virilha → fratura até prova em contrário." },
           { name: "Carga", how: "Tentar apoiar com ajuda.", positive: "Incapaz de apoiar → raio-X hoje; se normal, ressonância ou tomografia." },
           { name: "Neurovascular e pele", how: "Pulsos distais, sensibilidade, procurar lesões de pele e sinais de longa permanência no chão (desidratação, úlcera).", positive: "Tempo no chão > 1 h → rabdomiólise, hipotermia: exames." },
         ],
@@ -1233,7 +1233,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "Acompanhante: atestado dos dias de internação, se trabalha.",
         followup: "Após a alta hospitalar: 2 semanas (ferida, trombose, dor, osteoporose iniciada?).",
         pearls: ["Idoso com “dor no joelho” após queda e joelho normal: examine o quadril — dor referida é comum."],
-        sources: ["NICE NG124 — Hip fracture management", "AAOS CPG — Hip fractures in the elderly 2021", "ABRASSO — Osteoporose"],
+        sources: ["NICE NG124 — Manejo da fratura do quadril", "AAOS (diretriz) — Fraturas do quadril no idoso 2021", "ABRASSO — Osteoporose"],
       },
       {
         slug: "dor-no-quadril-na-crianca",
@@ -1243,7 +1243,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         summary: "Criança que manca sem trauma: sinovite transitória é o mais comum, artrite séptica é o que não pode escapar; adolescente gordinho com dor no joelho é epifisiólise até prova em contrário.",
         ask: ["Febre, infecção viral na semana anterior? Recusa total a andar ou só manca? Há quantos dias? Dor no joelho ou coxa (referida do quadril)?", "Idade: 2–8 anos (sinovite, Perthes), 10–15 anos com sobrepeso (epifisiólise)."],
         exam: [
-          { name: "Mobilidade do quadril", how: "Deitada, flexão, abdução e rotação interna comparando os lados; log roll.", positive: "Perda de rotação interna e abdução → quadril (sinovite, Perthes, epifisiólise, séptica). Rigidez total com dor extrema → séptica." },
+          { name: "Mobilidade do quadril", how: "Deitada, flexão, abdução e rotação interna comparando os lados; rolamento da perna.", positive: "Perda de rotação interna e abdução → quadril (sinovite, Perthes, epifisiólise, séptica). Rigidez total com dor extrema → séptica." },
           { name: "Sinal de Drehmann", how: "Ao flexionar o quadril, a perna roda para fora obrigatoriamente.", positive: "Epifisiólise." },
           { name: "Exame geral", how: "Temperatura, estado geral, outras articulações, pele, abdome, testículos.", positive: "Toxemia → infecção." },
         ],
@@ -1277,7 +1277,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "Escola: 3–5 dias na sinovite; dispensa de educação física por 2 semanas.",
         followup: "48 h e 7 dias na sinovite — se piorou ou febre, volta ao alarme.",
         pearls: ["Criança com “dor no joelho” e joelho normal: é o quadril. Examine sempre o quadril de quem reclama do joelho."],
-        sources: ["Kocher et al., JBJS 1999/2004", "AAOS OrthoInfo — Transient synovitis; SCFE", "POSNA — Limping child"],
+        sources: ["Kocher et al., JBJS 1999/2004", "AAOS OrthoInfo — Sinovite transitória; epifisiólise", "POSNA — A criança que manca"],
       },
     ],
   },
@@ -1330,7 +1330,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0–3 dias nas crises; readaptação se trabalho ajoelhado ou com carga.",
         followup: "8–12 semanas.",
         pearls: ["Paciente de 60 anos com “menisco” na ressonância e artrose no raio-X: trate a artrose. O menisco degenerativo é parte dela."],
-        sources: ["AAOS CPG — Osteoarthritis of the knee 2021", "NICE NG226 — Osteoarthritis 2022", "OARSI 2019", "Cochrane — Arthroscopic surgery for degenerative knee"],
+        sources: ["AAOS (diretriz) — Artrose do joelho 2021", "NICE NG226 — Osteoartrite 2022", "OARSI 2019", "Cochrane — Artroscopia no joelho degenerativo"],
       },
       {
         slug: "entorse-de-joelho-ligamentos",
@@ -1349,7 +1349,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         alarm: ["Instabilidade em várias direções, pulso alterado ou dormência: luxação de joelho — lesão de artéria poplítea em 20–30%: reduza, imobilize, pulsos de hora em hora, ITB, vascular e centro de trauma hoje (ver Luxações).", "Joelho travado em flexão que não estende (alça de balde do menisco): artroscopia em 48 h — cirurgião de joelho pela regulação; não force a extensão.", "Incapaz de estender ativamente o joelho (ruptura de quadríceps ou tendão patelar, fratura de patela desviada): imobilizador em extensão e cirurgia em 1–2 semanas (ver Fratura da patela)."],
         imaging: ["RX de joelho AP, perfil e axial conforme Ottawa (procure fratura de Segond: avulsão lateral da tíbia = LCA; platô tibial no idoso). Ressonância em 2–4 semanas se suspeita de LCA, LCP, lesão combinada ou menisco com bloqueio — pedida por você, pela regulação, com a pergunta clínica (“Lachman positivo, hemartrose — LCA? candidato a reconstrução”)."],
         plan: [
-          "Fase aguda (72 h): PRICE, muletas com carga parcial conforme a dor, imobilizador de joelho só se muita dor ou instabilidade; mover desde cedo (flexão/extensão sentado) para não enrijecer.",
+          "Fase aguda (72 h): proteção, repouso, gelo, compressão e elevação (PRICE), muletas com carga parcial conforme a dor, imobilizador de joelho só se muita dor ou instabilidade; mover desde cedo (flexão/extensão sentado) para não enrijecer.",
           "LCM isolada (grau I–II): joelheira articulada 3–6 semanas, fisioterapia; cura sem cirurgia. Grau III isolada: idem, 6–8 semanas.",
           "LCA: fisioterapia pré-operatória (recuperar extensão e quadríceps) é obrigatória em todo caso; cirurgia (reconstrução) para quem pratica esporte de pivô, trabalho exigente ou instabilidade no dia a dia; o sedentário pode tratar sem cirurgia com fortalecimento — a indicação é sua, com o paciente, e a reconstrução sai pela regulação (eletiva, meses).",
           "LCP isolada: tratamento conservador na maioria (órtese em extensão, quadríceps).",
@@ -1371,7 +1371,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "7–14 dias (escritório, com muletas); braçal: 3–6 semanas; LCA operado: 6–12 semanas.",
         followup: "1 semana (reexaminar com o joelho menos doloroso) e 3–4 semanas.",
         pearls: ["Derrame de sangue em 2 horas num jovem: 70% é LCA, 10% é fratura osteocondral — tome como grave.", "Faça o Lachman no primeiro dia; depois de 24 h o espasmo esconde."],
-        sources: ["AAOS CPG — ACL injury 2022", "Ottawa Knee Rule", "KANON trial (BMJ 2013)", "BOAST — Knee dislocation"],
+        sources: ["AAOS (diretriz) — Lesão do LCA 2022", "Regra de Ottawa para o joelho", "Estudo KANON (BMJ 2013)", "BOAST — Luxação do joelho"],
       },
       {
         slug: "lesao-meniscal",
@@ -1411,7 +1411,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "3–7 dias; braçal com agachamento: 2–4 semanas.",
         followup: "4–6 semanas.",
         pearls: ["“Menisco rasgado” no laudo de quem tem 55 anos e artrose não é indicação de cirurgia. Diga isso ao paciente antes que ele peça a artroscopia."],
-        sources: ["ESCAPE trial (JAMA 2018)", "FIDELITY trial (NEJM 2013)", "ESSKA consensus — Degenerative meniscus lesions 2017", "BMJ Rapid Recommendation 2017"],
+        sources: ["Estudo ESCAPE (JAMA 2018)", "Estudo FIDELITY (NEJM 2013)", "Consenso ESSKA — Lesões meniscais degenerativas 2017", "Recomendação rápida do BMJ 2017"],
       },
       {
         slug: "dor-patelofemoral",
@@ -1463,7 +1463,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0; restrição de agachamento e escada no trabalho por 2–4 semanas.",
         followup: "6–8 semanas.",
         pearls: ["Não diga “condromalácia” para um jovem com joelho normal: cria a ideia de desgaste e medo de mexer. Diga “dor da patela por sobrecarga, que fortalecimento resolve”."],
-        sources: ["Patellofemoral Pain Consensus (BJSM 2018)", "Cochrane — Exercise for patellofemoral pain", "APTA CPG 2019"],
+        sources: ["Consenso de dor patelofemoral (BJSM 2018)", "Cochrane — Exercício na dor patelofemoral", "APTA (diretriz) 2019"],
       },
       {
         slug: "cisto-de-baker-e-bursites-do-joelho",
@@ -1506,7 +1506,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0–7 dias; trabalho ajoelhado: 2 semanas e joelheira.",
         followup: "2 semanas (séptica: 48 h).",
         pearls: ["Cisto de Baker é um sinal, não uma doença. Pergunte: o que está inflamando este joelho?"],
-        sources: ["AAOS OrthoInfo — Baker's cyst; Prepatellar bursitis", "Aaron et al., JAAOS 2011 — Septic bursitis"],
+        sources: ["AAOS OrthoInfo — Cisto de Baker; bursite pré-patelar", "Aaron et al., JAAOS 2011 — Bursite séptica"],
       },
     ],
   },
@@ -1526,13 +1526,13 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
           { name: "Regra de Ottawa", how: "RX de tornozelo se dor na zona maleolar + (dor à palpação nos 6 cm distais da borda posterior ou ponta do maléolo lateral ou medial, ou incapaz de dar 4 passos logo após e na consulta). RX de pé se dor no mediopé + (dor na base do 5º metatarso ou no navicular, ou incapaz de 4 passos).", positive: "Qualquer critério → raio-X. Nenhum → não precisa (sensibilidade ~98%)." },
           { name: "Palpação ligamentar", how: "Talofibular anterior (anterior ao maléolo lateral), calcaneofibular (abaixo), deltoide (medial), sindesmose (acima da articulação, anterior).", positive: "Local da dor diz o ligamento; dor na sindesmose → pior prognóstico." },
           { name: "Gaveta anterior e inclinação talar", how: "Pé a 10–15° de flexão plantar, puxar o calcanhar à frente; inversão do calcanhar.", positive: "Frouxidão → grau III (melhor avaliar em 4–5 dias, quando dói menos)." },
-          { name: "Squeeze e rotação externa", how: "Comprimir a perna no terço médio; rodar o pé para fora com o joelho a 90°.", positive: "Dor na sindesmose → lesão sindesmal: raio-X com carga ou estresse em rotação externa; diástase é cirurgia (ver Alarme)." },
+          { name: "Compressão da perna (squeeze) e rotação externa", how: "Comprimir a perna no terço médio; rodar o pé para fora com o joelho a 90°.", positive: "Dor na sindesmose → lesão sindesmal: raio-X com carga ou estresse em rotação externa; diástase é cirurgia (ver Alarme)." },
           { name: "Thompson e tendão fibular", how: "Comprimir a panturrilha (Aquiles); palpar fibulares atrás do maléolo lateral.", positive: "Sem flexão plantar → Aquiles (ver o tópico); subluxação dos fibulares → bota 4–6 semanas e, se persistir, reparo do retináculo (eletivo)." },
         ],
-        alarm: ["Fratura de maléolo com desvio, bimaleolar, de tálus ou luxação: não é entorse — ver Fraturas do tornozelo e Luxações (reduza se luxado; tala posterior + estribo).", "Lesão de sindesmose (squeeze positivo, dor alta, raio-X com diástase ou com estresse em rotação externa): tala sem carga e cirurgia (parafuso/botão de sindesmose) em dias, pela regulação; sem diástase, bota sem carga 4–6 semanas e controle.", "Dor na base do 5º metatarso com fratura: ver fratura de metatarso."],
-        imaging: ["Pela regra de Ottawa: RX de tornozelo AP, perfil e mortise; RX de pé AP, perfil e oblíqua. Ressonância só na instabilidade crônica ou dor > 6–8 semanas (lesão osteocondral, fibulares)."],
+        alarm: ["Fratura de maléolo com desvio, bimaleolar, de tálus ou luxação: não é entorse — ver Fraturas do tornozelo e Luxações (reduza se luxado; tala posterior + estribo).", "Lesão de sindesmose (compressão da perna positiva, dor alta, raio-X com diástase ou com estresse em rotação externa): tala sem carga e cirurgia (parafuso/botão de sindesmose) em dias, pela regulação; sem diástase, bota sem carga 4–6 semanas e controle.", "Dor na base do 5º metatarso com fratura: ver fratura de metatarso."],
+        imaging: ["Pela regra de Ottawa: RX de tornozelo AP, perfil e pinça (mortise); RX de pé AP, perfil e oblíqua. Ressonância só na instabilidade crônica ou dor > 6–8 semanas (lesão osteocondral, fibulares)."],
         plan: [
-          "Grau I (dor, pouco edema, sem frouxidão): PRICE 48 h, tornozeleira elástica, carga total desde o início, exercícios de mobilidade e equilíbrio. Volta ao esporte em 1–2 semanas.",
+          "Grau I (dor, pouco edema, sem frouxidão): proteção, gelo, compressão e elevação (PRICE) 48 h, tornozeleira elástica, carga total desde o início, exercícios de mobilidade e equilíbrio. Volta ao esporte em 1–2 semanas.",
           "Grau II (edema, equimose, dor para apoiar, frouxidão leve): bota imobilizadora ou órtese semirrígida por 5–10 dias com carga conforme a dor, muletas se precisar; depois tornozeleira e fisioterapia (propriocepção) por 4–6 semanas.",
           "Grau III (ruptura completa, frouxidão clara): bota por 10 dias a 3 semanas, depois órtese e fisioterapia por 6–8 semanas; cirurgia raramente (atleta com instabilidade).",
           "Treino de equilíbrio (apoio unipodal, prancha) reduz recidiva pela metade — prescreva sempre.",
@@ -1542,7 +1542,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         immobilize: ["Tornozeleira elástica (grau I); bota imobilizadora por poucos dias (II–III) com carga conforme a dor; nunca gesso de 3 semanas."],
         urgent: [
           "No plantão: Ottawa decide o raio-X; sem fratura → grau I: tornozeleira e carga; grau II–III: tala posterior ou bota (quando há) por 5–10 dias com carga conforme a dor e muletas, gelo, elevação, AINE curto; alta com retorno em 5–7 dias para reexaminar os ligamentos com menos dor. Nada de gesso por 3 semanas.",
-          "Squeeze positivo ou dor na sindesmose: raio-X com estresse em rotação externa (ou com carga); diástase → tala sem carga e regulação; sem diástase → bota sem carga 4–6 semanas.",
+          "Compressão da perna positiva ou dor na sindesmose: raio-X com estresse em rotação externa (ou com carga); diástase → tala sem carga e regulação; sem diástase → bota sem carga 4–6 semanas.",
           "Thompson sem flexão plantar: é Aquiles, não entorse — equino hoje (ver Tendão de Aquiles).",
         ],
         clinic: [
@@ -1555,7 +1555,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "Grau I: 3–5 dias; II: 7–14; III: 14–21 (braçal: dobrar).",
         followup: "5–7 dias (reexaminar ligamentos) e 4 semanas.",
         pearls: ["Quem “torce sempre” nunca fez propriocepção. Mande fazer: 5 minutos por dia num pé só."],
-        sources: ["Ottawa Ankle Rules", "NATA position statement — Ankle sprain 2013", "Vuurberg et al., BJSM 2018 — Ankle sprain guideline"],
+        sources: ["Regras de Ottawa para o tornozelo", "NATA (posicionamento) — Entorse de tornozelo 2013", "Vuurberg et al., BJSM 2018 — Diretriz da entorse de tornozelo"],
       },
       {
         slug: "fascite-plantar",
@@ -1594,7 +1594,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0–3 dias; restrição de ficar em pé prolongado por 2–4 semanas.",
         followup: "6–8 semanas.",
         pearls: ["O paciente vai pedir para “tirar o esporão”. O esporão está em 15% das pessoas sem dor; a dor é da fáscia e passa com o esporão no lugar."],
-        sources: ["APTA CPG — Heel pain/plantar fasciitis 2023", "AOFAS — Plantar fasciitis", "Cochrane — Corticosteroid injection for plantar heel pain"],
+        sources: ["APTA (diretriz) — Dor no calcanhar/fascite plantar 2023", "AOFAS — Fascite plantar", "Cochrane — Infiltração de corticoide na dor plantar do calcanhar"],
       },
       {
         slug: "tendao-de-aquiles",
@@ -1604,30 +1604,30 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         summary: "Dor e espessamento 2 a 6 cm acima da inserção, pior de manhã e ao iniciar corrida, é tendinopatia e trata com excêntrico; estalo súbito com Thompson positivo é ruptura: equino hoje e a sua decisão, em 48 h, entre o protocolo funcional e a cirurgia.",
         ask: ["Dor gradual com aumento de treino, rigidez matinal? Ou sensação de pedrada na panturrilha com estalo e dificuldade de ficar na ponta do pé (ruptura)?", "Uso de fluoroquinolona (ciprofloxacino, levofloxacino) ou infiltração de corticoide recente? (ruptura)", "Dor na inserção com calçado apertando (insercional, Haglund)?"],
         exam: [
-          { name: "Palpação", how: "Espessamento fusiforme e dor 2–6 cm acima da inserção (não insercional) ou na inserção no calcâneo (insercional); procurar gap (depressão) no tendão.", positive: "Gap palpável → ruptura." },
+          { name: "Palpação", how: "Espessamento fusiforme e dor 2–6 cm acima da inserção (não insercional) ou na inserção no calcâneo (insercional); procurar falha (depressão) no tendão.", positive: "Falha palpável → ruptura." },
           { name: "Thompson", how: "Decúbito ventral, pés para fora da maca, comprimir a panturrilha.", positive: "Sem flexão plantar → ruptura completa (faça em toda dor aguda de panturrilha)." },
           { name: "Ponta do pé unipodal", how: "Subir na ponta do pé doente 10×.", positive: "Incapaz → ruptura ou tendinopatia grave." },
           { name: "Arc sign e Royal London", how: "O espessamento move com a flexão/extensão do tornozelo; dor ao palpar some em dorsiflexão máxima.", positive: "Tendinopatia (não paratendinite)." },
         ],
-        alarm: ["Ruptura: imobilizar em equino hoje (bota com cunhas ou tala posterior em flexão plantar de 20–30°), sem apoiar; em 48 h você decide — protocolo funcional (a maioria; ver procedimento) ou cirurgia (atleta, gap > 5 mm em equino no ultrassom, diagnóstico tardio > 2 semanas, reruptura) pela regulação; atraso > 2 semanas sem imobilizar piora o resultado.", "Panturrilha com edema e dor sem trauma: trombose venosa — Doppler."],
-        imaging: ["Tendinopatia típica: nenhum. Ultrassom confirma espessamento e exclui ruptura parcial; ressonância antes de cirurgia. Ruptura: diagnóstico clínico (Thompson); ultrassom se dúvida ou para medir o gap."],
+        alarm: ["Ruptura: imobilizar em equino hoje (bota com cunhas ou tala posterior em flexão plantar de 20–30°), sem apoiar; em 48 h você decide — protocolo funcional (a maioria; ver procedimento) ou cirurgia (atleta, falha > 5 mm em equino no ultrassom, diagnóstico tardio > 2 semanas, reruptura) pela regulação; atraso > 2 semanas sem imobilizar piora o resultado.", "Panturrilha com edema e dor sem trauma: trombose venosa — Doppler."],
+        imaging: ["Tendinopatia típica: nenhum. Ultrassom confirma espessamento e exclui ruptura parcial; ressonância antes de cirurgia. Ruptura: diagnóstico clínico (Thompson); ultrassom se dúvida ou para medir a falha."],
         plan: [
           "Tendinopatia não insercional: exercício excêntrico de Alfredson (descer na ponta do pé no degrau, com joelho estendido e fletido, 3×15, 2× ao dia, 12 semanas) ou carga pesada lenta; reduzir corrida 50% sem parar; salto de 1–2 cm no calçado nas primeiras semanas.",
           "Insercional: mesmo esquema sem descer abaixo do nível do degrau; calçado sem contraforte rígido.",
           "AINE curto só na dor aguda (é degenerativa, não inflamatória). Nunca infiltrar corticoide no Aquiles (ruptura).",
           "Ondas de choque após 3 meses; cirurgia após 6–12 meses de falha.",
-          "Ruptura, tratamento conservador funcional (bota em equino progressivo, carga precoce, fisioterapia): resultados iguais à cirurgia com protocolo adequado; cirurgia para atleta, gap grande ou tardia.",
+          "Ruptura, tratamento conservador funcional (bota em equino progressivo, carga precoce, fisioterapia): resultados iguais à cirurgia com protocolo adequado; cirurgia para atleta, falha grande ou tardia.",
         ],
         rx: [...ANALGESIA_BASE, ...AINE_RX],
         immobilize: ["Tendinopatia: nenhuma (salto no calçado). Ruptura: bota com cunhas em equino ou tala posterior em flexão plantar, sem carga, até a decisão em 48 h — e depois o protocolo funcional ou a cirurgia."],
         urgent: [
           "Tendinopatia no plantão: diagnóstico clínico, Thompson negativo, salto no calçado, exercício excêntrico escrito, AINE curto, nunca infiltrar; retorno no ambulatório em 6 semanas.",
-          "Ruptura (Thompson positivo, gap): tala posterior em equino 20–30° ou bota com 3 cunhas, sem carga, muletas, enoxaparina se fator de risco, alta com retorno em 48 h (ultrassom nesse intervalo se disponível: gap em equino); em 48 h a decisão é sua: protocolo funcional (resultados iguais à cirurgia na maioria — ensaios UKSTAR, Willits) ou cirurgia.",
+          "Ruptura (Thompson positivo, falha palpável): tala posterior em equino 20–30° ou bota com 3 cunhas, sem carga, muletas, enoxaparina se fator de risco, alta com retorno em 48 h (ultrassom nesse intervalo se disponível: falha em equino); em 48 h a decisão é sua: protocolo funcional (resultados iguais à cirurgia na maioria — ensaios UKSTAR, Willits) ou cirurgia.",
         ],
         procedures: [
           {
             name: "Protocolo funcional da ruptura do Aquiles (tratamento sem cirurgia)",
-            when: "Ruptura aguda (< 2 semanas), gap que fecha em equino, paciente que aceita o protocolo. Começa em 48 h da decisão.",
+            when: "Ruptura aguda (< 2 semanas), falha que fecha em equino, paciente que aceita o protocolo. Começa em 48 h da decisão.",
             needs: "Bota imobilizadora com 3 cunhas de calcanhar (2 cm cada) — ou gesso suropodálico em equino trocado a cada 2 semanas se não há bota —, muletas, folha do protocolo.",
             steps: [
               "Semanas 0–2: bota com 3 cunhas (equino ~30°), sem carga ou carga de toque com muletas; dormir com a bota; enoxaparina se fator de risco.",
@@ -1636,7 +1636,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
               "Semanas 6–8: sem cunha, bota a 90°, marcha; semana 8–10: retira a bota, calçado com salto de 1–2 cm por 4 semanas, fisioterapia de força (ponta de pé bilateral → unipodal).",
               "Nunca dorsiflexão passiva forçada antes de 12 semanas; corrida em 4–6 meses; esporte de impacto em 6–9 meses.",
             ],
-            after: "Retorno a cada 2 semanas até a 10ª; Thompson e gap reavaliados em cada visita (reruptura: dor súbita + Thompson positivo → cirurgia). Anote a cunha de cada semana no prontuário.",
+            after: "Retorno a cada 2 semanas até a 10ª; Thompson e falha reavaliados em cada visita (reruptura: dor súbita + Thompson positivo → cirurgia). Anote a cunha de cada semana no prontuário.",
           },
         ],
         clinic: [
@@ -1645,12 +1645,12 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
           "Tendinopatia: 6 e 12 semanas (aderência ao excêntrico); 3–6 meses sem melhora → ultrassom e ondas de choque pela regulação.",
         ],
         refer: [
-          "Sai da sua mão: a sutura do Aquiles quando você a indica (atleta de alto nível, gap > 5 mm em equino, diagnóstico tardio > 2–4 semanas, reruptura) — cirurgião pela regulação em 1–2 semanas; a tendinopatia que falhou 6–12 meses de excêntrico e ondas de choque (desbridamento/transferência, eletiva, rara).",
+          "Sai da sua mão: a sutura do Aquiles quando você a indica (atleta de alto nível, falha > 5 mm em equino, diagnóstico tardio > 2–4 semanas, reruptura) — cirurgião pela regulação em 1–2 semanas; a tendinopatia que falhou 6–12 meses de excêntrico e ondas de choque (desbridamento/transferência, eletiva, rara).",
         ],
         leave: "Tendinopatia: 0–3 dias; ruptura: 6–12 semanas conforme trabalho.",
         followup: "Tendinopatia: 6 e 12 semanas; ruptura: 48 h (decisão), depois a cada 2 semanas para trocar a cunha (protocolo funcional) até 8–10 semanas, e 6 meses.",
         pearls: ["Um terço das rupturas é rotulado de “entorse” na primeira consulta. Faça o Thompson em toda dor aguda de panturrilha ou tornozelo.", "Fluoroquinolona + corticoide em idoso: suspenda e avise do risco."],
-        sources: ["AAOS CPG — Achilles tendon rupture", "Alfredson 1998; Beyer 2015 (heavy slow resistance)", "BJSM — Achilles tendinopathy consensus 2020"],
+        sources: ["AAOS (diretriz) — Ruptura do tendão de Aquiles", "Alfredson 1998; Beyer 2015 (resistência lenta e pesada)", "BJSM — Consenso de tendinopatia do Aquiles 2020"],
       },
       {
         slug: "fratura-de-metatarso",
@@ -1687,7 +1687,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "2–6 semanas conforme o trabalho.",
         followup: "2 semanas e 6 semanas com raio-X.",
         pearls: ["No raio-X da criança, a apófise da base do 5º metatarso é longitudinal; fratura é transversa. Não confunda."],
-        sources: ["AOFAS — Fifth metatarsal fractures", "BOFAS / NICE NG38", "Ottawa Foot Rule"],
+        sources: ["AOFAS — Fraturas do 5º metatarso", "BOFAS / NICE NG38", "Regra de Ottawa para o pé"],
       },
       {
         slug: "halux-valgo-e-metatarsalgia",
@@ -1726,7 +1726,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "0.",
         followup: "8–12 semanas.",
         pearls: ["Pergunte ao paciente se o sapato que ele veste todo dia é o que está no pé agora. A resposta costuma ser a causa."],
-        sources: ["AOFAS — Bunions; Morton neuroma", "ACFAS CPG — Hallux valgus", "Cochrane — Hallux valgus interventions"],
+        sources: ["AOFAS — Joanete; neuroma de Morton", "ACFAS (diretriz) — Hálux valgo", "Cochrane — Intervenções no hálux valgo"],
       },
     ],
   },
@@ -1779,7 +1779,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "Internação (séptica); gota/pseudogota: 3–5 dias.",
         followup: "Depois da alta: 1 semana.",
         pearls: ["Gota e artrite séptica podem coexistir: cristais no líquido não dispensam a cultura."],
-        sources: ["BSR/BOA — Hot swollen joint guideline", "EULAR 2016 — Gout", "Margaretten et al., JAMA 2007 — Does this adult patient have septic arthritis?"],
+        sources: ["BSR/BOA — Diretriz da articulação quente e inchada", "EULAR 2016 — Gota", "Margaretten et al., JAMA 2007 — Este adulto tem artrite séptica?"],
       },
       {
         slug: "crise-de-gota",
@@ -1821,7 +1821,7 @@ export const ORTHO_GUIDE: readonly OrthoChapter[] = [
         leave: "3–5 dias.",
         followup: "2 semanas (crise resolvida? ácido úrico, creatinina) e 4–8 semanas após iniciar alopurinol.",
         pearls: ["A gota do idoso em diurético é no punho e no joelho, não no dedão — e passa por “artrose inflamada”."],
-        sources: ["ACR 2020 — Gout management guideline", "EULAR 2016", "NICE NG219 — Gout 2022"],
+        sources: ["ACR 2020 — Diretriz de manejo da gota", "EULAR 2016", "NICE NG219 — Gota 2022"],
       },
     ],
   },
