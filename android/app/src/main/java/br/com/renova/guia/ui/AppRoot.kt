@@ -59,14 +59,11 @@ private data class Tab(val route: String, val label: String, val icon: ImageVect
  */
 private val TABS = listOf(
     Tab(Routes.ORTOPEDIA, "Ortopedia", Icons.Filled.Healing, "tab-ortopedia"),
+    Tab(Routes.PERGUNTAR, "Perguntar", Icons.Filled.AutoAwesome, "tab-perguntar"),
 )
 
 /** O escopo que cada tela sugere à Super Inteligência: ortopedia nas telas dela, Plantão nas outras, nenhum na aba Perguntar. */
-private fun scopeOfRoute(route: String?): String? = when {
-    route == null || route == Routes.PERGUNTAR -> null
-    route == Routes.ORTOPEDIA || route.startsWith("orto") -> SCOPE_ORTOPEDIA
-    else -> SCOPE_PLANTAO
-}
+private fun scopeOfRoute(route: String?): String? = if (route == null || route == Routes.PERGUNTAR) null else SCOPE_ORTOPEDIA
 
 /** O app inteiro: login, download do guia ou as abas, conforme o estado. */
 @Composable
@@ -124,6 +121,8 @@ private fun MainScaffold(container: AppContainer, ready: GuideState.Ready) {
 
     Scaffold(
         contentWindowInsets = WindowInsets(0, 0, 0, 0),
+        // A IA em toda tela, menos na aba dela (que já é a conversa).
+        floatingActionButton = { if (route != Routes.PERGUNTAR) AssistantFab { assistantOpen = true } },
         bottomBar = {
             if (TABS.size > 1) NavigationBar(containerColor = MaterialTheme.colorScheme.surfaceContainer) {
                 for (t in TABS) {
@@ -207,6 +206,18 @@ private fun MainScaffold(container: AppContainer, ready: GuideState.Ready) {
         }
     }
 
+
+    if (assistantOpen) {
+        AssistantSheet(
+            content,
+            assistantVm,
+            assistantContext(route, backStack?.arguments?.getString("slug"), content, consultVm),
+            screenScope = scopeOfRoute(route),
+            offline = ready.offline,
+            onOpenRoute = { r -> assistantOpen = false; openRoute(r) },
+            onDismiss = { assistantOpen = false },
+        )
+    }
 
     newRevision?.let { rev ->
         NewRevisionDialog(

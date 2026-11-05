@@ -10,6 +10,7 @@ import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performImeAction
 import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextClearance
 import androidx.compose.ui.test.performTextInput
@@ -50,6 +51,14 @@ class AppFlowTest {
     }
     private val bundle: GuideBundle by lazy { GuideJson.decodeFromString<GuideBundle>(bundleJson) }
 
+    private val answer = listOf(
+        """{"t":"search","q":"entorse tornozelo tala"}""",
+        """{"t":"text","d":"No guia de ortopedia: raio-X pelas regras de Ottawa, depois RICE e tornozeleira; carga conforme a dor [[orto-entorse-de-tornozelo#1]].\\n"}""",
+        """{"t":"text","d":"- Receita: **dipirona 1 g** de 6/6 h se dor [[orto-entorse-de-tornozelo#2]]\\n"}""",
+        """{"t":"sources","items":[{"id":"orto-entorse-de-tornozelo#1","slug":"entorse-de-tornozelo","topic":"Entorse de tornozelo","section":"Na urgência","source":"ortopedia","href":"/guia/entorse-de-tornozelo"},{"id":"orto-entorse-de-tornozelo#2","slug":"entorse-de-tornozelo","topic":"Entorse de tornozelo","section":"Conduta e retorno","source":"ortopedia","href":"/guia/entorse-de-tornozelo"}]}""",
+        """{"t":"done"}""",
+    ).joinToString("\n", postfix = "\n")
+
     @Before
     fun setUp() {
         server = MockWebServer()
@@ -59,6 +68,7 @@ class AppFlowTest {
                 return when {
                     path.startsWith("/api/app/guia") ->
                         if (request.getHeader("If-None-Match") == "\"${bundle.version}\"") MockResponse().setResponseCode(304) else MockResponse().setBody(bundleJson)
+                    path.startsWith("/api/guia/perguntar") -> MockResponse().addHeader("content-type", "application/x-ndjson").setBody(answer)
                     // Ilustrações e imagens: o servidor falso não as tem; o app segue sem elas.
                     else -> MockResponse().setResponseCode(404)
                 }
@@ -158,6 +168,17 @@ class AppFlowTest {
             waitForTag("cola-copy")
             shot("08c-cola-aberta")
             back()
+
+            // Super Inteligência: a aba Perguntar, a pergunta e a resposta com as fontes.
+            compose.onNodeWithTag("tab-perguntar").performClick()
+            waitForTag("ask-field")
+            shot("08d-perguntar")
+            compose.onNodeWithTag("ask-field").performTextInput("Entorse de tornozelo: o que faço?")
+            compose.onNodeWithTag("ask-field").performImeAction()
+            waitForText("FONTES", 60_000)
+            shot("08e-resposta")
+            compose.onNodeWithTag("tab-ortopedia").performClick()
+            waitForTag("orto-search")
 
             // Menu: o que mudou e Sobre.
             waitForTag("menu")

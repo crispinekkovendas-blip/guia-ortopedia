@@ -3,6 +3,8 @@ import { ORTHO_CREDIT, orthoDocs, orthoStats } from "@/lib/ortho-guide";
 import { imageStats } from "@/lib/images";
 import { OrthoIndex } from "@/components/guide/ortho-index";
 import { OrthoCredit } from "@/components/guide/ortho-credit";
+import { AskBox } from "@/components/guide/ask-box";
+import { guideAiEnabled } from "@/lib/guide-ask";
 
 export const metadata = { title: "Guia" };
 
@@ -33,6 +35,7 @@ export default function GuiaPage() {
           leva tudo sem internet.
         </p>
       </header>
+      {guideAiEnabled() ? <AskBox examples="ortopedia" defaultScope="ortopedia" /> : null}
       <OrthoIndex docs={orthoDocs()} />
       <div className="mt-8">
         <OrthoCredit />

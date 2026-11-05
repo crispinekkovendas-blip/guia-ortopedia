@@ -20,12 +20,14 @@ import androidx.compose.ui.unit.dp
 const val SCOPE_PLANTAO = "plantao"
 const val SCOPE_ORTOPEDIA = "ortopedia"
 
-private val SCOPES = listOf(null to "Tudo", SCOPE_PLANTAO to "Plantão", SCOPE_ORTOPEDIA to "Ortopedia")
+/** Neste produto só há um escopo (o guia inteiro): a lista fica com uma entrada e os chips não aparecem. */
+private val SCOPES = listOf(null to "Guia de Ortopedia")
 
 fun scopeLabel(scope: String?): String = SCOPES.firstOrNull { it.first == scope }?.second ?: "Tudo"
 
 @Composable
 fun ScopeChips(value: String?, onChange: (String?) -> Unit, contentPadding: PaddingValues = PaddingValues(horizontal = 16.dp)) {
+    if (SCOPES.size < 2) return
     LazyRow(
         contentPadding = contentPadding,
         horizontalArrangement = Arrangement.spacedBy(6.dp),
